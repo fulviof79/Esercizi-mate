@@ -10,7 +10,7 @@ sectnum,
 %twocolumn,
 ]{DossierExMathIta}
 
-\titolo{Eserciz PAP1}
+\titolo[indice]{PAP1}
 \author{CPT}
 \date{2020}
 
@@ -19,6 +19,11 @@ sectnum,
 \tikzstyle{every node}=[font=\footnotesize] 
 \renewcommand\partlabel{\arabic{partno})} %% Keep consistency in part numbering  with the screenshots
 
+\makeatletter
+\def\input@path{{esercizi/}}
+%or: \def\input@path{{/path/to/folder/}{/path/to/other/folder/}}
+\makeatother
+
 
 \begin{document}
 \setlength{\columnsep}{0.6cm}
@@ -26,8 +31,18 @@ sectnum,
 
 
 \section{Insiemi}
-\input{esercizi/insiemi}
+\input{01-insiemi}
 
+\exnewpage
+
+
+
+\section{Aritmetica}
+\input{02-aritmetica}
+\exnewpage
+
+\section{Notazione scientifica}
+\input{03-notazione-sci}
 
 
 
