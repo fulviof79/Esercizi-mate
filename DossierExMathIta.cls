@@ -85,6 +85,7 @@ Fulvio Frapolli]
 %%% START: Sections underlined %%%
 \titleformat{\section}
 {\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+%\titleformat{\subsection}{\normalfont\Large\bfseries}{\thesubsection}{1em}{}[{\titlerule[0.8pt]}]
 %%% END %%%
 
 %%% START: title for exercices and solution page %%%
