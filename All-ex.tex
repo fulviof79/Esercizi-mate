@@ -22,9 +22,13 @@ ssectnum,
 \renewcommand\partlabel{\arabic{partno})} %% Keep consistency in part numbering  with the screenshots
 
 \makeatletter
-\def\input@path{{esercizi/}}
+\def\input@path{{esercizi/}{temi/}}
 %or: \def\input@path{{/path/to/folder/}{/path/to/other/folder/}}
 \makeatother
+
+
+
+\includeonly{temi/20.aritmetica}
 
 
 \begin{document}
@@ -32,36 +36,7 @@ ssectnum,
 \indice
 
 
-\section{Insiemi}
-\subsection{Numeri}
-\begin{questions}
-\input{10.insiemi.numeri}
-\end{questions}
-
-
-\subsection{Operazioni}
-\begin{questions}
-\input{10.insiemi.operazioni}
-\end{questions}
-
-
-\exnewpage
-
-
-
-\section{Aritmetica}
-\subsection{Priorità delle operazioni}
-\begin{questions}
-	\input{11.aritmetica.operazioni}
-\end{questions}
-
-\subsection{Notazione scientifica}
-\begin{questions}
-	\input{11.aritmetica.notazione-sci}
-\end{questions}
-
-
-
-
+\include{temi/10.insiemi}
+\include{temi/20.aritmetica}
 
 \end{document}
