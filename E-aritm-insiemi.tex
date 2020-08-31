@@ -1,0 +1,40 @@
+% !TeX spellcheck = it_IT
+%!TEX encoding = UTF-8 Unicode
+%Author: Fulvio Frapolli
+%Last revision: 06.09.2019
+\documentclass[
+%todo,
+%answers,
+finale,
+ssectnum,
+%twocolumn,
+]{DossierExMathIta}
+
+\titolo{Insiemi e aritmetica}
+\author{CPT}
+\date{2020}
+
+
+
+\makeatletter
+\def\input@path{{../../1000-es-mate/}}
+%or: \def\input@path{{/path/to/folder/}{/path/to/other/folder/}}
+\makeatother
+
+
+
+
+%\pgfplotsset{AxisDefaults/.append style={width=\linewidth,}}
+\tikzstyle{every node}=[font=\footnotesize] 
+\renewcommand\partlabel{\arabic{partno})} %% Keep consistency in part numbering  with the screenshots
+
+
+\begin{document}
+\setlength{\columnsep}{0.6cm}
+\indice
+
+
+\include{temi/10.insiemi}
+\include{temi/20.aritmetica}
+
+\end{document}
