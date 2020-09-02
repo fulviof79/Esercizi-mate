@@ -32,6 +32,9 @@
 \RequirePackage{pgfplots}
 \RequirePackage{calc}
 \RequirePackage{tkz-tab,tkz-euclide,tkz-fct}
+
+% TKZ-EUCLIDE
+\usetkzobj{all}  
 \RequirePackage{pgfpages}   
 \RequirePackage{atbegshi}
 
@@ -304,7 +307,7 @@
 
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 \def\input@path{{../DB/}{./DB/}{./}{../ch/}{./ex/}}  %pour les exercices
-\graphicspath{{../DB/images/}{./images/}{./}{./img/}{../img/}{./ex/img/}} % pour le logo et les images des exercices
+\graphicspath{{../DB/images/}{./images/}{./}{./img/}{../img/}{./temi/img/}} % pour le logo et les images des exercices
 
 
 
@@ -481,7 +484,18 @@
 \NewEnviron{solline} { % laisse l'espace souligné pour sol élève ou sol prof en rouge
 \ifprintanswers \color{red} \BODY \else \underline{ \color{white} \BODY}\fi \color{black} }
 
-
+%%%%% COMANDI RETO %%%%
+\providecommand{\dif}{\mathop{}\!\mathrm{d}}
+\providecommand{\ii}{\mathop{}\!\mathrm{i}}
+\providecommand{\dom}[1]{\mathop{}\!\mathrm{Dom}_{#1}}
+\providecommand{\cod}[1]{\mathop{}\!\mathrm{Cod}_{#1}}
+\providecommand{\immagine}[1]{\mathop{}\!\mathrm{Im}_{#1}}
+\providecommand{\e}[1]{\times 10^{#1}}
+\providecommand{\mcm}[1]{\mathop{}\!\mathrm{mcm}({#1})}
+\providecommand{\MCD}[1]{\mathop{}\!\mathrm{MCD}({#1})}
+\providecommand{\ex}[1]{\mathop{}\!\mathrm{e}^{#1}}
+\providecommand{\vd}[2]{\begin{bmatrix} {#1} \\ {#2} \end{bmatrix}}
+\providecommand{\vt}[3]{\begin{bmatrix} {#1} \\ {#2} \\ {#3} \end{bmatrix}}
 
 
 

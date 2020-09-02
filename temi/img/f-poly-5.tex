@@ -1,0 +1,15 @@
+\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+\begin{axis}[AxisDefaults,
+major grid style={thick},
+x=1.5cm,y=1.5cm,
+%width=\linewidth,
+ytick distance={1},
+grid=both,
+minor tick num = 9,
+ymin=-5,ymax=7,xmin=-4,xmax=5,
+domain=-4:5
+]
+\addplot[draw=blue,thick,smooth,unbounded coords=jump,
+restrict y to domain=-6:8]{(x+3)*(x+1)*(x-2)*(x-1)*(x-4)/12.5}; 
+\end{axis}
+\end{tikzpicture}
