@@ -1202,22 +1202,34 @@ pic[pic text=$\gamma$,draw,angle eccentricity=1.5] {angle=A--C--B}
 
 
 \ifprintanswers   \else 
+%\begin{tikzpicture}[scale=0.7]
+%\tkzDefPoint(0,0){B}
+%\tkzDefShiftPoint[B](35:5){C}
+%\tkzDefShiftPoint[B](100:6){A}
+%\tkzDrawPolygon(A,B,C) 
+%\tkzLabelPoints[below](C,B)
+%\tkzLabelPoints[above](A)
+%\tkzLabelSegment[below right](C,B){$\SI{5}{\meter}$}
+%\tkzLabelSegment[left](A,B){$\SI{7}{\meter}$}
+%\tkzLabelSegment[above right](A,C){$\SI{6}{\meter}$}
+%\tkzLabelAngle[pos=1.2](B,A,C){$\alpha$}
+%\tkzMarkAngle[arc=l,size=.8 cm](B,A,C)
+%\tkzLabelAngle[pos=-1.2](B,C,A){$\gamma$}
+%\tkzMarkAngle[arc=l,size=.8 cm](A,C,B)
+%\tkzLabelAngle[pos=0.8](A,B,C){$\beta$}
+%\tkzMarkAngle[arc=l,size=.5 cm](C,B,A)
+%\end{tikzpicture}
+
+
 \begin{tikzpicture}[scale=0.7]
-\tkzDefPoint(0,0){B}
-\tkzDefShiftPoint[B](35:5){C}
-\tkzDefShiftPoint[B](100:6){A}
-\tkzDrawPolygon(A,B,C) 
-\tkzLabelPoints[below](C,B)
-\tkzLabelPoints[above](A)
-\tkzLabelSegment[below right](C,B){$\SI{5}{\meter}$}
-\tkzLabelSegment[left](A,B){$\SI{7}{\meter}$}
-\tkzLabelSegment[above right](A,C){$\SI{6}{\meter}$}
-\tkzLabelAngle[pos=1.2](B,A,C){$\alpha$}
-\tkzMarkAngle[arc=l,size=.8 cm](B,A,C)
-\tkzLabelAngle[pos=-1.2](B,C,A){$\gamma$}
-\tkzMarkAngle[arc=l,size=.8 cm](A,C,B)
-\tkzLabelAngle[pos=0.8](A,B,C){$\beta$}
-\tkzMarkAngle[arc=l,size=.5 cm](C,B,A)
+\coordinate[label=below :$B$]  (B) at (0,0);
+\coordinate[label= right:$C$]  (C) at (35:5);
+\coordinate[label=above:$A$]  (A) at (100:6);
+\draw (A) -- node[midway, left] {$\SI{7}{\meter}$} (B) --node[midway, below right] {$\SI{5}{\meter}$} (C) --node[midway, above right] {$\SI{6}{\meter}$} cycle;
+\path 
+pic[pic text=$\alpha$,draw,angle eccentricity=1.5] {angle=B--A--C}
+pic[pic text=$\beta$,draw,angle eccentricity=1.5] {angle=C--B--A}
+pic[pic text=$\gamma$,draw,angle eccentricity=1.5] {angle=A--C--B};
 \end{tikzpicture}
 \fi
 
@@ -1251,22 +1263,33 @@ pic[pic text=$\gamma$,draw,angle eccentricity=1.5] {angle=A--C--B}
 Calcolare $c$, $\beta$ e $\gamma$.}
 
 \ifprintanswers   \else  
+%\begin{tikzpicture}[scale=0.7]
+%\tkzDefPoint(0,0){B}
+%\tkzDefShiftPoint[B](0:5){C}
+%\tkzDefShiftPoint[B](76:6){A}
+%\tkzDrawPolygon(A,B,C) 
+%\tkzLabelPoints[below](C,B)
+%\tkzLabelPoints[above](A)
+%\tkzLabelSegment[below](C,B){$\SI{5}{\meter}$}
+%\tkzLabelSegment[left](A,B){$c$}
+%\tkzLabelSegment[above right](A,C){$\SI{7}{\meter}$}
+%\tkzLabelAngle[pos=1.2](B,A,C){$35^{\circ}$}
+%\tkzMarkAngle[arc=l,size=.8 cm](B,A,C)
+%\tkzLabelAngle[pos=1.2](B,C,A){$\gamma$}
+%\tkzMarkAngle[arc=l,size=.8 cm](A,C,B)
+%\tkzLabelAngle[pos=0.8](A,B,C){$\beta$}
+%\tkzMarkAngle[arc=l,size=.5 cm](C,B,A)
+%\end{tikzpicture}
+
 \begin{tikzpicture}[scale=0.7]
-\tkzDefPoint(0,0){B}
-\tkzDefShiftPoint[B](0:5){C}
-\tkzDefShiftPoint[B](76:6){A}
-\tkzDrawPolygon(A,B,C) 
-\tkzLabelPoints[below](C,B)
-\tkzLabelPoints[above](A)
-\tkzLabelSegment[below](C,B){$\SI{5}{\meter}$}
-\tkzLabelSegment[left](A,B){$c$}
-\tkzLabelSegment[above right](A,C){$\SI{7}{\meter}$}
-\tkzLabelAngle[pos=1.2](B,A,C){$35^{\circ}$}
-\tkzMarkAngle[arc=l,size=.8 cm](B,A,C)
-\tkzLabelAngle[pos=1.2](B,C,A){$\gamma$}
-\tkzMarkAngle[arc=l,size=.8 cm](A,C,B)
-\tkzLabelAngle[pos=0.8](A,B,C){$\beta$}
-\tkzMarkAngle[arc=l,size=.5 cm](C,B,A)
+\coordinate[label=below :$B$]  (B) at (0,0);
+\coordinate[label= right:$C$]  (C) at (0:5);
+\coordinate[label=above:$A$]  (A) at (76:6);
+\draw (A) -- node[midway, left] {$c$} (B) --node[midway, below ] {$\SI{5}{\meter}$} (C) --node[midway, above right] {$\SI{7}{\meter}$} cycle;
+\path 
+pic[pic text=$35\degree$,draw,angle eccentricity=1.5] {angle=B--A--C}
+pic[pic text=$\beta$,draw,angle eccentricity=1.5] {angle=C--B--A}
+pic[pic text=$\gamma$,draw,angle eccentricity=1.5] {angle=A--C--B};
 \end{tikzpicture}
 \fi
 
@@ -1282,22 +1305,32 @@ Calcolare $c$, $\alpha$, $\beta$ e $\gamma$ se l'area del triangolo é di $\SI{1
 }
 
 \exonly{
-\begin{tikzpicture}[scale=0.7]
-\tkzDefPoint(0,0){B}
-\tkzDefShiftPoint[B](0:3){C}
-\tkzDefShiftPoint[B](64:5){A}
-\tkzDrawPolygon(A,B,C) 
-\tkzLabelPoints[below](C,B)
-\tkzLabelPoints[above](A)
-\tkzLabelSegment[below](C,B){$\SI{6}{\meter}$} %CB
-\tkzLabelSegment[left](A,B){$c$}  % AB
-\tkzLabelSegment[above right](A,C){$\SI{5}{\meter}$} %AC
-\tkzLabelAngle[pos=1.2](B,A,C){$\alpha$} %alpha
-\tkzMarkAngle[arc=l,size=.8 cm](B,A,C)
-\tkzLabelAngle[pos=1.2](B,C,A){$\gamma$} %gamma
-\tkzMarkAngle[arc=l,size=.8 cm](A,C,B)
-\tkzLabelAngle[pos=0.8](A,B,C){$\beta$} %beta
-\tkzMarkAngle[arc=l,size=.5 cm](C,B,A)
+%\begin{tikzpicture}[scale=0.7]
+%\tkzDefPoint(0,0){B}
+%\tkzDefShiftPoint[B](0:3){C}
+%\tkzDefShiftPoint[B](64:5){A}
+%\tkzDrawPolygon(A,B,C) 
+%\tkzLabelPoints[below](C,B)
+%\tkzLabelPoints[above](A)
+%\tkzLabelSegment[below](C,B){$\SI{6}{\meter}$} %CB
+%\tkzLabelSegment[left](A,B){$c$}  % AB
+%\tkzLabelSegment[above right](A,C){$\SI{5}{\meter}$} %AC
+%\tkzLabelAngle[pos=1.2](B,A,C){$\alpha$} %alpha
+%\tkzMarkAngle[arc=l,size=.8 cm](B,A,C)
+%\tkzLabelAngle[pos=1.2](B,C,A){$\gamma$} %gamma
+%\tkzMarkAngle[arc=l,size=.8 cm](A,C,B)
+%\tkzLabelAngle[pos=0.8](A,B,C){$\beta$} %beta
+%\tkzMarkAngle[arc=l,size=.5 cm](C,B,A)
+%\end{tikzpicture}
+\begin{tikzpicture}[scale=0.8]
+\coordinate[label=below :$B$]  (B) at (0,0);
+\coordinate[label= right:$C$]  (C) at (0:3);
+\coordinate[label=above:$A$]  (A) at (64:5);
+\draw (A) -- node[midway, left] {$c$} (B) --node[midway, below ] {$\SI{6}{\meter}$} (C) --node[midway, above right] {$\SI{5}{\meter}$} cycle;
+\path 
+pic[pic text=$\alpha$,draw,angle eccentricity=1.5] {angle=B--A--C}
+pic[pic text=$\beta$,draw,angle eccentricity=1.5] {angle=C--B--A}
+pic[pic text=$\gamma$,draw,angle eccentricity=1.5] {angle=A--C--B};
 \end{tikzpicture}
 }
 
@@ -1367,23 +1400,35 @@ Qual'era l'altezza originale della torre?
 	
 	
 	\question
-	\exonly{
+	\ifprintanswers \else
 		Calcolare la lunghezza $L_1$.% e $L_2$.
 		
 		\begin{minipage}{0.4\textwidth}
-			\begin{tikzpicture}%[scale=.8]
-			\tkzDefPoint(0,0){O}
-			\tkzDefShiftPoint[O](0:2.5){A}
-			\tkzDefShiftPoint[O](120:2.5){B}
-			\tkzDrawCircle[R,dashed](O,2,5 cm)
-			\tkzDrawSegments(O,A O,B)
-			\tkzLabelSegment[below](O,A){$r=2,5$ m}
-			\tkzDrawArc[ultra thick,color=black](O,A)(B)
-			\tkzLabelAngle[pos=3](A,O,B){$L_1$}
-			\tkzMarkAngle[arc=l,size=0.5 cm,](A,O,B)
-			\tkzLabelAngle[pos=0.8,circle](A,O,B){$120^\circ$}
-			\tkzDrawSegments(O,A O,B)
+%			\begin{tikzpicture}%[scale=.8]
+%			\tkzDefPoint(0,0){O}
+%			\tkzDefShiftPoint[O](0:2.5){A}
+%			\tkzDefShiftPoint[O](120:2.5){B}
+%			\tkzDrawCircle[R,dashed](O,2,5 cm)
+%			\tkzDrawSegments(O,A O,B)
+%			\tkzLabelSegment[below](O,A){$r=2,5$ m}
+%			\tkzDrawArc[ultra thick,color=black](O,A)(B)
+%			\tkzLabelAngle[pos=3](A,O,B){$L_1$}
+%			\tkzMarkAngle[arc=l,size=0.5 cm,](A,O,B)
+%			\tkzLabelAngle[pos=0.8,circle](A,O,B){$120^\circ$}
+%			\tkzDrawSegments(O,A O,B)
+%			\end{tikzpicture}
+			\begin{tikzpicture}
+			\coordinate (O) at (0,0);
+			\coordinate (B) at (120:2.5);
+			\coordinate (A) at (0:2.5);
+			\draw (A) -- node[midway, below] {$r=\SI{2.5}{\meter}$} (O) -- (B);
+			\path 
+			pic[pic text=$120\degree$,draw,angle eccentricity=1.5] {angle=A--O--B};
+			\draw[dashed] (O) circle (2.5);
+			\draw[very thick] (A) arc (0:120:2.5) node[midway, above] {$L_1$} ;
 			\end{tikzpicture}
+			
+		
 		\end{minipage}
 		
 		%\begin{minipage}{0.4\textwidth}
@@ -1401,7 +1446,7 @@ Qual'era l'altezza originale della torre?
 		%\tkzDrawSegments(O,A O,B)
 		%\end{tikzpicture}
 		%\end{minipage}
-	}
+	\fi
 	
 	
 	\solonly{$L_1=\SI{5.24}{\meter}$ }%\qquad $L_2=\SI{26.18}{\meter}$}
@@ -1441,32 +1486,34 @@ Qual'era l'altezza originale della torre?
 	\exonly{
 		Calcolare la lunghezza della strada (le parti curve sono archi di cerchio).
 		
+		\includegraphics[scale=1]{es1-5-3}
 		
-		
-		\begin{tikzpicture}[scale=0.55]
-		\tkzDefPoint(0,0){O}
-		\tkzDefPoint(-5.7,0){O1}
-		\tkzDefShiftPoint[O](-1.7,0){P3}
-		\tkzDefShiftPoint[P3](-4,4){P2}
-		\tkzDefShiftPoint[P2](0,-4){P2a}
-		\tkzDefShiftPoint[P2](-5.5,0){P1}
-		\tkzDefShiftPoint[P1](0,-4){P1a}
-		\tkzDefShiftPoint[O](-45:1.7){P4}
-		\tkzDefShiftPoint[P4](45:3.3){P5}
-		\tkzDefShiftPoint[P5](135:1.7){P5a}
-		\tkzDrawSegments[ultra thick,color=black](P1,P2 P4,P5)
-		\tkzDrawArc[ultra thick,color=black](O,P3)(P4)
-		\tkzDrawArc[ultra thick,color=black](O1,P3)(P2)
-		\tkzDrawSegments[dashed,color=black](P1a,P2a   P2a,P3 P3,O  O,P5a)
-		\tkzDrawSegments[dotted,color=black](P1,P1a P2,P2a  O,P4  P5,P5a)
-		\tkzLabelSegment(P1a,P2a){\footnotesize $55$m}
-		\tkzLabelSegment(P3,P2a){\footnotesize  $40$m}
-		\tkzLabelSegment(P3,O){\footnotesize  $17$m}
-		\tkzLabelSegment[left](O,P5a){\footnotesize $33$m}
-		\tkzMarkAngle[arc=l,size=0.5 cm,](P3,O,P4)
-		\tkzLabelAngle[pos=-0.8,circle](P3,O,P4){\footnotesize  $135^\circ$}
-		\tkzMarkRightAngle(P2,P2a,P3)
-		\end{tikzpicture}
+%		\begin{tikzpicture}[scale=0.7]
+%		\tkzDefPoint(0,0){O}
+%		\tkzDefPoint(-5.7,0){O1}
+%		\tkzDefShiftPoint[O](-1.7,0){P3}
+%		\tkzDefShiftPoint[P3](-4,4){P2}
+%		\tkzDefShiftPoint[P2](0,-4){P2a}
+%		\tkzDefShiftPoint[P2](-5.5,0){P1}
+%		\tkzDefShiftPoint[P1](0,-4){P1a}
+%		\tkzDefShiftPoint[O](-45:1.7){P4}
+%		\tkzDefShiftPoint[P4](45:3.3){P5}
+%		\tkzDefShiftPoint[P5](135:1.7){P5a}
+%		\tkzDrawSegments[ultra thick,color=black](P1,P2 P4,P5)
+%		\tkzDrawArc[ultra thick,color=black](O,P3)(P4)
+%		\tkzDrawArc[ultra thick,color=black](O1,P3)(P2)
+%		\tkzDrawSegments[dashed,color=black](P1a,P2a   P2a,P3 P3,O  O,P5a)
+%		\tkzDrawSegments[dotted,color=black](P1,P1a P2,P2a  O,P4  P5,P5a)
+%		\tkzLabelSegment(P1a,P2a){\footnotesize $55$m}
+%		\tkzLabelSegment(P3,P2a){\footnotesize  $40$m}
+%		\tkzLabelSegment(P3,O){\footnotesize  $17$m}
+%		\tkzLabelSegment[left](O,P5a){\footnotesize $33$m}
+%		\tkzMarkAngle[arc=l,size=0.5 cm,](P3,O,P4)
+%		\tkzLabelAngle[pos=-0.8,circle](P3,O,P4){\footnotesize  $135^\circ$}
+%		\tkzMarkRightAngle(P2,P2a,P3)
+%		\end{tikzpicture}
+		%TODO diegno in tikz
+
 	}
 	
 	\solonly{$\SI{190.89}{\meter}$}
