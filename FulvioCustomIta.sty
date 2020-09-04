@@ -33,8 +33,15 @@
 \RequirePackage{calc}
 \RequirePackage{tkz-tab,tkz-euclide,tkz-fct}
 
-% TKZ-EUCLIDE
-\usetkzobj{all}  
+%% TKZ-EUCLIDE
+%\@ifpackagelater{tkz-euclide}{2020/01/01}
+%  {%
+%    % Do something for the newer version
+%  }
+%  {%
+%    \usetkzobj{all} 
+%  }%
+ 
 \RequirePackage{pgfpages}   
 \RequirePackage{atbegshi}
 
