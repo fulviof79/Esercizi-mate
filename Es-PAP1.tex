@@ -1,7 +1,7 @@
 % !TeX spellcheck = it_IT
 %!TEX encoding = UTF-8 Unicode
 %Author: Fulvio Frapolli
-%Last revision: 06.09.2019
+%Last revision: 05.09.2020
 \documentclass[
 %todo,
 %answers,
@@ -10,7 +10,10 @@ ssectnum,
 %twocolumn,
 ]{DossierExMathIta}
 
-\titolo[indice]{PAP1}
+
+\usepackage{pgf-pie}
+
+\titolo[indice]{Matematica \\ PAP1}
 \author{CPT}
 \date{2020}
 
@@ -25,7 +28,7 @@ ssectnum,
 %or: \def\input@path{{/path/to/folder/}{/path/to/other/folder/}}
 \makeatother
 
-%\includeonly{temi/31.grado1}
+%\includeonly{temi/90.statistica}
 
 
 \begin{document}
@@ -35,10 +38,13 @@ ssectnum,
 
 \include{temi/10.insiemi}
 \include{temi/20.aritmetica}
-
-\include{temi/31.grado1}
 \include{temi/25.algebra.polinomi}
+\include{temi/31.grado1}
+
 \include{temi/32.grado2}
-\include{temi/41.geometria.2d.triangolo}
+\include{temi/41.geometria.2d}
+\include{temi/42.geometria.3d}
+
+\include{temi/90.statistica}
 
 \end{document}
