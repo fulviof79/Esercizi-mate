@@ -6,7 +6,8 @@
 % French documents
 \RequirePackage[utf8] {inputenc}
 \RequirePackage[T1]{fontenc}
-
+\RequirePackage{currfile}
+\RequirePackage{xstring}
 % Common typical packages
 \RequirePackage{amsmath,amsthm,amssymb}
 \RequirePackage{enumerate}
@@ -31,8 +32,10 @@
 \usetikzlibrary{shapes,arrows,angles,quotes,intersections,babel}
 \RequirePackage{pgfplots}
 \RequirePackage{calc}
-\RequirePackage{tkz-tab,tkz-euclide,tkz-fct}
-
+\RequirePackage{tkz-euclide}
+%\RequirePackage{pgf-pie}
+%\RequirePackage{tkz-tab}
+%\RequirePackage{kz-fct}
 %% TKZ-EUCLIDE
 %\@ifpackagelater{tkz-euclide}{2020/01/01}
 %  {%
@@ -504,5 +507,8 @@
 \providecommand{\vd}[2]{\begin{bmatrix} {#1} \\ {#2} \end{bmatrix}}
 \providecommand{\vt}[3]{\begin{bmatrix} {#1} \\ {#2} \\ {#3} \end{bmatrix}}
 
-
+\newcommand\updatesectfromfile{
+\StrBefore*{\currfilebase}{-E-}[\secct]
+\setcounter{section}{\secct}
+\addtocounter{section}{-1}}
 
