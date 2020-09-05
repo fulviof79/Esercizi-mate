@@ -1,0 +1,10 @@
+\renewcommand{\section}[1]{%
+	\par\refstepcounter{section}% Increase section counter
+	\sectionmark{#1}% Add section mark (header)
+	\addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}% Add section to ToC
+	% Add more content here, if needed.
+}
+
+\makeatletter
+\def\input@path{{esercizi/}{temi/}}
+\makeatother
