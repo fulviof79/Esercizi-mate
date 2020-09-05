@@ -1,0 +1,537 @@
+\section{Geometria dello spazio}
+\subsection{Prismi e piramidi}
+\begin{questions}
+	
+\question
+%\begin{minipage}[t]{0.6\linewidth}
+\exonly{
+	Consideriamo la  piramide di base $ABC$ e vertice $S$.
+	I lati  $SA$, $SB$ e $SC$ sono perpendicolari tra loro e misurano rispettivamente \SI{1}{\metre}, \SI{2}{\metre}  e \SI{3}{\metre}.}
+	
+%	Une pyramide a pour base le triangle ABC et pour sommet le point S. Les arêtes $SA$, $SB$ et $SC$ sont perpendiculaires deux à deux et mesurent respectivement \SI{1}{\metre}, \SI{2}{\metre}  et \SI{3}{\metre}.}
+
+
+\ifprintanswers   \else 
+\begin{tikzpicture}
+\draw 
+	(0,0) coordinate [label=left:$A$] (A)  
+	(4,0) coordinate [label=right:$C$]  (C) --
+	(2,-1) coordinate [label=below:$B$]  (B) -- (A) --
+	(1,2) coordinate [label=above:$S$]  (S) edge (C)	 edge (B);
+\draw[dashed] (A) -- (C);
+\end{tikzpicture}
+ \fi
+
+
+\begin{parts}
+\part
+\exonly{
+	Determinare l'area della base $ABC$.
+%	Déterminer l’aire de la base $ABC$ de cette pyramide.
+} 
+\solonly{\SI{3.5}{\square\metre}}
+\part
+\exonly{
+	Determinare il volume di questa piramide.
+%	Déterminer le volume de cette pyramide.
+}
+\solonly{\SI{1}{\cubic\metre}}
+\end{parts}
+%\end{minipage}
+%\begin{minipage}[t][][b]{0.4\linewidth}
+
+%\end{minipage}
+
+\question
+\exonly{
+	I vertici di un cubo di lato \SI{10}{\centi\metre} vengono tagliati affinché le facce del cubo diventino degli ottagoni regolari.
+%	On découpe les sommets d’un cube d’arêtes de \SI{10}{\centi\metre} de telle manière que les faces du cube deviennent des octogones réguliers.
+}
+
+
+
+
+\begin{parts}
+\part
+\exonly{
+	Disegnare uno schizzo della situazione.
+%	Faire un croquis de la situation.
+}
+
+\ifprintanswers 
+\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)},scale=0.6]
+%\tikzstyle{isometric}=[x={(0.710cm,-0.410cm)},y={(0cm,0.820cm)},z={(-0.710cm,-0.410cm)}]
+\tikzset{every path/.style={isometric}}
+\tikzset{face/.style={fill=gray!20}}
+\pgfmathsetmacro{\cubex}{4}
+\pgfmathsetmacro{\cubey}{4}
+\pgfmathsetmacro{\cubez}{4}
+\pgfmathsetmacro{\ratio}{1/3}
+
+\coordinate (FTR) at (0,0,0);
+\coordinate (FTL) at (-\cubex,0,0);
+\coordinate (FBL) at (-\cubex,-\cubey,0);
+\coordinate (FBR) at (0,-\cubey,0);
+\coordinate (BTR) at (0,0,-\cubez);
+\coordinate (BBR) at (0,-\cubey,-\cubez);
+\coordinate (BTL) at (-\cubex,0,-\cubez);
+\coordinate (BBL) at (-\cubex,-\cubey,-\cubez);
+
+
+\draw[dotted] (FBL) -- (BBL);
+
+\shadedraw[face] ($(FTR)!\ratio!(FTL)$) -- ($(FTL)!\ratio!(FTR)$) -- ($(FTL)!\ratio!(FBL)$) -- ($(FBL)!\ratio!(FTL)$) --
+($(FBL)!\ratio!(FBR)$) -- ($(FBR)!\ratio!(FBL)$) --
+($(FBR)!\ratio!(FTR)$) -- ($(FTR)!\ratio!(FBR)$) --cycle;
+%top face
+\shadedraw[face] ($(FTR)!\ratio!(FTL)$) -- ($(FTR)!\ratio!(BTR)$) -- ($(BTR)!\ratio!(FTR)$) -- ($(BTR)!\ratio!(BTL)$) --
+($(BTR)!\ratio!(BTL)$) -- ($(BTL)!\ratio!(BTR)$) --
+($(BTL)!\ratio!(FTL)$) --  ($(FTL)!\ratio!(BTL)$)
+-- ($(FTL)!\ratio!(FTR)$) --cycle;
+%right face
+\shadedraw[face] ($(FTR)!\ratio!(BTR)$) -- ($(BTR)!\ratio!(FTR)$) -- ($(BTR)!\ratio!(BBR)$) -- ($(BBR)!\ratio!(BTR)$) --
+($(BBR)!\ratio!(FBR)$) -- ($(FBR)!\ratio!(BBR)$) --
+($(FBR)!\ratio!(FTR)$) --  ($(FTR)!\ratio!(FBR)$)
+-- ($(FTR)!\ratio!(FBR)$) -- cycle;
+
+%top right corner
+\shadedraw[face] ($(FTR)!\ratio!(BTR)$) -- ($(FTR)!\ratio!(FTL)$) -- ($(FTR)!\ratio!(FBR)$) --cycle;
+%top left corner
+\shadedraw[face] ($(FTL)!\ratio!(BTL)$) -- ($(FTL)!\ratio!(FTR)$) -- ($(FTL)!\ratio!(FBL)$) --cycle;
+
+%bottom right corner
+\shadedraw[face] ($(FBR)!\ratio!(FTR)$) -- ($(FBR)!\ratio!(FBL)$) -- ($(FBR)!\ratio!(BBR)$) --cycle;
+
+%top right corner
+\shadedraw[face] ($(BTR)!\ratio!(FTR)$) -- ($(BTR)!\ratio!(BTL)$) -- ($(BTR)!\ratio!(BBR)$) --cycle;
+%\fill[red] (0,0,0) circle (2pt);
+\draw[dotted] (FTR)  -- (FTL)  -- (FBL)  -- (FBR)  -- cycle;
+\draw[dotted] (FTR) -- (BTR)  -- (BTL)  -- (FTL) -- cycle;
+\draw[dotted] (FTR) -- (FBR) -- (BBR)  -- (BTR) -- cycle;
+\end{tikzpicture}
+ \fi
+\part
+\exonly
+{
+	Calcolare l'area esterna totale del solido ottenuto.
+%	Calculer l’aire extérieure totale du corps ainsi obtenu
+}
+\solonly{\SI{556.42}{\square\metre}}
+\part
+\exonly{
+	Calcolarne il volume.
+%	Calculer son volume.
+}
+\solonly{\SI{966}{\cubic\metre}}
+\end{parts}
+
+\question
+\exonly{
+	Calcolare l'altezza della piramide retta a base rettangolare $ABCD$ il cui vertice é $S$.
+	Le misure seguenti sono conosciute: $AB$=\SI{20}{\centi\metre}, $BC$=\SI{23}{\centi\metre} e $AS$=\SI{32}{\centi\metre}.
+%Calculer la hauteur de la pyramide droite à base rectangulaire  $ABCD$, de sommet $S$, dont on connaît les distances suivantes: $AB$=\SI{20}{\centi\metre}, $BC$=\SI{23}{\centi\metre} et $AS$=\SI{32}{\centi\metre}.
+}
+
+\ifprintanswers   \else
+\begin{tikzpicture}[scale=0.7]
+\coordinate[label=left:$A$] (A) at (0,0);
+\coordinate[label=right:$B$] (B) at (4,0);
+\coordinate[label=below:$C$] (C) at ($(B)+(35:3)$);
+\coordinate[label=below:$D$] (D) at ($(A)+(35:3)$);
+\draw (A)-- (B)--(C)--(D)-- cycle;
+\draw (3,5) coordinate [label=above:$S$]  (S)  edge (A) edge (D) edge (C)	 edge (B);
+
+\end{tikzpicture}
+  \fi
+ \solonly{\SI{28.14}{\centi\metre}}
+
+
+
+\question
+\exonly{
+	Il rapporto tra l'apotema e il diametro di un cono retto é di $\frac{5}{6}$ (vale a dire che $\frac{l}{d}=\frac{5}{6}$).\\	
+	Il volume del cono é di \SI{2.7}{\cubic\centi\metre}.\\	
+	Calcolare la superficie laterale del cono.\\
+}
+\solonly{\SI{8.13}{\square\centi\metre}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+
+
+\question
+\exonly{
+	Da uno degli spigoli di un cubo tagliamo un tetraedro i cui spigolo misurano  $AP=AQ=$\SI{3}{\centi\metre} e $AR=$\SI{4}{\centi\metre}.
+}
+
+\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+%\tikzstyle{isometric}=[x={(0.710cm,-0.410cm)},y={(0cm,0.820cm)},z={(-0.710cm,-0.410cm)}]
+%\tikzset{every path/.style={isometric}}
+\tikzset{face/.style={fill=gray!20}}
+\pgfmathsetmacro{\cubex}{2}
+\pgfmathsetmacro{\cubey}{2}
+\pgfmathsetmacro{\cubez}{2}
+\pgfmathsetmacro{\ratio}{1/3}
+
+\coordinate (FTR) at (0,0,0);
+\coordinate[label=left:$A$] (FTL) at (-\cubex,0,0);
+\coordinate (FBL) at (-\cubex,-\cubey,0);
+\coordinate (FBR) at (0,-\cubey,0);
+\coordinate (BTR) at (0,0,-\cubez);
+\coordinate (BBR) at (0,-\cubey,-\cubez);
+\coordinate (BTL) at (-\cubex,0,-\cubez);
+\coordinate (BBL) at (-\cubex,-\cubey,-\cubez);
+\coordinate[label=left:$R$] (R) at ($(FTL)!0.6!(BTL)$);
+\coordinate[label=left:$Q$] (Q) at ($(FTL)!0.6!(FBL)$);
+\coordinate[label=right:$P$] (P) at ($(FTL)!0.6!(FTR)$);
+
+\draw[dotted] (FTR)  -- (FTL)  -- (FBL)  -- (FBR)  -- cycle;
+\draw[dotted] (FTR) -- (BTR)  -- (BTL)  -- (FTL) -- cycle;
+\draw[dotted] (FTR) -- (FBR) -- (BBR)  -- (BTR) -- cycle;
+\draw[very thick] (FTL) -- (R) -- (P) -- (Q) --cycle;
+\draw[very thick]  (FTL) -- (Q) -- (P);
+\draw[very thick, dashed]  (R) -- (Q);
+\end{tikzpicture}
+\begin{parts}
+	\part
+	\exonly{ 
+	Calcolare il volume del tetraedro.
+	%Calculer le volume du tétraèdre.
+	}
+	\solonly{\SI{6}{\centi\metre}}
+	
+	\part
+	\exonly{
+	Calcolare l'altezza del tetraedro rispetto alla base $PQR$.
+	%Calculer la hauteur du tétraèdre relative à la base $PQR$.
+	}
+	\solonly{\SI{1.9}{\centi\metre}}
+\end{parts}
+
+\question
+\exonly{
+Un prisma a base quadrate di lato $b=\SI{2}{\centi\metre}$ é inscritto in una piramide regolare a base quadrata di base $a=\SI{6}{\centi\metre}$ e altezza $h=\SI{10}{\centi\metre}$.
+
+%On inscrit un prisme carré d’arête de base $b=\SI{2}{\centi\metre}$ dans une pyramide régulière à base carrée de base $a=\SI{6}{\centi\metre}$  et de hauteur $h=\SI{10}{\centi\metre}$.
+}
+
+
+\begin{parts}
+\part
+\exonly{
+Eseguire uno schizzo della situazione.
+%Faire un croquis de la situation.
+}
+\ifprintanswers 
+\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)},scale=0.4]
+%\tikzstyle{isometric}=[x={(0.710cm,-0.410cm)},y={(0cm,0.820cm)},z={(-0.710cm,-0.410cm)}]
+%\tikzset{every path/.style={isometric}}
+\tikzset{face/.style={fill=gray!20}}
+\pgfmathsetmacro{\cubex}{4}
+\pgfmathsetmacro{\cubey}{4}
+\pgfmathsetmacro{\cubez}{4}
+\pgfmathsetmacro{\ratio}{1/2}
+\pgfmathsetmacro{\shift}{-3.5cm}
+
+\coordinate (S) at (0,7,0);
+\coordinate (FL) at (-\cubex,0,\cubez);
+\coordinate (FR) at (\cubex,0,\cubez);
+\coordinate (BR) at (\cubex,0,-\cubez);
+\coordinate (BL) at (-\cubex,0,-\cubez);
+\coordinate (PFTR) at ($(FR)!\ratio!(S)$);
+\coordinate (PFTL) at ($(FL)!\ratio!(S)$);
+\coordinate (PBTL) at ($(BL)!\ratio!(S)$);
+\coordinate (PBTR) at ($(BR)!\ratio!(S)$);
+\coordinate (PFBR) at ([yshift=\shift] PFTR);
+\coordinate (PFBL) at ([yshift=\shift] PFTL);
+\coordinate (PBBL) at ([yshift=\shift] PBTL);
+\coordinate (PBBR) at ([yshift=\shift] PBTR);
+
+
+\draw (FL) -- (FR) -- (BR);
+\draw[dotted] (BR) -- (BL) --(FL);
+\draw (S) edge (FR)  edge (FL) edge (BR);
+\draw[dotted] (S)  edge (BL) ;
+
+\draw[thick] (PFTL) -- (PFTR) -- (PBTR) --(PBTL) -- cycle;
+\draw[thick] (PFBR) -- (PFBL) -- (PBBL) -- (PBBR) -- cycle;
+\draw[thick] (PFTL) -- (PFBL) (PFTR) -- (PFBR) (PBTL) --(PBBL) (PBTR)--(PBBR);
+
+\end{tikzpicture}
+\fi
+\part
+\exonly{
+Calcolare il volume del prisma.
+%Calculer le volume du prisme.
+
+}
+\solonly{\SI{26.67}{\square\centi\metre}}
+\end{parts}
+
+
+\excbreak
+\question
+\exonly{
+	I vertici di un tetraedro di lato \SI{12}{\centi\metre} vengono tagliati affinché le facce del tetraedro divengano degli esagoni regolari. 
+%	On coupe les sommets d’un tétraèdre régulier d’arête \SI{12}{\centi\metre}, de sorte que les faces du tétraèdre deviennent des hexagones réguliers. 
+
+Determinare il volume del solido ottenuto.
+%Déterminer le volume du corps ainsi obtenu.
+}
+\solonly{\SI{173.48}{\cubic\centi\metre}}
+
+\begin{tikzpicture}[scale=2]
+\tikzset{every path/.style={isometric}}
+\pgfmathsetmacro{\a}{2/ sqrt(3)}
+\pgfmathsetmacro{\b}{sqrt(3)/2}
+\pgfmathsetmacro{\h}{sqrt(23/4)}
+\pgfmathsetmacro{\ratio}{1/3}
+\pgfmathsetmacro{\Ratio}{2/3}
+
+\coordinate (A) at ( 0,0,\a);
+\coordinate (B) at ( 1,0,-\b);
+\coordinate (C) at ( -1,0,-\b);
+\coordinate (S) at ( 0,\h,0);
+\draw[dotted] (A)--(B);
+
+\draw[dotted] (C) edge (B) edge (A);
+\draw[dotted] (S) edge (A) edge (B);
+\draw [dotted]  (S) edge (C);
+
+\shadedraw[dashed] ($(A)!\Ratio!(S)$) -- ($(B)!\Ratio!(S)$) -- ($(C)!\Ratio!(S)$) -- cycle;
+\draw ($(A)!\Ratio!(S)$) -- ($(B)!\Ratio!(S)$) ;
+
+\shadedraw[dashed] ($(A)!\ratio!(S)$) -- ($(A)!\ratio!(B)$) -- ($(A)!\ratio!(C)$) --cycle; 
+\draw ($(A)!\ratio!(S)$) -- ($(A)!\ratio!(B)$);
+
+\shadedraw[dashed] ($(B)!\ratio!(S)$) -- ($(B)!\ratio!(A)$) -- ($(B)!\ratio!(C)$) --cycle; 
+\draw ($(B)!\ratio!(S)$) -- ($(B)!\ratio!(A)$);
+
+\draw[dashed] ($(C)!\ratio!(S)$) -- ($(C)!\ratio!(A)$) -- ($(C)!\ratio!(B)$) --cycle; 
+
+\shade ($(A)!\Ratio!(S)$) -- ($(B)!\Ratio!(S)$) -- ($(B)!\ratio!(S)$) -- ($(B)!\ratio!(A)$)--($(B)!\Ratio!(A)$) -- ($(A)!\ratio!(S)$) --cycle;
+
+ \end{tikzpicture}
+  \end{questions}
+ 
+ \subsection{Solidi di rotazione}
+ \begin{questions}
+ 
+
+ 
+ \question
+ \exonly{
+ Pratichiamo un foro circolare di \SI{10}{\centi\metre}  di diametro in una placca metallica.
+ 
+ Disponiamo nel buco una sfera di raggio $R>\SI{10}{\centi\metre} $ e constatiamo che la parte visibile della sfera ha un'altezza di \SI{13}{\centi\metre}.
+ 
+ 
+ 	%On dispose d’une plaque de métal dans laquelle on a percé un trou circulaire de \SI{10}{\centi\metre} de diamètre. 
+ 	%Sur cet orifice, on pose une sphère de rayon $R$ et on constate que la hauteur de la sphère par rapport à la surface de la plaque est de \SI{13}{\centi\metre}. 
+ 	
+ 	
+ }
+ 
+ \begin{parts}
+ 	\part
+ 	\exonly{
+ 		Eseguire uno schizzo della situazione.		
+ 		
+ 		}
+ 	\ifprintanswers 
+ 	\begin{tikzpicture}[scale=0.5,baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+ 	\pgfmathsetmacro{\radius}{3}
+ 	\pgfmathsetmacro{\planex}{5}
+ 	\pgfmathsetmacro{\planez}{2.5}
+ 	\pgfmathsetmacro{\ang}{30}
+ 	\draw (-\planex,{-sin(\ang)*\radius},\planez) -- (-\planex,{-sin(\ang)*\radius},-\planez) -- (\planex,{-sin(\ang)*\radius},-\planez)--(\planex,{-sin(\ang)*\radius},\planez); 
+ 	\shadedraw[shading=ball,ball color=gray!10] (0,0) circle (\radius cm);
+ 	\draw[very thick] (0,{-sin(\ang)*\radius}) ellipse ({cos(\ang)*\radius} and 0.5);
+ 	\draw[very thick] (\planex,{-sin(\ang)*\radius},\planez) -- (-\planex,{-sin(\ang)*\radius},\planez) ;
+ 	\draw [dashed] (-0.7*\planex,{-sin(\ang)*\radius}) |- (0,\radius);
+ 	\draw[latex-latex] (-0.7*\planex,{-sin(\ang)*\radius}) -- node[left] {\SI{13}{\centi\metre}} ({$(-0.7*\planex,{-sin(\ang)*\radius})$} |- {$(0,\radius)$});
+ 	
+ 	\draw[dashed] ({cos(\ang)*\radius},{-sin(\ang)*\radius}) -- ({cos(\ang)*\radius},-4) -|  ({-cos(\ang)*\radius},{-sin(\ang)*\radius});
+ 	\draw[latex-latex] ({cos(\ang)*\radius},-4) -- node[below] {\SI{10}{\centi\metre}}({-cos(\ang)*\radius},-4);
+ 	\end{tikzpicture}
+ 	
+ 	\fi
+ 	
+ 	
+ 	
+ 	
+ 	\part
+ 	
+ 	\exonly{
+ 	Determinare il volume della sfera.
+ 	
+ 	}
+ 	\sol{\SI{1.74}{\cubic\deci\metre}}
+ \end{parts}
+ 
+ 
+\question
+\exonly{
+Vogliamo costruire una boa avente la forma di un settore sferico in modo che la superficie della calotta sia identica alla superficie laterale del cono.
+
+}
+
+\begin{parts}
+\part
+
+\exonly{
+Calcolare il raggio $r$ della calotta e il volume $V$ del settore sferico se $R=\SI{70}{\centi\metre}$
+}
+\solonly{$r=\SI{56}{\centi\metre}$ , $h=\SI{28}{\centi\metre}$ e \\ $V=\SI{287351}{\cubic\centi\metre}$}
+\part
+\exonly{
+Calcolare il raggio $r$ della calotta e il volume $V$ del settore sferico in funzione del raggio $R$ della sfera da cui viene estratto.}
+\solonly{
+$r=\dfrac{4}{5}R$ e $V=\dfrac{4}{15}\pi R^3$
+}
+
+\end{parts}
+
+\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)},scale=0.6]
+\pgfmathsetmacro{\radius}{3}
+\pgfmathsetmacro{\planex}{5}
+\pgfmathsetmacro{\planez}{2.5}
+\pgfmathsetmacro{\ang}{30}
+\pgfmathsetmacro{\err}{0.1}
+\coordinate (O) at (0,0);
+\draw[] (O) circle (\radius cm);
+ %manteau secteur spherique
+\shadedraw[gray!10, color=black] ({cos(\ang)*\radius-\err},{sin(\ang)*\radius-\err}) -- (O) node [below] {$O$} -- node[below] {$R$} ({-cos(\ang)*\radius+\err},{sin(\ang)*\radius-\err});
+
+\shadedraw[thick] ({cos(\ang)*\radius},{sin(\ang)*\radius}) arc (0:-180:{cos(\ang)*\radius} and 0.4) arc (180-\ang:\ang:\radius);
+ 
+
+ 
+ 
+ \shadedraw[very thick] ({cos(\ang)*\radius},{sin(\ang)*\radius}) arc (\ang:180-\ang:\radius);
+ 
+ \draw[dotted]  ({cos(\ang)*\radius},{sin(\ang)*\radius}) arc (0:180:{cos(\ang)*\radius} and 0.4);
+ 
+ \draw[dashed] (0,{sin(\ang)*\radius} ) -- node [above] {$r$} ({cos(\ang)*\radius},{sin(\ang)*\radius});
+ \draw [dashed] (0,\radius + 1) -- (0, -\radius -1);
+\end{tikzpicture}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\exnewpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\question
+\exonly{
+In una sfera di raggio $R=\SI{1}{\metre}$ é inscritto un cilindro la cui superficie laterale vale la metà della superficie della sfera.
+
+Calcolare il volume del cilindro.
+}
+
+\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)},scale=2]
+\pgfmathsetmacro{\Radius}{1}
+\pgfmathsetmacro{\radius}{1/sqrt(2)}
+\pgfmathsetmacro{\height}{sqrt(2) /2 }
+
+\coordinate (O) at (0,0);
+\shadedraw[shading=ball,ball color=gray!10] (O) circle (\Radius);
+\draw (0,\height  ) ellipse ({\radius}  and 0.1);
+\draw(0,-\height ) ellipse ({\radius}  and 0.1);
+\draw[dotted] (O) ellipse ({\Radius} and 0.1);
+\draw (-\radius, \height) -- (-\radius,- \height);
+\draw (\radius, \height) -- (\radius, -\height);
+\draw[dashed] (0,\height + 0.5) -- (0,-\height -0.5);
+\draw[thick] (O) -- node[above] {$R$} (\Radius,0);
+%manteau secteur spherique
+\end{tikzpicture}
+
+
+\solonly{\SI{2.2}{\cubic\metre}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\question
+\exonly{
+Calcolare il volume di un cono retto di altezza $h=\SI{15}{\centi\metre}$ nel quale é inscritta una sfera di raggio $r=\SI{6}{\centi\metre}$.
+ }
+\solonly{\SI{2827.4}{\cubic\centi\metre}}
+
+\begin{tikzpicture}[scale=0.3]
+\pgfmathsetmacro\radius{9/sqrt(6)}
+\coordinate (a) at (0,\radius);
+\coordinate (b) at (0,18);
+\draw (\radius,0) -- (b) -- (-\radius,0);
+\draw (\radius,0) arc(0:-180:{\radius} and 1);
+\draw[dashed] (\radius,0) arc(0:180:{\radius} and 1);
+%\fill[black] (0,0) circle (2pt) node[below left] { $O_1$};
+
+
+\shadedraw[shading=ball,ball color=gray!10] (0,3) circle (3);
+\draw[-latex,thick] (0,3) -- ++(-10:3) node[midway,above] {$R$}; 
+
+\draw[dashed] (0,0) -- (0,18);
+\draw[dashed] (0,0) -- (6,0)  (6,18) --(0,18);
+\draw[latex-latex,thick] (6,18) -- (6,0) node[midway, right] {$h$};
+\end{tikzpicture}
+
+
+\question
+\exonly{
+Una sfera di raggio $R$  é illuminata da una sorgente luminosa puntiforme situata ad una distanza $L$ dal centro $O$ della sfera.
+}
+
+\begin{parts}
+\part
+
+\exonly{
+Calcolare la porzione (in \%) di superficie non illuminata della sfera se 
+ $R=\SI{1}{\metre}$ e $L=\SI{2.5}{\metre}$}
+\solonly{$70\%$}
+
+\part
+\exonly{
+Calcolare la proporzione si superficie non illuminata della sfera in funzione di $R$ e $L$.}
+
+\solonly{$\dfrac{(L+R)}{2L}$}
+\part
+\exonly{
+Discutere i due casi estremi $L>>R$ (che potrebbe modellizzare la situazione Terra-Sole) e $L\approx R$.}
+\solonly{$50\%$ e $0\%$}
+
+\end{parts}
+
+
+
+\ifprintanswers   \else 
+\begin{tikzpicture}
+\node[circle, draw, very thick] (c) at (0, 0) [minimum size=3cm] {};
+\fill[red]   (4, 0) coordinate (a) circle (3pt);
+\draw (tangent cs:node=c, point={(a)}, solution=1) coordinate (t1)-- (a);
+\draw (tangent cs:node=c, point={(a)}, solution=2) coordinate (t2)-- (a);
+%\draw[dashed] (0,0) -- (t1);
+%\draw[dashed] (0,0) -- (t2);
+\fill[gray!10] (t1)  let \p1 = ($ (0,0) - (t1) $) in  arc ({atan(\y1/\x1)}:{360-atan(\y1/\x1)}:1.5);
+
+
+\path ($(t1)!0.5!(t2)$) coordinate (e1);
+
+\fill[gray!10] (e1)  let \p1 = ($ (t2) - (t1) $) in  ellipse (0.2 cm and {0.5*veclen(\x1,\y1)});
+\node[circle, draw, very thick] (c) at (0, 0) [minimum size=3cm] {};
+\draw (t1) let \p1 = ($ (t1) - (t2) $) in
+arc (90:-90: 0.2 cm and {0.5*veclen(\x1,\y1)});
+\draw (0,0) -- node[below left] {$R$} (150:1.5);
+\fill (0,0) circle (1pt) node [below] {$O$};
+\draw [dashed] (0,0) -- (0,-2) -| (a);
+\draw [latex-latex] (0,-2) -- node [above] {$L$}({$(0,-2)$} -| {$(a)$});
+
+\end{tikzpicture}
+  \fi
+  
+
+
+\end{questions}
