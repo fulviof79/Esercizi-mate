@@ -1,0 +1,19 @@
+\documentclass[preview,finale]{standalone}
+\usepackage{FulvioCustomIta}
+
+\begin{document}
+\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+\tikzset{
+	every pin/.style={fill=yellow!50!white,rectangle,rounded corners=3pt,font=\tiny},
+	small dot/.style={fill=black,circle,scale=0.3}
+}
+\begin{axis}[
+AxisDefaults, 
+width=10cm,
+ytick distance={10}]
+\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-25:20]{x^3-x^2-10*x-8}; 
+\addplot[mark=*] coordinates {(-1.52,1.38)} node[small dot,pin={[pin distance=0.5cm]90:{$(-1.52,1.38)$}}]{} ;
+\addplot[mark=*] coordinates {(2.19,-24.2)} node[small dot,pin={[pin distance=1cm]90:{$(2.19,-24.2)$}}]{} ;
+\end{axis}
+\end{tikzpicture} 
+\end{document}

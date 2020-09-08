@@ -45,60 +45,63 @@
 \part
 \exonly{$f_1(x)=x^3-x^2-10x-8$}
 \ifprintanswers 
-\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-  \tikzset{
-	every pin/.style={fill=yellow!50!white,rectangle,rounded corners=3pt,font=\tiny},
-	small dot/.style={fill=black,circle,scale=0.3}
-}
-\begin{axis}[
-AxisDefaults, 
-width=10cm,
-ytick distance={10}]
-\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-25:20]{x^3-x^2-10*x-8}; 
-\addplot[mark=*] coordinates {(-1.52,1.38)} node[small dot,pin={[pin distance=0.5cm]90:{$(-1.52,1.38)$}}]{} ;
-\addplot[mark=*] coordinates {(2.19,-24.2)} node[small dot,pin={[pin distance=1cm]90:{$(2.19,-24.2)$}}]{} ;
-\end{axis}
-\end{tikzpicture} 
+\input{tikz/funzioni.polinomiali.1}
+%\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+%  \tikzset{
+%	every pin/.style={fill=yellow!50!white,rectangle,rounded corners=3pt,font=\tiny},
+%	small dot/.style={fill=black,circle,scale=0.3}
+%}
+%\begin{axis}[
+%AxisDefaults, 
+%width=10cm,
+%ytick distance={10}]
+%\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-25:20]{x^3-x^2-10*x-8}; 
+%\addplot[mark=*] coordinates {(-1.52,1.38)} node[small dot,pin={[pin distance=0.5cm]90:{$(-1.52,1.38)$}}]{} ;
+%\addplot[mark=*] coordinates {(2.19,-24.2)} node[small dot,pin={[pin distance=1cm]90:{$(2.19,-24.2)$}}]{} ;
+%\end{axis}
+%\end{tikzpicture} 
 \fi
 
 
 \part
 \exonly{$f_2(x)=x^3 + x^2 -14x -24$ }
 \ifprintanswers 
-\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-\tikzset{
-	every pin/.style={fill=yellow!50!white,rectangle,rounded corners=3pt,font=\tiny},
-	small dot/.style={fill=black,circle,scale=0.3}
-}
-\begin{axis}[
-AxisDefaults, 
-width=10cm,
-ytick distance={10}]
-\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-45:5]{x^3+x^2-14*x-24}; 
-\addplot[mark=*] coordinates {(-2.5,1.6)} node[small dot,pin={[pin distance=2cm]-90:{$(-2.5,1.6)$}}]{} ;
-\addplot[mark=*] coordinates {(1.85,-40.1)} node[small dot,pin={[pin distance=1cm]90:{$(1.85,-40.1)$}}]{} ;
-\end{axis}
-\end{tikzpicture} 
+\input{tikz/funzioni.polinomiali.2}
+%\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+%\tikzset{
+%	every pin/.style={fill=yellow!50!white,rectangle,rounded corners=3pt,font=\tiny},
+%	small dot/.style={fill=black,circle,scale=0.3}
+%}
+%\begin{axis}[
+%AxisDefaults, 
+%width=10cm,
+%ytick distance={10}]
+%\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-45:5]{x^3+x^2-14*x-24}; 
+%\addplot[mark=*] coordinates {(-2.5,1.6)} node[small dot,pin={[pin distance=2cm]-90:{$(-2.5,1.6)$}}]{} ;
+%\addplot[mark=*] coordinates {(1.85,-40.1)} node[small dot,pin={[pin distance=1cm]90:{$(1.85,-40.1)$}}]{} ;
+%\end{axis}
+%\end{tikzpicture} 
 \fi
 
 
 \part
 \exonly{$f_3(x)=2 x^3 - 3 x^2 - 17 x + 30 $ }
 \ifprintanswers 
-\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-\tikzset{
-	every pin/.style={fill=yellow!50!white,rectangle,rounded corners=3pt,font=\tiny},
-	small dot/.style={fill=black,circle,scale=0.3}
-}
-\begin{axis}[
-AxisDefaults, 
-width=10cm,
-ytick distance={10}]
-\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-5:45]{2*x^3-3*x^2-17*x+30}; 
-\addplot[mark=*] coordinates {(-1.26,42.66)} node[small dot,pin={[pin distance=2cm]-90:{$(-1.26,42.66)$}}]{} ;
-\addplot[mark=*] coordinates {(2.26,-0.66)} node[small dot,pin={[pin distance=1cm]90:{$(2.26,-0.66)$}}]{} ;
-\end{axis}
-\end{tikzpicture} 
+\input{tikz/funzioni.polinomiali.3}
+%\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+%\tikzset{
+%	every pin/.style={fill=yellow!50!white,rectangle,rounded corners=3pt,font=\tiny},
+%	small dot/.style={fill=black,circle,scale=0.3}
+%}
+%\begin{axis}[
+%AxisDefaults, 
+%width=10cm,
+%ytick distance={10}]
+%\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-5:45]{2*x^3-3*x^2-17*x+30}; 
+%\addplot[mark=*] coordinates {(-1.26,42.66)} node[small dot,pin={[pin distance=2cm]-90:{$(-1.26,42.66)$}}]{} ;
+%\addplot[mark=*] coordinates {(2.26,-0.66)} node[small dot,pin={[pin distance=1cm]90:{$(2.26,-0.66)$}}]{} ;
+%\end{axis}
+%\end{tikzpicture} 
 \fi
 
 
