@@ -10,6 +10,7 @@ Fulvio Frapolli]
 \RequirePackage{atveryend} %% TO REMOVE, NOT USED ?
 \RequirePackage{filecontents} %% STORE BODY IN A SEPARATE FILE
 \RequirePackage{xparse}
+\RequirePackage{standalone}
 \DeclareOption*{%not working TODO
 \PackageWarning{DossierExMathIta}{Unknown option ‘\CurrentOption’}%
 }
