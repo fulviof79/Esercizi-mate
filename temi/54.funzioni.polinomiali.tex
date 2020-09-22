@@ -752,4 +752,28 @@ SFIDA : Determinare i valori esatti di $x$ tali per cui il volume del parallelep
  }
 
 \solonly{$7$ e $\dfrac{3+\sqrt{93}}{2}\approx 6.32$ }
+
+\question
+\exonly{In una giornata di fine estate la temperatura di \SI{20}{\degreeCelsius}  è stata misurata alle 00h00, alle 09h00 e di nuovo alle 24h00.
+	
+	La temperatura minima è stata riscontrata alle 04h00 ed era di \SI{17}{\degreeCelsius}.
+	
+	Stabilire un modello polinomiale, $T(x)$ della temperatura in funzione dell'ora per la suddetta giornata e rappresentarla graficamente. }
+\solonly{$T(x)=-\dfrac{3}{400}x(x-9)(x-24)+20$
+
+ \begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+\begin{axis}[AxisDefaults,
+width=\linewidth,
+ytick distance={1},
+ymin=0,
+ymax=30,
+ylabel=$T(x)$
+]
+\addplot[ultra thick,draw=red,smooth,unbounded coords=jump,
+restrict y to domain=0:35,
+domain=0:24
+]{-x*(x-9)*(x-24)*3/400+20}; 
+\end{axis}
+\end{tikzpicture} 
+ }
 \end{questions}
