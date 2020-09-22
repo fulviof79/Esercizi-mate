@@ -1,18 +1,19 @@
 \NeedsTeXFormat{LaTeX2e}[1999/01/01]
 \ProvidesPackage{FulvioCustomIta}[2019/08/19]
 %%%CHANGELOG 13.11.2018
-%% remomed babel , frenchb and ngerman, pain in the ass for nothing l.14, l144, l.153, l.157
+%% removed babel , frenchb and ngerman, pain in the ass for nothing l.14, l144, l.153, l.157
 %% readded for table of content french, ngerman l 16 and \updatelang macro
 % French documents
 \RequirePackage[utf8] {inputenc}
 \RequirePackage[T1]{fontenc}
+\RequirePackage[table]{xcolor}
 \RequirePackage{currfile}
 \RequirePackage{xstring}
 % Common typical packages
 \RequirePackage{amsmath,amsthm,amssymb}
 \RequirePackage{enumerate}
 \RequirePackage{siunitx}
-\RequirePackage[table]{xcolor}
+
 %%%%\RequirePackage[frenchb,ngerman] {babel}  % ou french ????? 
 \RequirePackage[italian] {babel}
 \RequirePackage{xfrac}
@@ -33,6 +34,7 @@
 \RequirePackage{pgfplots}
 \RequirePackage{calc}
 \RequirePackage{tkz-euclide}
+\RequirePackage{lmodern}
 %\RequirePackage{pgf-pie}
 %\RequirePackage{tkz-tab}
 %\RequirePackage{kz-fct}
@@ -218,13 +220,25 @@
 
 
 % PGF and TIKZ
-\pgfplotsset{compat=1.13} 
+%\pgfplotsset{compat=1.13} 
+\pgfplotsset{compat=1.16}
 \usepgfplotslibrary{statistics}
 \usepgflibrary{shapes.geometric}
 \usetikzlibrary{arrows}
 \usetikzlibrary{intersections}
 
 \tikzset{declare function={cbrt(\x) =\x / abs(\x) *abs(\x)^(1/3);}}
+
+\tikzset{
+cross/.style={
+    thick,
+    draw=gray,
+    cross out,
+    inner sep=0pt,
+    minimum width=4pt,
+    minimum height=4pt,
+},
+}
 
 \pgfplotsset{
 	AxisDefaults/.style={
@@ -316,8 +330,8 @@
 % IMAGES and INPUT PATH
 
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
-\def\input@path{{../DB/}{./DB/}{./}{../ch/}{./ex/}}  %pour les exercices
-\graphicspath{{../DB/images/}{./images/}{./}{./img/}{../img/}{./temi/img/}} % pour le logo et les images des exercices
+\def\input@path{{../DB/}{./DB/}{./}{../ch/}{./ex/}{./temi}{../temi}}  %pour les exercices
+\graphicspath{{../DB/images/}{./images/}{./}{./img/}{../img/}{./temi/img/}{./tikz}{../tikz}} % pour le logo et les images des exercices
 
 
 
