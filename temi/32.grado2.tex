@@ -416,4 +416,64 @@ Lo standard internazionale del formato carta, l'ISO 216, decreta che il formato 
 	\solonly{\SI{21}{\centi\metre}$\times$\SI{29.7}{\centi\metre} }
 \end{parts}
 
+
+\question
+\exonly{
+La figura qui sotto mostra la sezione schematizzata di una casa.
+
+\begin{tikzpicture}
+\draw[very thick, fill=gray!20] (0,0) rectangle (5,2.6);
+\draw[very thick] (0,2.6) -- (0,3.5) -- (2.5,5) -- (5,3.5) -- (5,2.6);
+\dimline[extension start length=-0.3cm,extension end length=-0.3cm] {(0,-0.3)}{(5,-0.3)}{$a$};
+\dimline[extension end length=0.3cm,extension start length=0.3cm] {(-0.3,0)}{(-0.3,2.6)}{$b$};
+\dimline[extension end length=0.3cm,extension start length=0.3cm] {(-0.3,2.6)}{(-0.3,3.5)}{$c$};
+\dimline[extension end length=0,extension start length=0] {(2.5,2.6)}{(2.5,5)}{$x$};
+\end{tikzpicture}
+
+}
+
+\begin{parts}
+\part
+\exonly{Determinare l'altezza $x$ al centro del secondo piano affinché i due piani abbiano la stessa superficie di taglio}
+\solonly{\es{$2b-c$}}
+
+\part
+\exonly{
+Cosa potete constatare?
+}
+\solonly{La soluzione non dipende da $a$ ma solo da $b$ e $c$.}
+
+\end{parts}
+
+\question
+\exonly{Le pagine di un libro d'arte hanno forma rettangolare: larghezza pari a $a$ \si{\centi\metre} e lunghezza pari a 
+$b$ \si{\centi\metre}.
+
+Ogni pagina è composta da una zona di testo e da un margine di larghezza constante $x$ \si{\centi\metre}. 
+
+\begin{tikzpicture}
+\draw[very thick, fill=gray!20] (1,1) rectangle (4,3);
+\draw[very thick] (0,0) rectangle (5,4);
+\dimline[color=black,extension start length=-0.3cm, extension end length=-0.3cm] {(0,-0.3)}{(5,-0.3)}{$b$};
+\dimline[color=black,extension start length=0.3cm, extension end length=0.3cm] {(-0.3,0)}{(-0.3,4)}{$a$};
+\dimline[color=black,extension start length=0, extension end length=0] {(4,2)}{(5,2)}{$x$};
+\dimline[extension start length=0, extension end length=0] {(2.5,3)}{(2.5,4)}{$x$};
+\end{tikzpicture}
+
+Determinare la misura di tale margine affinché le due zona abbiano la stessa area.
+}
+
+\begin{parts}
+\part
+\exonly{Nel caso di un foglio A4 ($\SI{21}{\centi\metre}\times\SI{29.7}{\centi\metre}$.)
+}
+\solonly{\SI{3.58}{\centi\metre}}
+
+\part
+
+\exonly{Nel caso generale.}
+\solonly{$\dfrac{a+b-\sqrt{a^2+b^2}}{4}$}
+
+\end{parts}
+
 \end{questions}
