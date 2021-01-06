@@ -111,7 +111,7 @@ node[below right, pos=0.9] {$f_2$};
 node[above, pos=0.9] {$f_3$}; 
 \addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=0:5]{(0.5)^(x+2)}
 node[above, pos=0.2] {$f_4$}; 
-\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-5:5]{2^(x-2)}
+\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-5:5]{2^(x)-2}
 node[below right, pos=0.9] {$f_5$};
 \end{axis}
 \end{tikzpicture}
@@ -209,6 +209,10 @@ ytick distance={500},
 \begin{profonly}
 Src: Swokowski pg 318 ex 23	
 \end{profonly}}
+
+\part 
+\exonly{Dopo quante ore ci saranno circa $5400$ batteri? }
+\solonly{Dopo circa 4 ore }
 
 \end{parts}
 
@@ -919,7 +923,9 @@ Si tratta di un modello lineare ou esponenziale?
 Quale sarà la temperatura del caffè dopo \SI{24}{\minute}?
 }
 
-\solonly{	Modèle exponentiel. $T(24)=\SI{41.18}{\degreeCelsius}$ }
+\solonly{	Modello Esponenzale $T(24)=\SI{41.18}{\degreeCelsius}$ }
+
+
 \begin{profonly}
 Cela ne peut pas être linéaire puisque pour une variation de  $\SI{4}{\minute}$ on à des diminutions différentes de température : entre $0$ et $4$ diminution $\SI{14.2}{\degreeCelsius}$ mais entre $4$ et $8$ diminution de $\SI{12.1}{\degreeCelsius}$  et entre $8$ et $12$ de $\SI{10.3}{\degreeCelsius}$ .
 
@@ -1199,6 +1205,31 @@ Quanto tempo sarà necessario ad ottenere un pezzo finito?
 \solonly{
 29 colpi \\ 414 \si{\second}
 }
+
+\question
+\exonly{Il tempo di dimezzamento (o emivita) dell'isotopo radioattivo $239$ del Plutonio (${}^{239}Pu$) è di $24000$ anni. }
+	
+	\begin{parts}
+		\part
+		\exonly{
+		Dopo $2000$ anni quanto rimarrà di un campione iniziale di \SI{100}{\gram}?
+		}
+
+\solonly{
+$Q(t)=100 \cdot \left(\dfrac{1}{2}\right)^{\dfrac{t}{24000}}$
+
+$Q(2000)=\SI{94.4}{\gram}$}
+
+
+\part 
+
+\exonly{Quanto tempo è necessario per passare da \SI{100}{\gram} a \SI{10}{\gram} di ${}^{239}Pu$. }
+\solonly{$\approx\num{79726.3}$ anni}
+
+\end{parts}
+
+
+
 
 %		\question
 %		\exonly{

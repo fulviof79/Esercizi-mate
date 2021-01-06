@@ -44,17 +44,17 @@
 		\renewcommand\arraystretch{2.2}
 		\begin{tabular}{|C{3cm}|C{3cm}|C{3cm}|C{3cm}|}
 			\hline
-			$x$ & $v$ & $t$ & $x_o$ \\
+			             $x$              &                   $v$                   &      $t$       &     $x_o$     \\
 			\hline
-			& $\SI{3}{\frac{m}{s}}$ & $\SI{13}{s}$ & $\SI{2.5}{m}$ \\
+			\solonly{\SI{41.5}{\metre}  } &          $\SI{3}{\frac{m}{s}}$          &  $\SI{13}{s}$  & $\SI{2.5}{m}$ \\
 			%		\midrule
-			$\SI{23}{km}$ &  & $\SI{3.2}{h}$ & $\SI{4}{km}$ \\
+			        $\SI{23}{km}$         & \solonly{$\SI{5.94}{\frac{km}{h}}  $  } & $\SI{3.2}{h}$  & $\SI{4}{km}$  \\
 			%		\midrule
-			$\SI{173}{m}$ & $\SI{2.7}{\frac{m}{s}}$ &  & $\SI{42}{m}$ \\
+			        $\SI{173}{m}$         &         $\SI{2.7}{\frac{m}{s}}$         &    \solonly{$\SI{48.5}{s}$ }            & $\SI{42}{m}$  \\
 			%		\midrule
-			$\SI{236}{km}$ & $\SI{123}{\frac{km}{h}}$ & $\SI{5}{h}$ &  \\
+			       $\SI{236}{km}$         &        $\SI{123}{\frac{km}{h}}$         &  $\SI{5}{h}$   &  \solonly{$\SI{-379}{km}$ }             \\
 			%		\midrule
-			$\SI{1323}{m}$ &  & $\SI{47}{min}$ & $\SI{300}{m}$ \\
+			       $\SI{1323}{m}$         &         \solonly{$\SI{21.77}{\frac{m}{min}}$ }                                & $\SI{47}{min}$ & $\SI{300}{m}$ \\
 			\hline
 		\end{tabular}	
 		
@@ -104,17 +104,17 @@
 		\renewcommand\arraystretch{2.2}
 		\begin{tabular}{|C{3cm}|C{3cm}|C{3cm}|C{3cm}|}
 			\hline
-			$R$ & $\rho$ & $l$ & $A$ \\
+			            $R$              &                       $\rho$                        &              $l$               &       $A$        \\
 			\hline
-			& $\SI{0.0175}{\frac{\ohm \cdot mm^2}{m}}$ & $\SI{250}{m}$ & $\SI{0.5}{mm^2}$ \\
+			\solonly{$\SI{8.75}{\ohm} $} &      $\SI{0.0175}{\frac{\ohm \cdot mm^2}{m}}$       &         $\SI{250}{m}$          & $\SI{0.5}{mm^2}$ \\
 			%		\midrule
-			$\SI{10}{\ohm}$ &  & $\SI{1.5}{km}$ & $\SI{2.5}{mm^2}$ \\
+			      $\SI{10}{\ohm}$        & \solonly{$\SI{0.017}{\frac{\ohm \cdot mm^2}{m}}$  } &         $\SI{1.5}{km}$         & $\SI{2.5}{mm^2}$ \\
 			%		\midrule
-			$\SI{152}{m\ohm}$ &  $\SI{0.0287}{\frac{\ohm \cdot mm^2}{m}}$ &  & $\SI{0.4}{mm^2}$ \\
+			     $\SI{152}{m\ohm}$       &      $\SI{0.0287}{\frac{\ohm \cdot mm^2}{m}}$       & \solonly{$\SI{2.12}{\metre}$ } & $\SI{0.4}{mm^2}$ \\
 			%		\midrule
-			$\SI{0.5}{\ohm}$ & $\SI{0.0175}{\frac{\ohm \cdot mm^2}{m}}$ & $\SI{3.5}{km}$ \\
+			      $\SI{0.5}{\ohm}$       &      $\SI{0.0175}{\frac{\ohm \cdot mm^2}{m}}$       &         $\SI{3.5}{km}$         &   \solonly{ $\SI{122.5}{mm^2}$ }               \\
 			%		\midrule
-			$\SI{2}{\ohm}$ &  & $\SI{105}{m}$ & $\SI{1.5}{mm^2}$ \\
+			       $\SI{2}{\ohm}$        &     \solonly{$\SI{0.0286}{\frac{\ohm \cdot mm^2}{m}}$  }                                                &         $\SI{105}{m}$          & $\SI{1.5}{mm^2}$ \\
 			\hline
 		\end{tabular}
 		
@@ -135,13 +135,16 @@
 	\exonly{ Risolvi le seguenti equazioni: }
 	\begin{parts}
 		\setlength\itemsep{3mm}
-		\item \exonly{$x-3=2$ }
-		\item \exonly{$3x=9$ }
-		\item \exonly{$2x+3=7$ }
-		\item \exonly{$3x-5=7-x$ }
-		\item \exonly{$3x+2=5$ }
-		\item \exonly{$5x+3=2x-7$ }
-		\item \exonly{$2x+3-7x=3x-5+2x-1$ }
+		\item 
+		\exonly{$x-3=2$ }
+		\solonly{$\es{5}$}
+		
+		\item \exonly{$3x=9$ } \solonly{$\es{3 }$} 
+		\item \exonly{$2x+3=7$ } \solonly{$\es{2 }$ }
+		\item \exonly{$3x-5=7-x$ } \solonly{$\es{3 }$ }
+		\item \exonly{$3x+2=5$ } \solonly{$\es{1 }$ }
+		\item \exonly{$5x+3=2x-7$ } \solonly{$\es{-\frac{10}{3} }$ }
+		\item \exonly{$2x+3-7x=3x-5+2x-1$ } \solonly{$\es{\frac{9}{10} }$ }
 	\end{parts}	
 	
 	
@@ -152,10 +155,18 @@
 	\begin{parts}
 		\setlength\itemsep{3mm}
 		\item \exonly{$2(3x-2)+3(x-1)=4(x-1)-(3-x)$ }
+		\solonly{$\es{0 }$ }
+		
 		\item \exonly{$\frac{2}{3}(5x+3)-2(\frac{1}{3}x-\frac{3}{4})=\frac{1}{2}(\frac{3}{5}-\frac{3}{7}x)$ }
+		\solonly{$\es{-\frac{672}{605} }$ }
+		
 		\item \exonly{$3(x-5)+2(3-2x)=x+3-2(x-4)$ }
+		\solonly{$S=\emptyset$ }
+		
 		\item \exonly{$(x+3)(x-2)=x(x+3)-3(x-4)$ }
+		\solonly{$\es{18 }$ }
 		\item \exonly{$2(3x-4)=4(x+1)+2(x-6)$ }
+			\solonly{$S=\R$ }
 	\end{parts}
 	
 	
@@ -165,10 +176,10 @@
 	
 	\begin{parts}
 		\setlength\itemsep{3mm}
-		\item \exonly{$2x+3-2a=3x-5+2a-1$ }
-		\item \exonly{$2(3x-2a)+3(x-a)=4(x-a)-(3a-x)$ }
-		\item \exonly{$3(x-5a)+2(3-2x)=x+3-2(x-4a)$ }
-		\item \exonly{$(x+3)(x-a)=x(x+2a)-3(x-4)$ }
+		\item \exonly{$2x+3-2a=3x-5+2a-1$ } \solonly{$\es{9-4a \mid a \in \R }$ }
+		\item \exonly{$2(3x-2a)+3(x-a)=4(x-a)-(3a-x)$ } \solonly{$\es{0 \mid a \in \R }$ }
+		\item \exonly{$3(x-5a)+2(3-2x)=x+3-2(x-4a)$ } \solonly{Se $a=\frac{3}{23}$: $S=\R$, se $a\neq\frac{3}{23}$: $S=\emptyset$ }
+		\item \exonly{$(x+3)(x-a)=x(x+2a)-3(x-4)$ } \solonly{$\es{\frac{a+4}{2-a} \mid a \neq 2 }$ , se $a=2$: $S=\emptyset$ }
 	\end{parts}
 	
 	
@@ -178,7 +189,7 @@
 	
 	\exnewpage
 	\question
-	\exonly{ Risolvi i seguenti sistemi nelle incognite $x$ e $y$: }
+	\exonly{Risolvere i seguenti sistemi. }
 	
 	\begin{minipage}{\textwidth}
 	\begin{multicols}{2}
@@ -193,7 +204,7 @@
 		x-y & = 5 
 		\end{aligned}
 		\right. $ }
-	\solonly{ }
+		\solonly{$\es{(2;-2) }$ }
 	
 		\item
 		\exonly{ $
@@ -203,6 +214,7 @@
 		3x-2y & = 2 
 		\end{aligned}
 		\right. $ }
+		\solonly{$\es{(1;\frac{1}{2}) }$ }
 	
 		\item 
 		\exonly{$
@@ -212,6 +224,9 @@
 		-x+2y & = 5 
 		\end{aligned}
 		\right. $ }	
+			\solonly{$\es{(\frac{7}{2};\frac{17}{4}) }$ }
+
+
 			
 			
 		\item 
@@ -221,14 +236,16 @@
 		5x-5 & = 1 \\
 		-6x+9y & = -3 
 		\end{aligned}
-		\right. $ }		
+		\right. $ }	
+	
+			\solonly{$\es{(\frac{6}{5};\frac{7}{15}) }$ }	
 	\end{parts}
 		\end{multicols}
 	\end{minipage}
 	
 	
 	\question
-\exonly{	Risolvi i  seguenti sistemi nelle incognite $x$ e $y$ e $z$.  }
+\exonly{Risolvere i  seguenti sistemi. Se necessario discutere il parametro $a$ }
 
 
 \begin{minipage}{\textwidth}
@@ -309,6 +326,46 @@
 		\end{parts}
 	\end{multicols}
 \end{minipage}
+
+\question
+\exonly{Risolvere i seguenti sistemi.}
+
+\begin{minipage}{\textwidth}
+	\begin{multicols}{2}		
+		\begin{parts}
+		\part 
+		\exonly{$
+		\left\{
+		\begin{aligned}
+		x+y+z & = 3 \\
+		x-y-z & = 4 \\
+		-x+y-z &= -2 
+		\end{aligned}
+		\right. $ }
+	
+		\part
+		\exonly{ $
+		\left\{
+		\begin{aligned}
+		3x-4y+z & = 2 \\
+		2x+2y-3z & = 1 \\
+		3x-3y+2z &= -2 
+		\end{aligned}
+		\right. $ }
+	
+		\part
+		\exonly{ $
+		\left\{
+		\begin{aligned}
+		2x - 3y + z & =  x -  y - z \\
+		x + 2y - z & =  2 - 3x \\
+		2x + 4y +3z & = -x +z + 1
+		\end{aligned}
+		\right. $ }
+	\end{parts}
+\end{multicols}
+\end{minipage}
+
 
 \end{questions}
 \exnewpage
@@ -436,7 +493,7 @@ xmin=-8, xmax=10,  %set the min and max x tick
 
 \solonly{
 	Pendenza: $m=3$\\	
-	Ordinata all'origine: $b=\dfrac{1}{4}$
+	Ordinata all'origine: $b=\frac{1}{4}$
 }
 
 \question
@@ -444,26 +501,23 @@ xmin=-8, xmax=10,  %set the min and max x tick
 
 \solonly{$y= -2x-3$}
 
-%\question
-%Déterminer l'équation de la droite passant par A(-5;5) et perpendiculaire à la droite d'équation $3y-7x+4=0$.
+\question
+\exonly{Determinare l'equazione della retta passante per  A(-5;5) che sia perpendicolare alla retta di equazione  $3y-7x+4=0$. }
+
+\solonly{$y= -\frac{3}{7}x+\frac{20}{7}$}
+
 %
-%\rsol{$y= -\dfrac{3}{7}x+\dfrac{20}{7}$}
-%\end{questions}
-%
-%\subsection{Intersezioni}
-%\begin{questions}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\question
+\question
 
 \exonly{Determinare i punti d'intersezione della retta di equazione $5x + 6y = 8$ con : }
 
 \begin{parts}
 	\part 
 		\exonly{l'asse delle ascisse $x$ }
-		\solonly{Asse  x: $y=0 \Rightarrow (\dfrac{8}{5};0)$ }
+		\solonly{Asse  x: $y=0 \Rightarrow \left( \frac{8}{5};0\right) $ }
 	\part  
 	\exonly{l'asse delle ordinate $y$ }
-	\solonly{Asse y: $x=0 \Rightarrow (0;\dfrac{4}{3})$ }
+	\solonly{Asse y: $x=0 \Rightarrow \left( 0;\frac{4}{3}\right) $ }
 \end{parts}
 
 
@@ -502,7 +556,7 @@ Un rappresentante di propone a Gérard un nuova macchina per gestire l'imballagg
 \part
 \exonly{Quali scenari si presentano a Gérard e quale decisione dovrebbe prendere in funzione del numero di confezione vendute, in media, quotidianamente. }
 
-\solonly{$<8:$ chiudere \\ $8\leq x \leq 20$: mantenere sistema attuale \\ $x>20$ innovare il sistema di imballaggio }
+\solonly{$<8:$ chiudere \\ $8\leq x \leq 20$: mantenere sistema attuale \\ $x>20$: rinnovare il sistema di imballaggio }
 
 \end{parts}
 
