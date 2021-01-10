@@ -61,6 +61,7 @@
 \RequirePackage[useregional]{datetime2}
 \RequirePackage{needspace}
 \RequirePackage{commath} % \dif differenziale, \norm norma vettori ecc.
+\RequirePackage{fontawesome} % \FaPlane ecc
 
 
 %%%%% OPTIONS
@@ -97,7 +98,14 @@
 \@todotrue
 }
 
+\newif\if@doublepage  \@doublepagefalse
+\DeclareOption{a3double}{
+\@doublepagetrue
 
+    }
+    
+   
+    
     
 \ProcessOptions\relax
 
@@ -129,7 +137,13 @@
 \@studenttrue
 \fi
 
-
+ \if@doublepage
+ \ifprintanswers
+ \else
+    \pgfpagesuselayout{2 on 1}[a3paper,landscape]
+    \fi
+    \fi
+    
 
 %%%%% TODO
 \newcommand{\done}[1]{\todo[color=green!40]{#1}}
@@ -226,6 +240,7 @@
 \usepgflibrary{shapes.geometric}
 \usetikzlibrary{arrows}
 \usetikzlibrary{intersections}
+
 
 \tikzset{declare function={cbrt(\x) =\x / abs(\x) *abs(\x)^(1/3);}}
 
@@ -517,7 +532,7 @@ cross/.style={
 \providecommand{\e}[1]{\times 10^{#1}}
 \providecommand{\mcm}[1]{\mathop{}\!\mathrm{mcm}({#1})}
 \providecommand{\MCD}[1]{\mathop{}\!\mathrm{MCD}({#1})}
-\providecommand{\ex}[1]{\mathop{}\!\mathrm{e}^{#1}}
+%\providecommand{\ex}[1]{\mathop{}\!\mathrm{e}^{#1}}
 \providecommand{\vd}[2]{\begin{bmatrix} {#1} \\ {#2} \end{bmatrix}}
 \providecommand{\vt}[3]{\begin{bmatrix} {#1} \\ {#2} \\ {#3} \end{bmatrix}}
 

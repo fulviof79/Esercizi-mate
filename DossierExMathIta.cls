@@ -10,7 +10,6 @@ Fulvio Frapolli]
 \RequirePackage{atveryend} %% TO REMOVE, NOT USED ?
 \RequirePackage{filecontents} %% STORE BODY IN A SEPARATE FILE
 \RequirePackage{xparse}
-\RequirePackage{standalone}
 \DeclareOption*{%not working TODO
 \PackageWarning{DossierExMathIta}{Unknown option ‘\CurrentOption’}%
 }
@@ -86,7 +85,6 @@ Fulvio Frapolli]
 %%% START: Sections underlined %%%
 \titleformat{\section}
 {\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
-%\titleformat{\subsection}{\normalfont\Large\bfseries}{\thesubsection}{1em}{}[{\titlerule[0.8pt]}]
 %%% END %%%
 
 %%% START: title for exercices and solution page %%%
@@ -169,7 +167,7 @@ Fulvio Frapolli]
 
 
 \colorgrids %%%%% Set the grid to gray
-
+\definecolor{GridColor}{gray}{0.5}
 
 
 \renewcommand{\questionshook}{%
