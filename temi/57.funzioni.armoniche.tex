@@ -471,6 +471,110 @@ $f(t)=-10\sin\left(\dfrac{\pi}{12}(t+2)\right)=\\ =10\sin\left(\dfrac{\pi}{12}t+
 	\exonly{Quante oscillazioni complete esegue in \SI{3}{\minute}? }
 	\solonly{138 }
 \end{parts}
+
+\exnewpage
+\question
+
+\exonly{Il valore di picco di una tensione alternata è di $U = \SI{300}{\volt}$, la sua frequenza è di \SI{50}{\hertz}. 
+	
+	Il valore istantaneo a $t = \SI{0}{\second}$ è di $U = \SI{50}{\volt}$ e sta aumentando. }
+
+\begin{parts}
+	\part
+	\exonly{Determina la funzione $U(t)$}
+		\solonly{
+		$U(t)=300\sin(100\pi t +0.16745)$ \si{\volt}
+	 }
+ 
+ \part
+ \exonly{La tensione $U(t)$ viene applicata ai capi di una resistenza $R = \SI{5}{\kilo\ohm}$ determina
+ 	l’intensità della corrente $I(t)$ che scorre nella resistenza. }
+ \solonly{
+$I(t)=0.6 \sin(100\pi t +0.16745)$  \si{\ampere}
+ }
+
+\part
+\exonly{Qual’è il valore istantaneo dell’intensità di corrente all’istante $t = \SI{0}{\second}$?
+ }
+
+ \solonly{
+ \SI{0.1}{\ampere}
+ }
+\part
+\exonly{Determina i valori di $U$ e $I$ all’istante $t =\SI{3.5}{\second}$. }
+\solonly{$U(3.5)=\SI{50}{\volt}$\\
+$I(3.5)=\SI{0.1}{\ampere}$
+ }
+
+\part
+
+\exonly{Quante oscillazioni complete compie in \SI{3}{\second}?
+ }
+\solonly{$150$ }
+\end{parts}
+
+
+\solnewpage
+\question
+\exonly{
+		Sono date le intensità di corrente:
+
+\begin{align*}
+	I_1(t) & =\SI{1.5}{A} \cdot \sin{(\SI{100\pi}{s^{-1}} \cdot t + \frac{\pi}{3})} \\
+	I_2(t) & =\SI{0.8}{A}\cdot \sin{(\SI{100\pi}{s^{-1}} \cdot t + \frac{\pi}{6})} \\
+	I_3(t) & =\SI{0.5}{A}\cdot \sin{(\SI{100\pi}{s^{-1}} \cdot t + \frac{\pi}{4})}
+\end{align*}
+ }
+	
+	
+
+	
+	
+	\begin{parts}
+		\part
+		 \exonly{Aiutandoti con la calcolatrice (Desmos, GeoGebra, \ldots ) traccia un grafico accurato di \begin{equation*}
+			I(t)=I_1(t) + I_2(t) - I_3(t)
+		\end{equation*} }
+	
+	\ifprintanswers 
+	\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+		\begin{axis}[
+			AxisDefaults,
+			SmallAxisLabels,
+			trig format plots=rad,
+			width=\linewidth,
+			domain=-0.02:0.06,
+			ymin=-4,
+			ymax=4,
+			xtick distance=0.01,
+			%ytick distance =10,
+			xmin=-0.02,
+			xmax=0.06,
+			%minor y tick num=1,
+			xlabel=$t$,
+			ylabel=$I(t)$,
+			%extra x ticks={-7.5},
+			]		
+			\addplot[draw=red,smooth,unbounded coords=jump]{2.728 *sin(100*pi*(x+0.00271)}; 
 		
+		\end{axis}
+		
+	\end{tikzpicture}
+	\fi
+	
+	
+		\part 
+		\exonly{In base al grafico ottenuto determina la funzione $I(t)$ }
+		\solonly{$I(t)=2.728\sin\left(100\pi\left(t+0.00271\right)\right)$ \\
+			$I(t)=2.728\sin\left(100\pi t +0.85\right)$
+		 }
+		
+			
+		
+		\part 
+		
+		\exonly{Verifica la correttezza del risultato utilizzando i numeri complessi }
+		\solonly{$2.728\angle 0.85$ }
+	\end{parts}		
 
 \end{questions}
