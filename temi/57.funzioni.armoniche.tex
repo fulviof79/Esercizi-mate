@@ -491,7 +491,7 @@ $f(t)=-10\sin\left(\dfrac{\pi}{12}(t+2)\right)=\\ =10\sin\left(\dfrac{\pi}{12}t+
  \exonly{La tensione $U(t)$ viene applicata ai capi di una resistenza $R = \SI{5}{\kilo\ohm}$ determina
  	l’intensità della corrente $I(t)$ che scorre nella resistenza. }
  \solonly{
-$I(t)=0.6 \sin(100\pi t +0.16745)$  \si{\ampere}
+$I(t)=0.06 \sin(100\pi t +0.16745)$  \si{\ampere}
  }
 
 \part
@@ -499,12 +499,12 @@ $I(t)=0.6 \sin(100\pi t +0.16745)$  \si{\ampere}
  }
 
  \solonly{
- \SI{0.1}{\ampere}
+ \SI{0.01}{\ampere}
  }
 \part
 \exonly{Determina i valori di $U$ e $I$ all’istante $t =\SI{3.5}{\second}$. }
 \solonly{$U(3.5)=\SI{50}{\volt}$\\
-$I(3.5)=\SI{0.1}{\ampere}$
+$I(3.5)=\SI{0.01}{\ampere}$
  }
 
 \part
@@ -556,7 +556,7 @@ $I(3.5)=\SI{0.1}{\ampere}$
 			ylabel=$I(t)$,
 			%extra x ticks={-7.5},
 			]		
-			\addplot[draw=red,smooth,unbounded coords=jump]{2.728 *sin(100*pi*(x+0.00271)}; 
+			\addplot[draw=red,smooth,unbounded coords=jump]{1.731 *sin(100*pi*x+0.889)}; 
 		
 		\end{axis}
 		
@@ -566,8 +566,8 @@ $I(3.5)=\SI{0.1}{\ampere}$
 	
 		\part 
 		\exonly{In base al grafico ottenuto determina la funzione $I(t)$ }
-		\solonly{$I(t)=2.728\sin\left(100\pi\left(t+0.00271\right)\right)$ \\
-			$I(t)=2.728\sin\left(100\pi t +0.85\right)$
+		\solonly{$I(t)=1.731\sin\left(100\pi\left(t+0.00283\right)\right)$ \\
+			$I(t)=1.731\sin\left(100\pi t +0.899\right)$
 		 }
 		
 			
@@ -575,7 +575,7 @@ $I(3.5)=\SI{0.1}{\ampere}$
 		\part 
 		
 		\exonly{Verifica la correttezza del risultato utilizzando i numeri complessi }
-		\solonly{$2.728\angle 0.85$ }
+		\solonly{$1.73\angle 0.89$ }
 	\end{parts}		
 
 \end{questions}
