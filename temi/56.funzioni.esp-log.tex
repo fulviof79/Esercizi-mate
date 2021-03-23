@@ -682,6 +682,8 @@ EVTL: Swokowski pg 351 ex 1 - 15
 \exonly{
 Risolvere le equazioni seguenti. Specificare l'insieme delle soluzioni esatte e dare un valore approssimato (al centesimo).  }
 
+
+\begin{multicols}{2}
 \begin{parts}
 \part
 \exonly{$3^{x+4}=2^{1-3x}$ }
@@ -716,11 +718,22 @@ Risolvere le equazioni seguenti. Specificare l'insieme delle soluzioni esatte e 
 
 \part
 \exonly{$3^{-x^2}=5$ }
-\solonly{$S=\emptyset $
+\solonly{$S=\emptyset $}
 \begin{profonly}Src: Swok pg 361 ex 16	\end{profonly}
-}
+
+\part
+\exonly{	$5^x-5^{-x}=6$  }
+%\begin{prof}$ x= \log_5(3 + \sqrt{10})=\dfrac{\log(3+\sqrt{10})}{\log 5}$\end{prof}
+\solonly{$S=\left\lbrace \log_5(3 + \sqrt{10})\right\rbrace =\left\lbrace \dfrac{\log(3+\sqrt{10})}{\log 5}\right\rbrace $}
+
+\part
+\exonly{$2^x-6 \cdot 2^{-x}=6$ } %\begin{prof}$x=\dfrac{\log(3 \pm \sqrt{15})}{\log 2}$\end{prof}
+\solonly{$S=\left\lbrace \log_2(3 + \sqrt{15})\right\rbrace=
+	\left\lbrace \dfrac{\log(3 + \sqrt{15})}{\log 2}\right\rbrace $}
+
 
 \end{parts}
+\end{multicols}
 
 
 
@@ -854,15 +867,7 @@ x+y=15 \\
 %	\part
 %	$\log_y \sqrt{3}=\sqrt{2}$ \begin{prof}$y= 3^{\frac{1}{2 \sqrt{2}}}$\end{prof}
 %	
-\part
-\exonly{	$5^x-5^{-x}=6$  }
-%\begin{prof}$ x= \log_5(3 + \sqrt{10})=\dfrac{\log(3+\sqrt{10})}{\log 5}$\end{prof}
-\solonly{$S=\left\lbrace \log_5(3 + \sqrt{10})\right\rbrace =\left\lbrace \dfrac{\log(3+\sqrt{10})}{\log 5}\right\rbrace $}
 
-\part
-\exonly{$2^x-6 \cdot 2^{-x}=6$ } %\begin{prof}$x=\dfrac{\log(3 \pm \sqrt{15})}{\log 2}$\end{prof}
-\solonly{$S=\left\lbrace \log_2(3 + \sqrt{15})\right\rbrace=
-\left\lbrace \dfrac{\log(3 + \sqrt{15})}{\log 2}\right\rbrace $}
 \end{parts}
 
 
@@ -885,7 +890,7 @@ Lunghezza in  \si{\centi\meter} & \num{70} & \num{71.5} & \num{73} & \num{77.5} 
 \hline 
 \end{Tabular} 
 
-Vogliamo modellizzare la funzione $L(x)$ che ci darà la lunghezza della molla (in \SI{}{\centi\meter}) in funzione della massa sospesa (in \SI{}{\kilogram}). Con che tipo di modello abbiamo a che fare? Lineare o esponenziale?
+Vogliamo modellizzare la funzione $L(x)$ che ci darà la lunghezza della molla (in \SI{}{\centi\meter}) in funzione della massa sospesa (in \SI{}{\kilogram}). Con che tipo di modello abbiamo a che fare? Lineare (o affine) o esponenziale?
 
 Quale lunghezza possiamo prevedere se sospendiamo una massa di \SI{4}{\kilogram} ?
 }
@@ -919,7 +924,7 @@ Temperatura in \SI{}{\degreeCelsius} & \num{95} & \num{80.75} & \num{69.2} & \nu
 
 Vogliamo modellizzare la funzione $T(t)$, la temperatura del caffè in \SI{}{\degreeCelsius}, in funzione del tempo trascorso $t$ in \SI{}{\minute}.
 
-Si tratta di un modello lineare ou esponenziale?
+Si tratta di un modello lineare (o affine) ou esponenziale?
 
 Quale sarà la temperatura del caffè dopo \SI{24}{\minute}?
 }
