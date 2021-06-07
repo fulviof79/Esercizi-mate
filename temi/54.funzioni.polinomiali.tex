@@ -64,7 +64,7 @@
 
 
 \part
-\exonly{$f_2(x)=x^3 + x^2 -14x -24$ }
+\exonly{$f_2(x)=-x^3 - x^2 +14x +24$ }
 \ifprintanswers 
 \input{tikz/funzioni.polinomiali.2}
 %\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
@@ -120,7 +120,7 @@ width=10cm,
 ytick distance={1}]
 \addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-10:10]{12*x^3+8*x^2-3*x-2}; 
 \addplot[mark=*] coordinates {(-0.59,0.09)} node[small dot,pin={[pin distance=2cm]-90:{$(-0.59,0.09)$}}]{} ;
-\addplot[mark=*] coordinates {(0.14,-2.23)} node[small dot,pin={[pin distance=1cm]90:{$(2.26,-0.66)$}}]{} ;
+\addplot[mark=*] coordinates {(0.14,-2.23)} node[small dot,pin={[pin distance=1cm]90:{$(0.14,-2.23)$}}]{} ;
 \end{axis}
 \end{tikzpicture} 
 \fi
@@ -199,7 +199,7 @@ ytick distance={1}]
 	\begin{profonly}	Src: Swok ex 19 pg 260\end{profonly}	
 	
 \part
-	\exonly{$f(x)=x^3+2x^2-4x-8$}
+	\exonly{$f(x)=-x^3-2x^2+4x+8$}
 	\solonly{Zero: $2$ molteplicità $1$, $-2$ molt. $2$}
 	
 	\ifprintanswers 	
@@ -211,7 +211,7 @@ ytick distance={1}]
 			\addplot[draw=red,smooth,unbounded coords=jump,
 			restrict y to domain=-10:10,
 			domain=-3:6
-			]{x^3+2*x^2-4*x-8}; 
+			]{-x^3-2*x^2+4*x+8}; 
 		\end{axis}
 		\end{tikzpicture} 
 		\fi
