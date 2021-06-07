@@ -11,9 +11,9 @@
 AxisDefaults, 
 width=10cm,
 ytick distance={10}]
-\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-45:5]{x^3+x^2-14*x-24}; 
-\addplot[mark=*] coordinates {(-2.5,1.6)} node[small dot,pin={[pin distance=2cm]-90:{$(-2.5,1.6)$}}]{} ;
-\addplot[mark=*] coordinates {(1.85,-40.1)} node[small dot,pin={[pin distance=1cm]90:{$(1.85,-40.1)$}}]{} ;
+\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-5:45]{-x^3-x^2+14*x+24}; 
+\addplot[mark=*] coordinates {(-2.5,-1.6)} node[small dot,pin={[pin distance=2cm]90:{$(-2.52,-1.63)$}}]{} ;
+\addplot[mark=*] coordinates {(1.85,40.1)} node[small dot,pin={[pin distance=1cm]-90:{$(1.85,40.15)$}}]{} ;
 \end{axis}
 \end{tikzpicture} 
 %\end{document}
