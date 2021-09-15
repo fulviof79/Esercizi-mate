@@ -243,18 +243,35 @@ Dati i vettori $\vec{v}=\vecII{3}{-5}$e $\vec{w}=\vecII{-2}{3}$ calcolare:
 
 
 \question
-\exonly{Calcolare le componenti (approssimate a due decimali) dei vettori $\vec{a}$ e $\vec{b}$ di norma $2$
+\exonly{Sono dati due vettori  $\vec{a}$ e $\vec{b}$ (vedi schizzo sotto) con $\norm{\vec{a}}=2$ e $\norm{\vec{b}}=3$.
 
 \begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
 \draw[-latex] (-3,0) -- (3,0) coordinate (X);
 \draw[-latex] (0,-3) -- (0,3);
-\draw[->] (0,0) coordinate (O)-- node[midway,above]{$\vec{a}$} +(1,3) coordinate (A);
+\draw[->] (0,0) coordinate (O)-- node[midway,above]{$\vec{a}$} +(1,2) coordinate (A);
 \draw[->] (O)--node[midway,above]{$\vec{b}$}  +(-3,-2) coordinate (B);
 \draw pic["$70\degree$",draw, angle eccentricity=1.5, blue] {angle=X--O--A};
 \draw pic["$150\degree$",draw, angle radius=0.7cm,angle eccentricity=1.5, blue] {angle=B--O--X};
 \end{tikzpicture}
 }
-\solonly{$\vec{a} \approx \vecII{\num{0.68}}{\num{1.88}}$, $\vec{b} \approx \vecII{\num{-1.73}}{\num{-1}}$}
+
+\begin{parts}
+\part
+
+\exonly{Calcolare le componenti in base standard dei vettori $\vec{a}$ e $\vec{b}$. Approssimare il risultati a due decimali. }	
+\solonly{$\vec{a} \approx \vecII{\num{0.68}}{\num{1.88}}$, $\vec{b} \approx \vecII{\num{-2.6}}{\num{-1.5}}$}
+
+\part
+\exonly{ Determinare il vettore $\vec{c}=\vec{a}+\vec{b}$.  }
+
+\solonly{ $\vec{c}=\vecII{\num{-1.92}}{\num{0.38}}$  }
+
+\part
+\exonly{Esprimere $\vec{c}$ in forma polare. }
+\solonly{$\vec{c}=1.96 \angle \ang{168.8}}
+
+\end{parts}
+
 
 \question
 \exonly{
