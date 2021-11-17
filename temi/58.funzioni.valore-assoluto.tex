@@ -127,7 +127,7 @@
 
 
 \question
-\exonly{Risolvere le seguenti equazioni e verificare con il CAS: }
+\exonly{Risolvere le seguenti equazioni e verificare con il \textbf{CAS} }
 \begin{parts}
 	\part
 	\exonly{$|x+1|=|2x-4| $}
@@ -148,7 +148,7 @@
 \end{parts}
 
 \question
-\exonly{Risolvere le seguenti equazioni con il CAS: }
+\exonly{\textbf{CAS} Risolvere le seguenti equazioni}
 \begin{parts}
 	\part
 	\exonly{$\dfrac{3+|x^2-1|}{3|x-6|}=x-1 $}
@@ -164,6 +164,60 @@
 
 	
 \end{parts}
+
+\exonly{\newpage}
+\question 
+\exonly{Il rimepimento di pacchetti di zucchero da \SI{500}{\gram} è automatizzato. Una prima macchina riempie i pacchetti che vengono successivamente pesati da una seconda macchina. Questa scarta i pacchetti che non rispettano la tolleranza massima di \SI{5}{\gram} imposta sui pacchetti.
+
+Esprimere, con un unico vincolo, la condizione che la seconda macchina deve testare per scartare il pacchetto pesato. 
+
+Risolvere e indicare l'intervallo entro il quale la macchina scarta il pacchetto.
+}
+
+\solonly{
+	Sia $x$ la massa (in grammi) del pacchetto pesato.
+
+$|x-500|> 5$
+
+La macchina scarta pacchetti nell'intervallo $[0;455[ \cup ]505,\infty[$
+
+}
+
+\question 
+\exonly{
+Una macchina costruisce barre di metallo di un diametro di \SI{8}{\milli\metre} con un errore dichiarato di massimo \SI{0.5}{\milli\metre}.
+
+Esprimere, con un solo vincolo, la condizione da testare per verificare che la barra di metallo si nei limiti tollerati. Indicare l'intervallo tollerato.
+
+
+}
+
+\solonly{
+Sia $x$ il diametro della barra.
+
+$|x-8|\leq 0.5$
+
+Intervallo tollerato $[7.5;8.5]$ \si[]{\milli\metre}
+
+}
+
+\question 
+\exonly{
+	\textbf{CAS} Per un angolo in radianti, la funzione $f(x)=\sin$ può essere approssimata da $g(x)=x$. Se si tollera un errore massimo di \num[]{0.01}, per quale intervallo è possibile usare l'approssimazione? Esprimere l'intervallo in radianti e in gradi.
+
+}
+
+\solonly{
+$|\sin(x)-x|\leq 0.01$
+
+In radianti: $S=[-0.392;0.392]$
+
+In gradi: $S=[-22.46;22.46]$
+
+
+}
+
+
 
 
 \end{questions}
