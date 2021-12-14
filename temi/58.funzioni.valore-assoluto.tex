@@ -165,11 +165,16 @@
 	
 \end{parts}
 
-\exonly{\newpage}
-\question 
-\exonly{Il rimepimento di pacchetti di zucchero da \SI{500}{\gram} è automatizzato. Una prima macchina riempie i pacchetti che vengono successivamente pesati da una seconda macchina. Questa scarta i pacchetti che non rispettano la tolleranza massima di \SI{5}{\gram} imposta sui pacchetti.
 
-Esprimere, con un unico vincolo, la condizione che la seconda macchina deve testare per scartare il pacchetto pesato. 
+\exonly{\newpage}
+\subsection{Applicazioni} 
+\question 
+\exonly{ 
+	
+
+	Il riempimento di pacchetti di zucchero da \SI{500}{\gram} è automatizzato. Una prima macchina riempie i pacchetti che vengono successivamente pesati da una seconda macchina. Questa scarta i pacchetti che non rispettano la tolleranza massima di \SI{5}{\gram} imposta sui pacchetti.
+
+Esprimere, con un unico vincolo, la condizione che la seconda macchina deve testare per scartare i pacchetti fuori tolleranza. 
 
 Risolvere e indicare l'intervallo entro il quale la macchina scarta il pacchetto.
 }
@@ -185,9 +190,9 @@ La macchina scarta pacchetti nell'intervallo $[0;455[ \cup ]505,\infty[$
 
 \question 
 \exonly{
-Una macchina costruisce barre di metallo di un diametro di \SI{8}{\milli\metre} con un errore dichiarato di massimo \SI{0.5}{\milli\metre}.
+Una macchina costruisce barre di metallo di un diametro di \SI{8}{\milli\metre} con un errore dichiarato di massimo \SI{0.1}{\milli\metre}.
 
-Esprimere, con un solo vincolo, la condizione da testare per verificare che la barra di metallo si nei limiti tollerati. Indicare l'intervallo tollerato.
+Esprimere, con un solo vincolo, la condizione da testare per verificare che la barra di metallo sia nei limiti tollerati. Indicare l'intervallo tollerato.
 
 
 }
@@ -195,9 +200,9 @@ Esprimere, con un solo vincolo, la condizione da testare per verificare che la b
 \solonly{
 Sia $x$ il diametro della barra.
 
-$|x-8|\leq 0.5$
+$|x-8|\leq 0.1$
 
-Intervallo tollerato $[7.5;8.5]$ \si[]{\milli\metre}
+Intervallo tollerato $[7.9;8.1]$ \si[]{\milli\metre}
 
 }
 
