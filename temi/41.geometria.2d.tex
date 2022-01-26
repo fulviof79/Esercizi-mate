@@ -709,14 +709,68 @@ Calcolare l'altezza $h$ del palazzo.
 \exonly{Calcolare $\alpha$, $\beta$, $\gamma$ e $\delta$.}
 
 %TODO : convert in TikZ
-\exonly{\includegraphics[width=0.5\linewidth]{aac-1}}
+\exonly{
+	%\includegraphics[width=0.5\linewidth]{aac-1}
+	\pgfmathsetmacro\radius{4}
+	\begin{tikzpicture}
+		\coordinate[label=below right:$O$] (O) at (0,0);
+\draw (O) circle (\radius);
+\filldraw (O) circle (1pt);
+\coordinate (A) at (20:\radius);
+\coordinate (B) at (150:\radius);
+\coordinate (C) at (250:\radius);
+
+\draw (A) -- (B) -- (C)-- cycle;
+\draw (B) -- (O)-- (C);
+
+\draw pic["$\alpha$",draw, angle eccentricity=1.3,angle radius=1cm] {angle=B--A--C};
+\draw pic["$\beta$",draw, angle eccentricity=1.3,angle radius=1cm] {angle=A--C--O};
+\draw pic["$\gamma$",draw, angle eccentricity=1.3,angle radius=0.6cm] {angle=O--C--B};
+\draw pic["$\delta$",draw, angle eccentricity=1.3,angle radius=0.6cm] {angle=C--B--O};
+\draw pic["$30^{\circ}$",draw, angle eccentricity=1.4,angle radius=1cm] {angle=O--B--A};
+	\end{tikzpicture}
+
+}
 
 \solonly{$\alpha=40^{\circ}$, $\gamma=\delta=50^{\circ}$, $\beta=10^{\circ}$}
 
 \question
 \exonly{Calcolare $\alpha$, $\beta$, $\gamma$ e $\delta$.}
 
-\exonly{\includegraphics[width=0.6\linewidth]{aac-2}}
+\exonly{
+\begin{tikzpicture}
+	\pgfmathsetmacro\radius{4}
+\coordinate[label=below right:$O$] (O) at (0,0);
+\draw[name path=circle] (O) circle (\radius);
+\filldraw (O) circle (1pt);
+\coordinate (A) at (120:\radius);
+\coordinate (B) at (250:\radius);
+\coordinate (C) at (\radius+4,2);
+
+
+\draw[name path=l1] (A) --  (C);
+\draw[name path=l2] (B) -- (C);
+
+\path [name intersections={of=l1 and circle,by={A1}}];
+\path [name intersections={of=l2 and circle,by={B1}}];
+
+\draw[name path=s1] (A) -- (B1);
+\draw[name path=s2] (B) -- (A1);
+\path [name intersections={of=s1 and s2,by={S}}];
+
+
+\draw pic [draw,angle radius=3mm] {right angle = B1--S--B};
+
+\draw pic["$\alpha$",draw, angle eccentricity=1.3,angle radius=0.6cm] {angle=A--A1--S};
+\draw pic["$\beta$",draw, angle eccentricity=1.3,angle radius=0.6cm] {angle=S--B1--B};
+\draw pic["$\gamma$",draw, angle eccentricity=1.3,angle radius=0.8cm] {angle=B1--B--S};
+\draw pic["$\delta$",draw, angle eccentricity=1.3,angle radius=0.6cm] {angle=A--C--B};
+\draw pic["$20^{\circ}$",draw, angle eccentricity=1.4,angle radius=1cm] {angle=S--A--A1};
+\end{tikzpicture}	
+
+
+%\includegraphics[width=0.6\linewidth]{aac-2}
+}
 
 \solonly{$\gamma=20^{\circ}$, $\alpha=\beta=70^{\circ}$, $\delta=50^{\circ}$}
 
