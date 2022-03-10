@@ -1463,12 +1463,33 @@
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		\question
 		\exonly{
-			I rettangoli  $R_1$, $R_2$, $R_3$ e $R_4$ hanno la stessa superficie.
+			I rettangoli  $R_1$, $R_2$, $R_3$ e $R_4$ hanno la stessa area.
 
 			Calcolare l'area e il perimetro della figura.
 
 			%TODO : convert in TikZ
-			\includegraphics[width=0.5\linewidth]{surf-1}
+\begin{tikzpicture}
+	\pgfmathsetmacro\l{8}
+\pgfmathsetmacro\h{6}
+
+\pgfmathsetmacro\p{2}
+
+\coordinate(O) at (0,0);
+\draw (O) rectangle (\l,\h);
+\draw (\p,0) rectangle (\l,\h);
+\draw (\p,0) rectangle (\l,\h-\p);
+\draw[] (\p,0) rectangle (\p+0.5*\l-0.5*\p,\h-\p);
+
+\dimline[extension start length=1cm,extension end length=1cm] {(\p,\h+0.5)}{(\l,\h+0.5)}{$12$ cm};
+\dimline[extension start length=-1cm,extension end length=
+-1cm] {(\l+0.5,0)}{(\l+0.5,\h-\p)}{$10$ cm};
+\coordinate[label=$R_1$] (R1) at (1,\h/2);
+\coordinate[label=$R_2$] (R2) at (5,4.55);
+\coordinate[label=$R_3$] (R2) at (3.5,2);
+\coordinate[label=$R_4$] (R2) at (6.5,2);
+\end{tikzpicture}
+
+			%\includegraphics[width=0.5\linewidth]{surf-1}
 		}
 
 		\solonly{
