@@ -9,24 +9,24 @@
 	\question
 	\exonly{Determinare dove costruire un ponte $HG$ perpendicolare al fiume così da minimizzare la distanza tra $A$ e $B$.
 	}
-	%\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-	%
-	%\draw[-] (-4,0)-- (3.5,0);
-	%\draw[-,name path=river] (-4,1)-- (3.5,1);
-	%\fill (-3,2) coordinate[label=above:$A$] (A)  circle (1pt);
-	%\fill (-2,1) coordinate[label=above:$H$] (H) circle (1pt);
-	%\fill (-2,0) coordinate[label=above:$G$] (G) circle (1pt);
-	%\fill (2,-2) coordinate[label=above:$B$] (B)  circle (1pt);
-	%\draw[dotted] (A) -- (H) --(G) --(B);
-	%\ifprintanswers 
-	%\coordinate (B1) at ($(B)+(0,1)$);
-	%\path[name path=shortpath] (B1) -- (A);
-	%\path [name intersections={of=shortpath and river,by=G1}];
-	% \draw[red] (A) -- (G1) -- ++(0,-1) -- (B) ; 
-	% \draw[red,dashed] (B) -- (B1) -- (A);
-	% 
-	%  \fi
-	%\end{tikzpicture}
+	\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}, scale=1.5]
+	
+	\draw[-] (-4,0)-- (3.5,0);
+	\draw[-,name path=river] (-4,1)-- (3.5,1);
+	\fill (-3,2) coordinate[label=above:$A$] (A)  circle (1pt);
+	\fill (-2,1) coordinate[label=above:$H$] (H) circle (1pt);
+	\fill (-2,0) coordinate[label=above:$G$] (G) circle (1pt);
+	\fill (2,-2) coordinate[label=above:$B$] (B)  circle (1pt);
+	\draw[dotted] (A) -- (H) --(G) --(B);
+	\ifprintanswers 
+	\coordinate (B1) at ($(B)+(0,1)$);
+	\path[name path=shortpath] (B1) -- (A);
+	\path [name intersections={of=shortpath and river,by=G1}];
+	\draw[red] (A) -- (G1) -- ++(0,-1) -- (B) ; 
+	\draw[red,dashed] (B) -- (B1) -- (A);
+	
+	 \fi
+	\end{tikzpicture}
 
 	\solonly{Discussione in classe }
 
@@ -103,7 +103,7 @@
 
 	\solonly{$\vec{F_3}=-\left( \vec{F_1}+\vec{F_2} \right) $}
 
-
+\exnewpage
 	\question
 	\exonly{
 		Consideriamo le forze $\vec{F_1}$ e $\vec{F_2}$. Determinare graficamente e algebricamente il vettore della forza $\vec{F_3}$ tale per cui $\vec{F_1}+\vec{F_2}+\vec{F_3}=\vec{R}$.}
@@ -126,7 +126,7 @@
 
 \end{questions}
 
-\solonly{\newpage}
+\exnewpage
 \subsection{Componenti, operazioni di base}
 
 \begin{questions}
@@ -170,7 +170,6 @@
 			$\vec{a}=\vecII{8}{5}$, $\vec{a}=\vecII{0}{9}$, $\vec{c}=\vecII{-2}{-8}$
 		}
 	\end{parts}
-
 
 
 
