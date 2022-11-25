@@ -6,23 +6,51 @@
 	
 
 \question
-\exonly{Dato il grafico di $f(x)$ risolvere graficamente la disequazione $f(x)<3$ .
+\exonly{Dato il grafico della funzione  $f : \R \longrightarrow \R$  risolvere graficamente la disequazione $f(x)<3$ .
 
 \input{img/f-poly-5}
 }
 
 \exnewpage
 \question
-\exonly{Dato il grafico di $f(x)$ risolvere graficamente la disequazione $ f(x)+1 \geq 0$ .
+\exonly{Dato il grafico della funzione  $f : \R \longrightarrow \R$ risolvere graficamente la disequazione $ f(x)+1 \geq 0$ .
 	
 	\input{img/f-poly-5}
 }
 
 \exnewpage
 \question
-\exonly{Dato il grafico di $f(x)$ risolvere graficamente la disequazione $ f(x) -\frac{1}{2}x \geq -1$ .
+\exonly{Dato il grafico della funzione  $f : \R \longrightarrow \R$  risolvere graficamente la disequazione $ f(x) -\frac{1}{2}x \geq -1$ .
 	
 	\input{img/f-poly-5}
+}
+%%23.11.2022
+\exnewpage
+\question
+
+\exonly{
+	Dato il grafico della funzione  $f : \R \longrightarrow \R \text{,} x \mapsto x^3$ determinare per quale valore di $b$ la disequazione $x^3<b$ ha come insieme di soluzioni $S=\left] - \infty ; 2 \right[$
+
+	\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+		\begin{axis}[AxisDefaults,
+		major grid style={ thick,black!50},
+		axis line style={very thick, black},
+		x=1cm,y=1cm,
+		%width=\linewidth,
+		ytick distance={1},
+		grid=both,
+		minor tick num = 9,
+		ymin=-8,ymax=9,xmin=-4,xmax=5,
+		domain=-4:5
+		]
+		\addplot[draw=blue,thick,smooth,unbounded coords=jump,
+		restrict y to domain=-9:10]{x^3}; 
+		\end{axis}
+		\end{tikzpicture}
+}
+\solonly{
+$b=7$
+
 }
 
 
