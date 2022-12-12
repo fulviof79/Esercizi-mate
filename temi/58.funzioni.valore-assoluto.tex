@@ -245,8 +245,8 @@
 			]{abs(2*x-1)} node[pos=0.2,above right] {$f$}; 
 			\addplot [only marks, mark=o] (-1/3,5/3) node[left] {$C$} ;
 			\addplot [only marks, mark=o] (3,5) node[right] {$D$} ;
-			\addplot [only marks, mark=o] (-1/3,0) node[below] {$A$} ;
-			\addplot [only marks, mark=o] (3,0) node[above right] {$B$} ;
+			\addplot [only marks, mark=o] (-1/3,0) node[above left,xshift=0.2cm] {$A(x_A;y_A)$} ;
+			\addplot [only marks, mark=o] (3,0) node[above right] {$B(x_B;y_B)$} ;
 			
 		\end{axis}
 		\end{tikzpicture} 
@@ -256,7 +256,7 @@
 
 \begin{parts}
 	\part 
-	\exonly{Quale vincolo tra $f$ e $g$ ha come soluzione l'intervallo  $[A;B]$ ?}
+	\exonly{Quale vincolo tra $f$ e $g$ ha come soluzione l'intervallo  $[x_A;x_B]$ ?}
 
 	\solonly{
 	$f(x)\geq g(x)$
