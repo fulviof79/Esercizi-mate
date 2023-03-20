@@ -31,30 +31,84 @@ ssectnum,
 
 
 
-%\includeonly{temi/25.algebra.polinomi}
-\includeonly{temi/58.funzioni.valore-assoluto}
+
 
 \begin{document}
 \begin{questions}
+\question
 	
-\pgfmathsetmacro\radius{4}
+Determinare il modello $f$ che rappresenti al meglio i dati rappresentati qui sotto.
+
+
+
+	\begin{center}
 		\begin{tikzpicture}
-			\coordinate[label=below right:$O$] (O) at (0,0);
-			\draw (O) circle (\radius);
-			\filldraw (O) circle (1pt);
-			\coordinate (A) at (20:\radius);
-			\coordinate (B) at (150:\radius);
-			\coordinate (C) at (250:\radius);
+			\begin{axis}[
+					AxisDefaults,
+					SmallAxisLabels,
+					height=10cm, %height and width of the graph
+					width=0.8\linewidth,
+					restrict y to domain= 0:11,
+					ymin=-1, ymax=10, %set the min and max y tick
+					xmin=-3
+				]
 
-			\draw (A) -- (B) -- (C)-- cycle;
-			\draw (B) -- (O)-- (C);
-
-			\draw pic["$\alpha$",draw, angle eccentricity=1.3,angle radius=1cm] {angle=B--A--C};
-			\draw pic["$\beta$",draw, angle eccentricity=1.3,angle radius=1cm] {angle=A--C--O};
-			\draw pic["$\gamma$",draw, angle eccentricity=1.3,angle radius=0.6cm] {angle=O--C--B};
-			\draw pic["$\delta$",draw, angle eccentricity=1.3,angle radius=0.6cm] {angle=C--B--O};
-			\draw pic["$30^{\circ}$",draw, angle eccentricity=1.4,angle radius=1cm] {angle=O--B--A};
-			\draw pic["$80^{\circ}$",draw, angle eccentricity=1.4,angle radius=1cm] {angle=B--O--C};
+				\addplot[draw=red,  only marks] coordinates {
+					(-3.00,24.00) (-2.00,12.00) (-1.00,6.00) (0.00,3.00) (1.00,1.50) (2.00,0.75) (3.00,0.38) (4.00,0.19) (5.00,0.09) (6.00,0.05) (7.00,0.02) (8.00,0.01) (9.00,0.01) 
+					};
+				\addplot[mark=none] coordinates {(-1,6)} node[pin=170:{$(-1;6)$}]{} ;
+				\addplot[mark=none] coordinates {(0,3)} node[pin=10:{$(0;3)$}]{} ;
+			\end{axis}
 		\end{tikzpicture}
+	\end{center}
+
+
+	\question
+	
+Determinare il modello $f$ che rappresenti al meglio i dati rappresentati qui sotto.
+
+
+
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{axis}[
+					AxisDefaults,
+					SmallAxisLabels,
+					height=10cm, %height and width of the graph
+					width=0.8\linewidth,
+					restrict y to domain= 0:30,
+					ymin=-1, ymax=30, %set the min and max y tick
+					xmin=-3,
+					ytick distance=5,
+				]
+
+				\addplot[draw=red,  only marks] coordinates {
+					(-3.00,0.05) (-2.00,0.09) (-1.00,0.19) (0.00,0.38) (1.00,0.75) (2.00,1.50) (3.00,3.00) (4.00,6.00) (5.00,12.00) (6.00,24.00) (7.00,48.00) (8.00,96.00) (9.00,192.00)
+					};
+				\addplot[mark=none] coordinates {(3,3)} node[pin=160:{$(3;3)$}]{} ;
+				\addplot[mark=none] coordinates {(5,12)} node[pin=110:{$(5;12)$}]{} ;
+			\end{axis}
+		\end{tikzpicture}
+	\end{center}
+	
+% \pgfmathsetmacro\radius{4}
+% 		\begin{tikzpicture}
+% 			\coordinate[label=below right:$O$] (O) at (0,0);
+% 			\draw (O) circle (\radius);
+% 			\filldraw (O) circle (1pt);
+% 			\coordinate (A) at (20:\radius);
+% 			\coordinate (B) at (150:\radius);
+% 			\coordinate (C) at (250:\radius);
+
+% 			\draw (A) -- (B) -- (C)-- cycle;
+% 			\draw (B) -- (O)-- (C);
+
+% 			\draw pic["$\alpha$",draw, angle eccentricity=1.3,angle radius=1cm] {angle=B--A--C};
+% 			\draw pic["$\beta$",draw, angle eccentricity=1.3,angle radius=1cm] {angle=A--C--O};
+% 			\draw pic["$\gamma$",draw, angle eccentricity=1.3,angle radius=0.6cm] {angle=O--C--B};
+% 			\draw pic["$\delta$",draw, angle eccentricity=1.3,angle radius=0.6cm] {angle=C--B--O};
+% 			\draw pic["$30^{\circ}$",draw, angle eccentricity=1.4,angle radius=1cm] {angle=O--B--A};
+% 			\draw pic["$80^{\circ}$",draw, angle eccentricity=1.4,angle radius=1cm] {angle=B--O--C};
+% 		\end{tikzpicture}
 \end{questions}
 \end{document}
