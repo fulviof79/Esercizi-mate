@@ -224,9 +224,82 @@
 	\end{profonly}
 
 
+	\exnewpage
+	\question
+	\exonly{
+		Determinare il modello $f$ che rappresenti al meglio i dati rappresentati qui sotto.
+
+
+
+		\begin{center}
+			\begin{tikzpicture}
+				\begin{axis}[
+						AxisDefaults,
+						SmallAxisLabels,
+						height=10cm, %height and width of the graph
+						width=0.8\linewidth,
+						restrict y to domain= 0:11,
+						ymin=-1, ymax=10, %set the min and max y tick
+						xmin=-3
+					]
+	
+					\addplot[draw=red,  only marks] coordinates {
+						(-3.00,24.00) (-2.00,12.00) (-1.00,6.00) (0.00,3.00) (1.00,1.50) (2.00,0.75) (3.00,0.38) (4.00,0.19) (5.00,0.09) (6.00,0.05) (7.00,0.02) (8.00,0.01) (9.00,0.01) 
+						};
+					\addplot[mark=none] coordinates {(-1,6)} node[pin=170:{$(-1;6)$}]{} ;
+					\addplot[mark=none] coordinates {(0,3)} node[pin=10:{$(0;3)$}]{} ;
+				\end{axis}
+			\end{tikzpicture}
+		\end{center}
+
+
+
+	}
+
+	\solonly{
+		$f(x)=3\cdot 2^{-x}=3\cdot \left(\dfrac{1}{2}\right)^x$
+
+
+	}
+
+	\question
+	\exonly{
+		Determinare il modello $f$ che rappresenti al meglio i dati rappresentati qui sotto.
+
+
+
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{axis}[
+					AxisDefaults,
+					SmallAxisLabels,
+					height=10cm, %height and width of the graph
+					width=0.8\linewidth,
+					restrict y to domain= 0:30,
+					ymin=-1, ymax=30, %set the min and max y tick
+					xmin=-3,
+					ytick distance=5,
+				]
+
+				\addplot[draw=red,  only marks] coordinates {
+					(-3.00,0.05) (-2.00,0.09) (-1.00,0.19) (0.00,0.38) (1.00,0.75) (2.00,1.50) (3.00,3.00) (4.00,6.00) (5.00,12.00) (6.00,24.00) (7.00,48.00) (8.00,96.00) (9.00,192.00)
+					};
+				\addplot[mark=none] coordinates {(3,3)} node[pin=160:{$(3;3)$}]{} ;
+				\addplot[mark=none] coordinates {(5,12)} node[pin=110:{$(5;12)$}]{} ;
+			\end{axis}
+		\end{tikzpicture}
+	\end{center}
+
+	}
+
+	\solonly{
+
+	$f(x)=3\cdot 4^{\frac{x-3}{2}}=3\cdot 2^{x-3}$
+	}
+
 \end{questions}
 
-
+\exnewpage
 
 \subsection{Equazioni esponenziali - introduzione}
 
