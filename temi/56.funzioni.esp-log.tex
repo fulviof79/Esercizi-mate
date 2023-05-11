@@ -954,6 +954,61 @@
 \begin{questions}
 	\question
 	\exonly{
+		La crescita in altezza di un albero é frequentemente descritta con una funzione logistica.
+		Supponiamo che l'altezza $h$ (in metri) di un albero di $t$ anni sia descritta dalla funzione
+
+		$$h(t)=\dfrac{36}{1+200 e^{-\num{0.2}t}} $$}
+
+	\begin{parts}
+		\part
+		\exonly{
+			Quale sarà l'altezza di un albero di $10$ anni?
+		}
+		\solonly{\SI{1.28}{\meter}}
+
+		\part
+		\exonly{
+			A che età la sua altezza sarà di \SI{15}{\metre}?}
+
+		\solonly{À \num{24.8} anni}
+	\end{parts}
+
+	\question
+
+	\exonly{
+		La massa di un elefante africano (in  \SI{}{\kilogram}) in funzione dell’età (in anni) é data approssimativamente dalla formula
+
+		$$m(t)=2600\cdot\left(1-0.51\cdot e^{-0.075\cdot t}\right)^3$$}
+
+	\begin{parts}
+		\part
+		\exonly{Determinare la massa di un elefante alla nascita}
+		\solonly{\SI{305.9}{\kilogram}}
+
+		\part
+		\exonly{
+			Determinare l’età di un elefante di  \SI{1800}{\kilogram}}
+		\solonly{\num{19.82} ans}
+	\end{parts}
+	\exnewpage
+	\question
+	\exonly{
+		La popolazione (in milioni di abitanti) degli Stati Uniti $t$ anni dopo il 1980 può essere approssimata dalla funzione
+
+		$$N(t)=227\cdot e^{0.007\cdot t}.$$
+
+		In quale lasso di tempo la popolazione raddoppia?
+		In quale anno la popolazione sarà raddoppiata rispetto al 1980?
+	}
+	\solonly{
+		\begin{profonly}
+			$2=e^{0.007\cdot t} \iff \ln 2 = 0.007 \cdot t \iff t=\dfrac{\ln 2}{0.007}\approx 99$
+		\end{profonly}
+
+		Dopo 99 anni. Nel 2079 }
+
+	\question
+	\exonly{
 		Varie masse vengono sospese ad una molla di  \SI{70}{\centi\meter} . Le lunghezze corrispondenti della molla vengono  misurate e notate nella tabella  qui sotto.
 
 		\begin{Tabular}[1.5]{|l|c|c|c|c|}
@@ -1022,44 +1077,10 @@
 		Discuter du problème de l'asymptote.
 	\end{profonly}
 
-	\exnewpage
-	\question
-	\exonly{
-		La crescita in altezza di un albero é frequentemente descritta con una funzione logistica.
-		Supponiamo che l'altezza $h$ (in metri) di un albero di $t$ anni sia descritta dalla funzione
+	
+	
+	
 
-		$$h(t)=\dfrac{36}{1+200 e^{-\num{0.2}t}} $$}
-
-	\begin{parts}
-		\part
-		\exonly{
-			Quale sarà l'altezza di un albero di $10$ anni?
-		}
-		\solonly{\SI{1.28}{\meter}}
-
-		\part
-		\exonly{
-			A che età la sua altezza sarà di \SI{15}{\metre}?}
-
-		\solonly{À \num{24.8} anni}
-	\end{parts}
-
-
-	\question
-	\exonly{
-		La popolazione (in milioni di abitanti) degli Stati Uniti $t$ anni dopo il 1980 può essere approssimata dalla funzione
-
-		$$N(t)=227\cdot e^{0.007\cdot t}.$$
-
-		In quale lasso di tempo la popolazione raddoppia?
-		In quale anno la popolazione sarà raddoppiata rispetto al 1980?
-	}
-	\solonly{
-		\begin{profonly}
-			$2=e^{0.007\cdot t} \iff \ln 2 = 0.007 \cdot t \iff t=\dfrac{\ln 2}{0.007}\approx 99$
-		\end{profonly}
-
-		Dopo 99 anni. Nel 2079 }
 
 
 	\question
@@ -1170,7 +1191,7 @@
 		\exonly{
 			Determinare il modello esponenziale  $S(t)$ rappresentante la superficie della foresta in funzione del tempo $t$ in anni.}
 
-		\solonly{$S(t)=250000 \cdot (1-0,07)^{\sfrac{t}{3}}$}
+		\solonly{$S(t)=250000 \cdot (1-0.07)^{\sfrac{t}{3}}$}
 
 		\part
 		\exonly{
@@ -1207,7 +1228,7 @@
 			$P(t)=P_0 \cdot \alpha^{t/T}$
 		}
 
-		\solonly{$P(t)=P_0 \cdot 0,8^{\sfrac{t}{4}}$}
+		\solonly{$P(t)=P_0 \cdot 0.8^{\sfrac{t}{4}}$}
 
 		\part
 		\exonly{
@@ -1246,23 +1267,7 @@
 
 
 
-	\question
-
-	\exonly{
-		La massa di un elefante africano (in  \SI{}{\kilogram}) in funzione dell’età (in anni) é data approssimativamente dalla formula
-
-		$$m(t)=2600\cdot\left(1-0.51\cdot e^{-0.075\cdot t}\right)^3$$}
-
-	\begin{parts}
-		\part
-		\exonly{Determinare la massa di un elefante alla nascita}
-		\solonly{\SI{305.9}{\kilogram}}
-
-		\part
-		\exonly{
-			Determinare l’età di un elefante di  \SI{1800}{\kilogram}}
-		\solonly{\num{19.82} ans}
-	\end{parts}
+	
 
 	%\question
 	%\exonly{Avec une inflation de \num{1.1}\% par an, en combien d'années les prix doublent-ils? En combien de temps le prix du beurre (actuellement vendu à \SI{10.80}{\CHF} le \si{\kilogram}) atteindra-t-il \SI{11.60}{\CHF}}
