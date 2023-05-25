@@ -377,6 +377,22 @@
 	\exonly{Dati punti $A(2;3)$, $B(8;2)$ e $C(k;8)$ determinare $k$ tale per cui $\angle CBA = \SI{90}{\degree}$ }
 	\solonly{$9$ }
 
+
+	\question
+	\exonly{Una forza $\vec{F}=\vecII{5}{3}$ \si{\newton} sposta un corpo di $\vec{s}=\vecII{12}{21} \si{\metre}$. }
+	%\solonly{\hfill}
+	\begin{parts}
+		\part
+		\exonly{Determinare il lavoro compiuto dalla forza $\vec{F}$}
+		\sol{$123 \si{\joule}$}
+
+		\part
+
+
+		\exonly{Determinare l'angolo tra la forza $\vec{F}$ et la direzione dello spostamento.}
+		\solonly{$\num{29.29}\degree$}
+	\end{parts}
+
 \end{questions}
 \exnewpage
 
@@ -446,10 +462,6 @@
 
 	\end{parts}
 
-	\question
-	\exonly{Determinare le coordinate mancanti tali per cui i punti $A(2;-1;10)$, $B(8;5;1)$ e $C(x;3;z)$ siano allineati.}
-	\solonly{$x=6$ e $z=4$}
-
 
 
 	\question
@@ -492,34 +504,16 @@
 		\part
 		\exonly{Determinare le coordinate del punto $I$ sul segmento [AE] tale per cui a distanza tra $A$ e $I$ sia di \SI{2}{\centi\metre}}
 		\solonly{$I(\num{0.24},-\num{0.38},\num{0.44})$}
-	\end{parts}
-\end{questions}
 
-
-
-\exnewpage
-\solnewpage
-\subsection{Problemi misti}
-
-\begin{questions}
-	\question
-	\exonly{Una forza $\vec{F}=\vecII{5}{3}$ \si{\newton} sposta un corpo di $\vec{s}=\vecII{12}{21} \si{\metre}$. }
-	%\solonly{\hfill}
-	\begin{parts}
-		\part
-		\exonly{Determinare il lavoro compiuto dalla forza $\vec{F}$}
-		\sol{$123 \si{\joule}$}
 
 		\part
-
-
-		\exonly{Determinare l'angolo tra la forza $\vec{F}$ et la direzione dello spostamento.}
-		\solonly{$\num{29.29}\degree$}
+		\exonly{Determinare il volume del prisma}
+		\solonly{$V=\qty{218}{\cubic\centi\metre}$}
 	\end{parts}
 
-
+	
 	\question
-	\exonly{Di una piramide a base rettangolare nello spazio si conoscono:\\
+	\exonly{Di una piramide a base rettangolare nello spazio si conoscono (le misure sono in metri):\\
 		$A(5;-3;9)$, $B(-3;3;4)$, $C(0;7;z)$ e il vertice $V(6;10;12)$
 
 		\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
@@ -554,12 +548,20 @@
 
 		\part
 		\exonly{L'altezza della piramide }
-		\solonly{$h=\num{5.81}$ }
+		\solonly{$h=\qty{5.81}{\metre}$ }
+
+		\part
+		\exonly{Il volume della piramide }
+		\solonly{$V=\dfrac{325}{3}\approx{\qty{108.3}{\cubic\metre}}$ }
 	\end{parts}
 
 
 
 
+
+	\question
+	\exonly{Determinare le coordinate mancanti tali per cui i punti $A(2;-1;10)$, $B(8;5;1)$ e $C(x;3;z)$ siano allineati.}
+	\solonly{$x=6$ e $z=4$}
 
 
 
@@ -596,7 +598,32 @@
 
 	}
 
+	%%TODO 
+	\solonly{
+
+	Versore: $\hat{AV}=\dfrac{\overrightarrow{AV}}{\norm{AV}}$
+	Vincolo: 
+	
+	
+	$k_1 \cdot \hat{AV}+k_2 \cdot \hat{BV} +k_3 \cdot \hat{CV} + 8\cdot 9.81 \cdot \vvec{0,0,-1}=\vec{0}$
+
+	$k_1=k_2=k_3\approx \qty{32}{\newton}$
+
+	}
 \end{questions}
+
+
+
+% \exnewpage
+% \solnewpage
+% \subsection{Problemi misti}
+
+% \begin{questions}
+	
+
+
+
+% \end{questions}
 
 
 \exnewpage
