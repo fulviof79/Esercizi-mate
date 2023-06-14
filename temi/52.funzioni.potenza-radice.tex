@@ -110,6 +110,74 @@
 	
 	
 	\begin{profonly}	Src: Swok ex 1-9 impairs pg 202\end{profonly}
+
+
+	\question 
+	\exonly{Data la funzione:
+	\begin{flalign*}
+		f: A & \rightarrow B \\
+		x & \mapsto x^{-1} &
+	\end{flalign*}	
+	}
+
+	\begin{parts}
+
+		\part
+		 \exonly{
+			$f$ è una funzione pari? Dispari? Nè l'une nè l'altro?
+		 }
+		\part
+
+		\exonly{
+			Determina il dominio $A$ della funzione $f$ e traccia uno schizzo qualitativo. 
+		}
+		 
+
+		\part
+
+		\exonly{
+			Per quale codominio $B$ la funzione è biettiva? Determina la legge di $f^{-1}$
+		}
+
+
+	\end{parts}
+
+		
+	
+\question 
+	\exonly{Data la funzione:
+	\begin{flalign*}
+		f: A & \rightarrow B \\
+		x & \mapsto x^{-2} &
+	\end{flalign*}	}
+
+	\begin{parts}
+
+		\part
+		 \exonly{
+			$f$ è una funzione pari? Dispari? Nè l'une nè l'altro?
+		 }
+
+		\part
+
+		\exonly{
+			Determina il dominio $A$ della funzione $f$ e traccia uno schizzo qualitativo. 
+		}
+		 
+		\part
+		\exonly{
+			$f$ è iniettiva sul dominio $A$? 
+		}
+
+		\part
+
+		\exonly{
+			Determina le coppie di insiemi $A$ e $B$ per le quali $f$ è biettiva? Determina la legge di $f^{-1}$
+		}
+
+		
+	\end{parts}
+
 \end{questions}
 
 \subsection{Rappresentazione grafica} 
@@ -308,8 +376,10 @@ ytick distance={1},xmin=-4,xmax=4,ymin=-5,ymax=4,samples=500,]
 		\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
 		\begin{axis}[AxisDefaults,
 		width=0.7\linewidth,
-		ytick distance={1},xmin=-3,xmax=3,ymin=-2,samples=500,]
-		\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-2:2]{cbrt(x+1)} node[below right,pos=0.7] {$i(x)$}; 
+		ytick distance={1},xmin=-3,xmax=3,ymin=-2,samples=1000,]
+		\addplot[draw=red,smooth,unbounded coords=jump,domain=-3:-1.1]{cbrt(x+1)} ; 
+		\addplot[draw=red,smooth,unbounded coords=jump,domain=-1.1:-0.9]{cbrt(x+1)};
+		\addplot[draw=red,smooth,unbounded coords=jump, domain=-0.9:2]{cbrt(x+1)} node[below right,pos=0.7] {$i(x)$}; 
 		\end{axis}
 		
 		\end{tikzpicture}
@@ -326,8 +396,10 @@ ytick distance={1},xmin=-4,xmax=4,ymin=-5,ymax=4,samples=500,]
 			\begin{axis}[AxisDefaults,
 			width=0.7\linewidth,
 			ytick distance={1},
-			xmin=-1,xmax=2,ymin=-2,ymax=2,samples=500,grid=both,minor x tick num=1]
-			\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-2:2]{cbrt(2*x-1)} node[below right,pos=0.6] {$l(x)$}; 
+			xmin=-1,xmax=2,ymin=-2,ymax=2,grid=both,minor x tick num=1]
+			\addplot[draw=red,smooth,unbounded coords=jump,domain=0.4:0.6,samples=1000,]{cbrt(2*x-1)}; 
+			\addplot[draw=red,smooth,unbounded coords=jump,domain=-2:0.4]{cbrt(2*x-1)} node[below right,pos=0.6] {$l(x)$}; 
+			\addplot[draw=red,smooth,unbounded coords=jump,domain=0.6:2]{cbrt(2*x-1)} node[below right,pos=0.6] {$l(x)$}; 
 			\end{axis}}
 		\end{tikzpicture}
 		\solonly{$l(x)=\sqrt[3]{2x-1}$}
