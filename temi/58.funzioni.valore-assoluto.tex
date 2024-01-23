@@ -83,7 +83,7 @@
 
 	\exnewpage
 		\question
-	\exonly{Dato il grafico di $f(x)=x^3$ risolvere graficamente  $|x|^3-2x-4=0$ .
+	\exonly{Dato il grafico di $f(x)=x^3$ risolvere graficamente  $|-2x^3+4|<2$ .
 	
 	\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
 		\begin{axis}[AxisDefaults,
@@ -95,6 +95,30 @@
 		grid=both,
 		minor tick num = 9,
 		ymin=-5,ymax=7,xmin=-4,xmax=5,
+		domain=-4:5
+		]
+		%\addplot[draw=blue,thick,restrict y to domain=-6:8]{x**3}; 
+		\addplot {x^3};
+		\end{axis}
+		\end{tikzpicture}
+		
+		
+	}
+
+	\exnewpage
+		\question
+	\exonly{Dato il grafico di $f(x)=x^3$ risolvere graficamente  $|x|^3-2x-4=0$ .
+	
+	\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+		\begin{axis}[AxisDefaults,
+		major grid style={ thick,black!50},
+		axis line style={very thick, black},
+		x=1cm,y=1cm,
+		%width=\linewidth,
+		ytick distance={1},
+		grid=both,
+		minor tick num = 9,
+		ymin=-5,ymax=9,xmin=-4,xmax=5,
 		domain=-4:5
 		]
 		%\addplot[draw=blue,thick,restrict y to domain=-6:8]{x**3}; 
