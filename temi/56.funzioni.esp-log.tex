@@ -133,38 +133,12 @@
 
 	\begin{parts}
 
-		\part \exonly{Supponendo che $t=0$ corrisponda alle ore  $13:00$, determinare, con una precisione di un decimo di grado, la temperatura alle ore  14h00, 15h30 e 16h00 }
-		\solonly{$T(1)=\SI{31}{\degreeCelsius}$ \\ $T(\num{2.5})=\SI{24.875}{\degreeCelsius}$ \\
-			$T(3)=\SI{24.4}{\degreeCelsius}$
+		\part \exonly{
+            Indicare il ruolo di ciascun parametro del modello e da quali dati sperimentali è stato ricavato.
 		}
 
 		\part
-		\exonly{Rappresentare graficamente  $T(t)$ nell'intervallo  $0\leq t \leq 4$}
-
-		\ifprintanswers
-			\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-				\begin{axis}[
-						AxisDefaults,
-						SmallAxisLabels,
-						width=\linewidth,
-						ymin=0,
-						ymax=52,
-						ytick distance={10},
-						xlabel=$t$
-						%sytick={0,10,...,24,...,52}
-					]
-					\addplot[draw=red,smooth,unbounded coords=jump,domain=-1:4,restrict y to domain=0:52]{28*2^(-2*x)+24};
-					\draw[dashed] (0,24) -- (4,24);
-				\end{axis}
-			\end{tikzpicture}
-		\fi
-
-		\solonly{
-
-
-			\begin{profonly}
-				Src: Swokowski pg 318 ex 24
-			\end{profonly}}
+		\exonly{Eseguire uno schizzo qualitativo del grafico della funzione $T(t)$}
 
 
 	\end{parts}
@@ -181,38 +155,12 @@
 
 
 	\begin{parts}
-		\part \exonly{Determinare approssimativamente il numero di batteri alle  $8h$ e alle  $11h$ del mattino. }
-		\solonly{$P(1)\approx 1039$ , $P(4)=5400$}
+		\part \exonly{Indicare il ruolo di ciascun parametro del modello e da quali dati sperimentali è stato ricavato.}
+		
 
 		\part
-		\exonly{Rappresentare graficamente  $P(t)$ per $0\leq t \leq 4$}
+		\exonly{Eseguire uno schizzo qualitativo del grafico della funzione $P(t)$}
 
-		\ifprintanswers
-			\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-				\begin{axis}[
-						AxisDefaults,
-						SmallAxisLabels,
-						width=\linewidth,
-						xlabel=$t$,
-						ymin=0,
-						ytick distance={500},
-						%sytick={0,10,...,24,...,52}
-					]
-					\addplot[draw=red,smooth,unbounded coords=jump,domain=0:4,restrict y to domain=0:6000]{600*3^(x/2)};
-				\end{axis}
-			\end{tikzpicture}
-		\fi
-
-		\solonly{
-
-
-			\begin{profonly}
-				Src: Swokowski pg 318 ex 23
-			\end{profonly}}
-
-		\part
-		\exonly{Dopo quante ore ci saranno circa $5400$ batteri? }
-		\solonly{Dopo circa 4 ore }
 
 	\end{parts}
 
@@ -1351,6 +1299,102 @@
 		\end{subparts}
 
 
+
+	\end{parts}
+
+    \question
+
+	\exonly{
+		Secondo la legge di raffreddamento di Newton, la velocità di raffreddamento é proporzionale alla differenza di temperature tra l'oggetto e l'ambiente in cui si trova.
+
+		Un ferro da stiro passa da \SI{52}{\celsius} a \SI{38}{\degreeCelsius} in \SI{30}{\minute} in una stanza ad una temperatura  constante di \SI{24}{\celsius}.
+
+		La temperatura $T$ del ferro dopo  $t$ ore é modellizzata da
+		$$ T(t)=28\cdot 2^{-2t}+24$$
+	}
+
+	\begin{parts}
+
+		\part \exonly{Supponendo che $t=0$ corrisponda alle ore  $13:00$, determinare, con una precisione di un decimo di grado, la temperatura alle ore  14h00, 15h30 e 16h00 }
+		\solonly{$T(1)=\SI{31}{\degreeCelsius}$ \\ $T(\num{2.5})=\SI{24.875}{\degreeCelsius}$ \\
+			$T(3)=\SI{24.4}{\degreeCelsius}$
+		}
+
+		\part
+		\exonly{Rappresentare graficamente  $T(t)$ nell'intervallo  $0\leq t \leq 4$}
+
+		\ifprintanswers
+			\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+				\begin{axis}[
+						AxisDefaults,
+						SmallAxisLabels,
+						width=\linewidth,
+						ymin=0,
+						ymax=52,
+						ytick distance={10},
+						xlabel=$t$
+						%sytick={0,10,...,24,...,52}
+					]
+					\addplot[draw=red,smooth,unbounded coords=jump,domain=-1:4,restrict y to domain=0:52]{28*2^(-2*x)+24};
+					\draw[dashed] (0,24) -- (4,24);
+				\end{axis}
+			\end{tikzpicture}
+		\fi
+
+		\solonly{
+
+
+			\begin{profonly}
+				Src: Swokowski pg 318 ex 24
+			\end{profonly}}
+
+
+	\end{parts}
+
+	\question
+	\exonly{
+		Il numero di batteri di una cultura passa da  $600$ a $1800$ tra le  $7h$ e le  $9h$ del mattino.
+		Supponendo una crescita esponenziale, la popolazione di batteri   $t$ ore dopo le  $7h$ del mattino é data dal modello
+
+		\[P(t)=600 \cdot 3^{\sfrac{t}{2}}\]
+	}
+
+
+
+
+	\begin{parts}
+		\part \exonly{Determinare approssimativamente il numero di batteri alle  $8h$ e alle  $11h$ del mattino. }
+		\solonly{$P(1)\approx 1039$ , $P(4)=5400$}
+
+		\part
+		\exonly{Rappresentare graficamente  $P(t)$ per $0\leq t \leq 4$}
+
+		\ifprintanswers
+			\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+				\begin{axis}[
+						AxisDefaults,
+						SmallAxisLabels,
+						width=\linewidth,
+						xlabel=$t$,
+						ymin=0,
+						ytick distance={500},
+						%sytick={0,10,...,24,...,52}
+					]
+					\addplot[draw=red,smooth,unbounded coords=jump,domain=0:4,restrict y to domain=0:6000]{600*3^(x/2)};
+				\end{axis}
+			\end{tikzpicture}
+		\fi
+
+		\solonly{
+
+
+			\begin{profonly}
+				Src: Swokowski pg 318 ex 23
+			\end{profonly}}
+
+		\part
+		\exonly{Dopo quante ore ci saranno circa $5400$ batteri? }
+		\solonly{Dopo circa 4 ore }
 
 	\end{parts}
 
