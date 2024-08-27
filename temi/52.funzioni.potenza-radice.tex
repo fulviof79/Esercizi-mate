@@ -2,11 +2,6 @@
 \subsection{Dominio, immagini, inversa} 
 \begin{questions}
 	
-	
-	
-	
-	
-	
 	\question
 	\exonly{Disegnare la rappresentazione grafica di  $f$ e della sua inversa $f^{-1}$. 
 		Se necessario, restringere dominio e codominio di $f$ per renderla biettiva.
@@ -184,7 +179,7 @@
 \begin{questions}	
 	
 	\question 
-	\exonly{Rappresentare graficamente le funzioni seguenti:}
+	\exonly{Rappresentare graficamente la funzione seguenti:}
 	
 	\begin{parts}
 		\part 
@@ -316,7 +311,7 @@ ytick distance={1},xmin=-4,xmax=4,ymin=-5,ymax=4,samples=500,]
 	
 	\exnewpage
 	\question
-	\exonly{Determinare la funzioni rappresentata:}
+	\exonly{Determinare la legge di assegnazione della funzione rappresentata:}
 	
 	
 		\ifprintanswers  \else
@@ -325,7 +320,7 @@ ytick distance={1},xmin=-4,xmax=4,ymin=-5,ymax=4,samples=500,]
 		AxisDefaults,
 		width=0.7\linewidth,
 		ytick distance={1},ymin=-2]
-		\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-4:5,domain=-10:10]{0.5*(x+3)^2-1} node[above left,pos=0.8] {$f(x)$}; 
+		\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-4:5,domain=-10:10]{0.5*(x+3)^2-1} node[above left,pos=0.8] {$f$}; 
 		\end{axis}
 		\end{tikzpicture}
 		\fi
@@ -334,7 +329,7 @@ ytick distance={1},xmin=-4,xmax=4,ymin=-5,ymax=4,samples=500,]
 			$f(x)=\dfrac{1}{2}(x+3)^2-1$}
 	
 	\question
-\exonly{Determinare la funzioni rappresentata:}
+    \exonly{Determinare la legge di assegnazione della funzione rappresentata:}
 
 		\ifprintanswers 	\else
 		\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
@@ -342,16 +337,16 @@ ytick distance={1},xmin=-4,xmax=4,ymin=-5,ymax=4,samples=500,]
 		AxisDefaults,
 		width=0.7\linewidth,
 		ytick distance={1},xmin=-2,xmax=2]
-		\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-3:3]{2*(x+1)^3} node[below right,pos=0.8] {$g(x)$}; 
+		\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-3:3]{2*(x+1)^3} node[left,pos=0.8] {$f$}; 
 		\end{axis}
 		\end{tikzpicture} 
 		\fi
-		\solonly{$g(x)=2(x+1)^3$}
+		\solonly{$f(x)=2(x+1)^3$}
 
 
 		\exnewpage
 	\question
-\exonly{Determinare la funzioni rappresentata:}
+    \exonly{Determinare la legge di assegnazione della funzione rappresentata:}
 
 		\ifprintanswers     \else 
 		\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
@@ -361,16 +356,16 @@ ytick distance={1},xmin=-4,xmax=4,ymin=-5,ymax=4,samples=500,]
 		width=0.7\linewidth,
 		ytick distance={1},xmin=0,xmax=5,ymin=-2]
 		\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-2:3,domain=2:2.2,samples=5000]{2*sqrt(x-2)-1}; 
-		\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-2:3,domain=2.2:6,samples=100]{2*sqrt(x-2)-1} node[above left,pos=0.8] {$h(x)$}; 
+		\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-2:3,domain=2.2:6,samples=100]{2*sqrt(x-2)-1} node[above left,pos=0.5] {$f$}; 
 		\addplot [only marks, mark=o] (2,-1) ;
 		
 		\end{axis}
 		\end{tikzpicture}
 		\fi
-		\solonly{$h(x)=2\sqrt{x-2}-1$}
+		\solonly{$f(x)=2\sqrt{x-2}-1$}
 
 		\question
-	\exonly{Determinare la funzioni rappresentata:}
+        \exonly{Determinare la legge di assegnazione della funzione rappresentata:}
 	
 		\ifprintanswers     \else     
 		\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
@@ -379,17 +374,17 @@ ytick distance={1},xmin=-4,xmax=4,ymin=-5,ymax=4,samples=500,]
 		ytick distance={1},xmin=-3,xmax=3,ymin=-2,samples=1000,]
 		\addplot[draw=red,smooth,unbounded coords=jump,domain=-3:-1.1]{cbrt(x+1)} ; 
 		\addplot[draw=red,smooth,unbounded coords=jump,domain=-1.1:-0.9]{cbrt(x+1)};
-		\addplot[draw=red,smooth,unbounded coords=jump, domain=-0.9:2]{cbrt(x+1)} node[below right,pos=0.7] {$i(x)$}; 
+		\addplot[draw=red,smooth,unbounded coords=jump, domain=-0.9:2]{cbrt(x+1)} node[below right,pos=0.7] {$f$}; 
 		\end{axis}
 		
 		\end{tikzpicture}
 		\fi
-		\solonly{$i(x)=\sqrt[3]{x+1}$}
+		\solonly{$f(x)=\sqrt[3]{x+1}$}
 
 
 	\exnewpage
 	\question
-	\exonly{Determinare la funzioni rappresentata:}
+	\exonly{Determinare la legge di assegnazione della funzione rappresentata:}
 
 		\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
 		\exonly{
@@ -398,14 +393,14 @@ ytick distance={1},xmin=-4,xmax=4,ymin=-5,ymax=4,samples=500,]
 			ytick distance={1},
 			xmin=-1,xmax=2,ymin=-2,ymax=2,grid=both,minor x tick num=1]
 			\addplot[draw=red,smooth,unbounded coords=jump,domain=0.4:0.6,samples=1000,]{cbrt(2*x-1)}; 
-			\addplot[draw=red,smooth,unbounded coords=jump,domain=-2:0.4]{cbrt(2*x-1)} node[below right,pos=0.6] {$l(x)$}; 
-			\addplot[draw=red,smooth,unbounded coords=jump,domain=0.6:2]{cbrt(2*x-1)} node[below right,pos=0.6] {$l(x)$}; 
+			\addplot[draw=red,smooth,unbounded coords=jump,domain=-2:0.4]{cbrt(2*x-1)} node[below right,pos=0.6] {}; 
+			\addplot[draw=red,smooth,unbounded coords=jump,domain=0.6:2]{cbrt(2*x-1)} node[below right,pos=0.6] {$f$}; 
 			\end{axis}}
 		\end{tikzpicture}
-		\solonly{$l(x)=\sqrt[3]{2x-1}$}
+		\solonly{$f(x)=\sqrt[3]{2x-1}$}
 		
 			\question
-		\exonly{Determinare la funzioni rappresentata:}
+            \exonly{Determinare la legge di assegnazione della funzione rappresentata:}
 			
 		\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
 		\exonly{
@@ -413,12 +408,12 @@ ytick distance={1},xmin=-4,xmax=4,ymin=-5,ymax=4,samples=500,]
 			AxisDefaults,
 			width=0.7\linewidth,
 			ytick distance={1},xmin=0,xmax=7,ymin=-2,ymax=3,samples=500,]
-			\addplot[draw=red,smooth,unbounded coords=jump,domain=0:7]{-sqrt(x-2)+1} node[below right,pos=0.7] {$m(x)$}; 
+			\addplot[draw=red,smooth,unbounded coords=jump,domain=0:7]{-sqrt(x-2)+1} node[below right,pos=0.7] {$f$}; 
 			\addplot [only marks, mark=o] (2,1) ;
 			%\filldraw (axis cs:2,1) circle (1.5pt) ;
 			\end{axis}}
 		\end{tikzpicture}
-		\solonly{$m(x)=-\sqrt{x-2}+1$}
+		\solonly{$f(x)=-\sqrt{x-2}+1$}
 
 	
 	
