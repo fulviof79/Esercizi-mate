@@ -106,17 +106,7 @@ Fulvio Frapolli]
 \RequirePackage{calc}
 \RequirePackage{tkz-euclide}
 \RequirePackage{lmodern}
-%\RequirePackage{pgf-pie}
-%\RequirePackage{tkz-tab}
-%\RequirePackage{kz-fct}
-%% TKZ-EUCLIDE
-%\@ifpackagelater{tkz-euclide}{2020/01/01}
-%  {%
-%    % Do something for the newer version
-%  }
-%  {%
-%    \usetkzobj{all} 
-%  }%
+
 
 \RequirePackage{pgfpages}
 \RequirePackage{atbegshi}
@@ -136,6 +126,8 @@ Fulvio Frapolli]
 \RequirePackage{polynom}
 \RequirePackage{empheq}
 \RequirePackage{marginnote}
+\RequirePackage{helvet}
+
 
 %%%%% 
 \newif\if@draftexam \@draftexamtrue
@@ -147,6 +139,13 @@ Fulvio Frapolli]
 \DeclareOption{exam}{
     \@examtrue
 }
+
+\newif\if@arial \@arialfalse
+\DeclareOption{arial}{
+    \@arialtrue
+}
+
+
 
 \DeclareOption{soluzioni}{% Pour imprimer les solutions
     \printanswers
@@ -183,6 +182,12 @@ Fulvio Frapolli]
 
 }
 
+%%% Arial font
+\if@arial
+    
+    \renewcommand{\familydefault}{\sfdefault}
+
+\fi
 
 % % Draft / Final
 \if@draftexam %%% if the option draft is set then put the watermark in the document
@@ -449,7 +454,14 @@ minimum height=6cm, node distance=4cm]
 {\def\arraystretch{#1}\tabular{#2}}
 {\endtabular}
 
-
+\newenvironment{qblock}
+{
+\begin{minipage}{\textwidth}
+}
+{
+    \end{minipage}
+    \medskip
+}
 % Solutions
 
 \newcommand{\sol}[1]{ %print only if solutions
