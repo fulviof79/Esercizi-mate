@@ -1,96 +1,99 @@
 \section{Funzioni e operazioni}
 
 \subsection{Riepilogo funzioni dei 1$^{\circ}$  et 2$^{\circ}$ grado}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subfile{../ch/BS-MPT-FP-rappel-fct-1-2}
+
+
 \begin{questions}
 
-    \question
-    \exonly{Siano le tre funzioni seguenti :
-
-        $f(x)=2x+2$
-
-        $g(x)=-\frac{1}{2}x-8$
-
-        $h(x)=x^2+8x+7$ }
-
-    \begin{parts}
-        \part
+    \begin{qblock}
+        \question
         \exonly{
-            Determinare algebricamente i punti di intersezione con gli assi  delle tre funzioni.
-            %		Déterminer algébriquement les points d'intersection avec les axes des trois fonctions. 
-        }
+            Siano le tre funzioni seguenti :
 
-        \solonly{
-            $f(x):$
-            $I_x(-1;0) \quad I_y(0;2)$
+            $f(x)=2x+2$
 
-            $g(x):$
-            $I_x(-16;0) \quad I_y(0;-8)$
+            $g(x)=-\frac{1}{2}x-8$
 
-            $h(x):$
-            $I_{x_1}(-7;0) \quad I_{x_2}(-1;0) \quad I_y(0;7)$
+            $h(x)=x^2+8x+7$ }
 
-        }
+        \begin{parts}
+            \part
+            \exonly{
+                Determinare algebricamente i punti di intersezione con gli assi  delle tre funzioni.
+                %		Déterminer algébriquement les points d'intersection avec les axes des trois fonctions. 
+            }
 
-        \part
-        \exonly{
-            Determinare algebricamente la pendenza delle funzioni $f$ e $g$. Cosa si può dire?
-            %		Déterminer algébriquement la pente de la fonction $f$ et de la fonction $g$. Que peut-on dire?
-        }
+            \solonly{
+                $f(x):$
+                $I_x(-1;0) \quad I_y(0;2)$
 
-        \solonly{
-            $f(x):$ pendenza$=2$
+                $g(x):$
+                $I_x(-16;0) \quad I_y(0;-8)$
 
-            $g(x):$ pendenza$=-\frac{1}{2}$
+                $h(x):$
+                $I_{x_1}(-7;0) \quad I_{x_2}(-1;0) \quad I_y(0;7)$
 
-            Rette perpendicolari
-        }
+            }
 
-        \part
-        \exonly{
-            Determinare algebricamente il vertice della funzione $h$.
-            %		Déterminer algébriquement le sommet de la fonction $h$. 
-        }
-        \solonly{$S(-4;-9)$}
+            \part
+            \exonly{
+                Determinare algebricamente la pendenza delle funzioni $f$ e $g$. Cosa si può dire?
+                %		Déterminer algébriquement la pente de la fonction $f$ et de la fonction $g$. Que peut-on dire?
+            }
 
-        \part
-        \exonly{
-            Determinare algebricamente i punti di intersezione tra le funzioni $f$ e $g$.
-            %		Déterminer algébriquement les points d'intersection entre la fonction $f$ et $g$. 
-        }
-        \solonly{$I(-4;-6)$}
-        \part
-        \exonly{
-            Determinare algebricamente i punti di intersezione tra le funzioni $f$ e $h$.
-            %		Déterminer algébriquement les points d'intersection entre la fonction $f$ et $h$. 
-        }
-        \solonly{$I_1(-1;0)$ et $I_2(-5;-8)$}
+            \solonly{
+                $f(x):$ pendenza$=2$
 
-        \part
-        \exonly{
-            Disegnare le tre funzioni nello stesso sistema di riferimento.
-            %	Dessiner chacune des trois fonctions dans le même repère. 
-        }
-        \ifprintanswers
-            \begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-                \begin{axis}[
-                        AxisDefaults,
-                        TinyAxisLabels,
-                        width=0.8\linewidth,
-                        ytick distance={2},
-                        ymin=-10,
-                        ymax=10,
-                        domain=-10:10,
-                        restrict y to domain=-11:11,
-                    ]
-                    \addplot[draw=red]{2*x+2} node[pos=0.8,above] {$f(x)$};
-                    \addplot[draw=blue]{-x/2-8}node[pos=0.8,above] {$g(x)$};
-                    \addplot[draw=violet,smooth	]{x^2+8*x+7} node[pos=0.2,right] {$h(x)$};
-                \end{axis}
-            \end{tikzpicture}
-        \fi
-    \end{parts}
+                $g(x):$ pendenza$=-\frac{1}{2}$
+
+                Rette perpendicolari
+            }
+
+            \part
+            \exonly{
+                Determinare algebricamente il vertice della funzione $h$.
+                %		Déterminer algébriquement le sommet de la fonction $h$. 
+            }
+            \solonly{$S(-4;-9)$}
+
+            \part
+            \exonly{
+                Determinare algebricamente i punti di intersezione tra le funzioni $f$ e $g$.
+                %		Déterminer algébriquement les points d'intersection entre la fonction $f$ et $g$. 
+            }
+            \solonly{$I(-4;-6)$}
+            \part
+            \exonly{
+                Determinare algebricamente i punti di intersezione tra le funzioni $f$ e $h$.
+                %		Déterminer algébriquement les points d'intersection entre la fonction $f$ et $h$. 
+            }
+            \solonly{$I_1(-1;0)$ et $I_2(-5;-8)$}
+
+            \part
+            \exonly{
+                Disegnare le tre funzioni nello stesso sistema di riferimento.
+                %	Dessiner chacune des trois fonctions dans le même repère. 
+            }
+            \ifprintanswers
+                \begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+                    \begin{axis}[
+                            AxisDefaults,
+                            TinyAxisLabels,
+                            width=0.8\linewidth,
+                            ytick distance={2},
+                            ymin=-10,
+                            ymax=10,
+                            domain=-10:10,
+                            restrict y to domain=-11:11,
+                        ]
+                        \addplot[draw=red]{2*x+2} node[pos=0.8,above] {$f(x)$};
+                        \addplot[draw=blue]{-x/2-8}node[pos=0.8,above] {$g(x)$};
+                        \addplot[draw=violet,smooth	]{x^2+8*x+7} node[pos=0.2,right] {$h(x)$};
+                    \end{axis}
+                \end{tikzpicture}
+            \fi
+        \end{parts}
+    \end{qblock}
 
 
 \end{questions}
@@ -98,257 +101,267 @@
 \subsection{Dominio, immagini, iniettività, suriettività, biiettività}
 
 \begin{questions}
-    \question
-    \exonly{Consideriamo la funzione $f: A \mapsto B$
-        con legge di assegnazione $f(x)=x^2+4x-5$.
 
-        Quali di queste affermazioni sono vere?
-    }
-    \solonly{Affermazioni vere $\blacksquare$ }
 
-    \begin{checkboxes}
+    \begin{qblock}
+        \question
+        \exonly{Consideriamo la funzione $f: A \mapsto B$
+            con legge di assegnazione $f(x)=x^2+4x-5$.
 
-        \choice $f$ può essere resa suriettiva se $B=[-10;\infty[$
+            Quali di queste affermazioni sono vere?
+        }
+        \solonly{Affermazioni vere $\blacksquare$ }
 
-        \CorrectChoice $f$ può essere resa suriettiva se $B=[-9;\infty[$
+        \begin{checkboxes}
 
-        \CorrectChoice $f$ é iniettiva se $A=[-2;\infty[$
+            \choice $f$ può essere resa suriettiva se $B=[-10;\infty[$
 
-        \choice $f$ é biiettiva per $A=[-\infty;-2[$ e $B=]-\infty;-9[$
+            \CorrectChoice $f$ può essere resa suriettiva se $B=[-9;\infty[$
 
-        \CorrectChoice $f$ é biiettiva per $A=[-\infty;-2[$ e $B=[-9;\infty[$
+            \CorrectChoice $f$ é iniettiva se $A=[-2;\infty[$
 
-        \CorrectChoice $f$ é biiettiva per $A=[-2;\infty[$ e $B=[-9;\infty[$
+            \choice $f$ é biiettiva per $A=[-\infty;-2[$ e $B=]-\infty;-9[$
 
-        \CorrectChoice il dominio naturale di $f$ è $\DD=\R$
+            \CorrectChoice $f$ é biiettiva per $A=[-\infty;-2[$ e $B=[-9;\infty[$
 
-        \choice $f$ é iniettiva per $A=\R$
+            \CorrectChoice $f$ é biiettiva per $A=[-2;\infty[$ e $B=[-9;\infty[$
 
-        \choice $f$ é biiettiva per $A=\R$ e $B=\R$
+            \CorrectChoice il dominio naturale di $f$ è $\DD=\R$
 
-    \end{checkboxes}
+            \choice $f$ é iniettiva per $A=\R$
 
-    \question
-    \exonly{Consideriamo la funzione $f: A \mapsto B$
-        con legge di assegnazione $f(x)=(x+2)^3-9$.
+            \choice $f$ é biiettiva per $A=\R$ e $B=\R$
 
-        Quali di queste affermazioni sono vere?
-    }
-    \solonly{Affermazioni vere $\blacksquare$ }
+        \end{checkboxes}
+    \end{qblock}
 
-    \begin{checkboxes}
 
-        \CorrectChoice $f$  può essere resa suriettiva se  $B=[0;\infty[$
-        \CorrectChoice $f$  può essere resa suriettiva se  $B=[-9;\infty[$
+    \begin{qblock}
+        \question
+        \exonly{Consideriamo la funzione $f: A \mapsto B$
+            con legge di assegnazione $f(x)=(x+2)^3-9$.
 
-        \CorrectChoice $f$ é iniettiva per $A=[-2;\infty[$
+            Quali di queste affermazioni sono vere?
+        }
+        \solonly{Affermazioni vere $\blacksquare$ }
 
-                    \choice $f$ é biiettiva per $A=]-\infty;-2[$ e $B=[-9;\infty[$
-                    \CorrectChoice $f$ é biiettiva per $A=]-\infty;-2[$ e $B=]-\infty;-9[$
-        \CorrectChoice il dominio naturale di $f$ $\DD=\R$
-        \CorrectChoice $f$ é iniettiva per $A=\R$
-        \CorrectChoice $f$ é biiettiva per $A=\R$ e $B=\R$
+        \begin{checkboxes}
 
-    \end{checkboxes}
+            \CorrectChoice $f$  può essere resa suriettiva se  $B=[0;\infty[$
+            \CorrectChoice $f$  può essere resa suriettiva se  $B=[-9;\infty[$
+
+            \CorrectChoice $f$ é iniettiva per $A=[-2;\infty[$
+
+                        \choice $f$ é biiettiva per $A=]-\infty;-2[$ e $B=[-9;\infty[$
+                        \CorrectChoice $f$ é biiettiva per $A=]-\infty;-2[$ e $B=]-\infty;-9[$
+            \CorrectChoice il dominio naturale di $f$ $\DD=\R$
+            \CorrectChoice $f$ é iniettiva per $A=\R$
+            \CorrectChoice $f$ é biiettiva per $A=\R$ e $B=\R$
+
+        \end{checkboxes}
+    \end{qblock}
 \end{questions}
 
 \subsection{Operazioni sulle funzioni}
 
 \begin{questions}
 
-    \question
-    \exonly{
-        Date le funzioni  $f(x)=x^2+2$ e \\ $g(x)=2x^2-1$.
-        Calcolare:
-        %	Soit les fonctions $f(x)=x^2+2$ et \\ $g(x)=2x^2-1$. 
-        %Calculer:
-    }
 
-    \begin{parts}
-        \part \exonly{$(f+g)(x)$ }
-        \solonly{$3x^2+1$}
-        \part \exonly{$(f-g)(x)$ }
-        \solonly{$-x^2+3$}
-        \part \exonly{$(fg)(x)$ }
-        \solonly{$2x^4+3x^2-2$}
-        \part
-        \exonly{ $\left(\dfrac{f}{g}\right)(x)$ }
-
-        \solonly{$=\dfrac{x^2+2}{2x^2-1}$}
-
-        \part \exonly{
-            Il dominio di $(f+g)(x)$
-            %	Le domaine de définition de $(f+g)(x)$
-        }
-        \solonly{$\DD=\R $}
-        \part \exonly{
-            Il dominio  di $(\dfrac{f}{g})(x)$
-            %	Le domaine de définition de $(\dfrac{f}{g})(x)$ 
-        }
-        \solonly{$\DD=\R \setminus \left\lbrace \pm \dfrac{ \sqrt{2}}{2}\right\rbrace $}
-    \end{parts}
-
-    \begin{profonly}	Src: Swok ex 3 pg 226/227	\end{profonly}
-
-
-
-
-
-    \question
-    \exonly
-    {
-        Date le funzioni $f(x)=\sqrt{x+5}$ e \\ $g(x)=\sqrt{x+5}$.
-        Calcolare:
-        %	Soit les fonctions $f(x)=\sqrt{x+5}$ et \\ $g(x)=\sqrt{x+5}$. 
-        %Calculer:
-    }
-
-    \begin{parts}
-        \part $(f+g)(x)$\solonly{$=2\sqrt{x+5}$}
-
-        \part $(f-g)(x)$\solonly{$=0$}
-
-        \part $(fg)(x)$\solonly{$=x+5$}
-
-        \part $\left(\dfrac{f}{g}\right)(x)$\solonly{$=\dfrac{\sqrt{x+5}}{\sqrt{x+5}}$}
-
-
-
-        \part \exonly{
-            Il dominio di  $(f+g)(x)$}\solonly{$\DD=\left[- 5 ; \infty \right[ $
-        }
-
-        \part \exonly{
-            Il dominio di  $\left(\dfrac{f}{g}\right)(x)$ }\solonly{$\DD=\left] -5 ; \infty \right[ $
-        }
-
-    \end{parts}
-    \begin{profonly}	Src: Swok ex 5 pg 226/227	\end{profonly}
-
-
-    %\question \begin{profonly}	Src: Swok ex 7 pg 226/227	\end{profonly}
-
-    \question
-    \exonly{Date le funzioni  $f(x)=x^2-3x$ e \\ $g(x)=\sqrt{x+2}$.
-        Determinare:
-    }
-    \begin{parts}
-        \part $(f \circ g)(x)$\solonly{$=x+2-3\sqrt{x+2}$}
-        \part \exonly{il dominio di $(f \circ g)(x)$}
-        \solonly{$\DD=\left[ -2 ; \infty \right[ $}
-        \part $(g \circ f)(x)$\solonly{$=\sqrt{x^2-3x+2}$}
-        \part \exonly{il dominio $(g \circ f)(x)$}\solonly{$\DD=\left] -\infty ;1 \right] \cup \left[ 2; \infty \right[ $}
-    \end{parts}
-
-    \begin{profonly}	Src: Swok ex 21 pg 227	\end{profonly}
-
-
-
-    \question
-    \exonly{Date le funzioni $f(x)=x^2-4$ e \\ $g(x)=\sqrt{3x}$.
-        Determinare:
-    }
-    \begin{parts}
-        \part $(f \circ g)(x)$\solonly{$=3x-4$}
-        \part \exonly{il dominio di $(f \circ g)(x)$}\solonly{$\DD=\left[ 0 ; \infty \right[ $}
-        \part $(g \circ f)(x)$\solonly{$=\sqrt{3x^2-12}$}
-        \part \exonly{il dominio di $(g \circ f)(x)$}\solonly{$\DD=\left] -\infty ;-2 \right] \cup \left[ 2; \infty \right[ $}
-    \end{parts}
-
-
-    \begin{profonly}	Src: Swok ex 23 pg 227	\end{profonly}
-
-    \newpage
-
-    \question
-    Date le leggi: 
-    \begin{itemize}
-        \item  $f_1(x)=x^2-9$ 
-        \item $f_2(x)=3x-7$
-         \item  $f_3(x)=\sqrt{x}$
-        \item  $f_4(x)=\sqrt{4-x^2}$
-    \end{itemize}
-
-
-    \begin{parts}
-        \part
+    \begin{qblock}
+        \question
         \exonly{
-            Determinare il dominio naturale $\DD_{f_i}$ e l'insieme delle immagini $Im_{f_i}$.}
+            Date le funzioni  $f(x)=x^2+2$ e \\ $g(x)=2x^2-1$.
+            Calcolare:
+            %	Soit les fonctions $f(x)=x^2+2$ et \\ $g(x)=2x^2-1$. 
+            %Calculer:
+        }
+
+        \begin{parts}
+            \part \exonly{$(f+g)(x)$ }
+            \solonly{$3x^2+1$}
+            \part \exonly{$(f-g)(x)$ }
+            \solonly{$-x^2+3$}
+            \part \exonly{$(fg)(x)$ }
+            \solonly{$2x^4+3x^2-2$}
+            \part
+            \exonly{ $\left(\dfrac{f}{g}\right)(x)$ }
+
+            \solonly{$=\dfrac{x^2+2}{2x^2-1}$}
+
+            \part \exonly{
+                Il dominio di $(f+g)(x)$
+                %	Le domaine de définition de $(f+g)(x)$
+            }
+            \solonly{$\DD=\R $}
+            \part \exonly{
+                Il dominio  di $(\dfrac{f}{g})(x)$
+                %	Le domaine de définition de $(\dfrac{f}{g})(x)$ 
+            }
+            \solonly{$\DD=\R \setminus \left\lbrace \pm \dfrac{ \sqrt{2}}{2}\right\rbrace $}
+        \end{parts}
+
+        \begin{profonly}	Src: Swok ex 3 pg 226/227	\end{profonly}
+    \end{qblock}
 
 
-        \part
-        \exonly{
-            Determinare se la funzione $f_i: \DD_{f_i} \mapsto Im_{f_i}$ é biiettiva.}
-        \begin{checkboxes}
-            \choice $f_1(x)=x^2-9$ %\solonly{$\DD=\left]0;\infty\right[$}
-            \CorrectChoice $f_2(x)=3x-7$
+    \begin{qblock}
+        \question
+        \exonly
+        {
+            Date le funzioni $f(x)=\sqrt{x+5}$ e \\ $g(x)=\sqrt{x+5}$.
+            Calcolare:
+            %	Soit les fonctions $f(x)=\sqrt{x+5}$ et \\ $g(x)=\sqrt{x+5}$. 
+            %Calculer:
+        }
 
-            \CorrectChoice $f_3(x)=\sqrt{x}$
-            \choice $f_4(x)=\sqrt{4-x^2}$
-        \end{checkboxes}
+        \begin{parts}
+            \part $(f+g)(x)$\solonly{$=2\sqrt{x+5}$}
 
-        \part
-        \exonly{
-            In caso contrario restringere il dominio e determinarne le immagine in modo da renderla biiettiva.}
-    \end{parts}
+            \part $(f-g)(x)$\solonly{$=0$}
 
+            \part $(fg)(x)$\solonly{$=x+5$}
 
-
-
-    \begin{profonly}	Src: Swok ex 1-12 pg 236	\end{profonly}
-
-    \question
-    \exonly{Determinare la funzione inversa (o reciproca) di $f$ sul loro dominio.}
-
-    \begin{parts}
-
-        \part
-        \exonly{$f(x)=3x+5$} \solonly{$f^{-1}(x)=\dfrac{x-5}{3}$}
-
-        \part
-        \exonly{$f(x)=\dfrac{3x+2}{2x-5}$}
-
-        \solonly{$f^{-1}(x)=\dfrac{5x+2}{2x-3}$}
-
-        \part
-        \exonly{$f(x)=2-3x^2$ , $x\leq 0$}
-        \solonly{$f^{-1}(x)=-\sqrt{\dfrac{2-x}{3}}$}
-
-        \part
-        \exonly{$f(x)=\sqrt{3-x}$} \solonly{$f^{-1}(x)=3-x^2$ , $x \geq 0$}
-
-
-    \end{parts}
-
-    \begin{profonly}	Src: Swok ex 17,21,23,27 pg 236	\end{profonly}
+            \part $\left(\dfrac{f}{g}\right)(x)$\solonly{$=\dfrac{\sqrt{x+5}}{\sqrt{x+5}}$}
 
 
 
+            \part \exonly{
+                Il dominio di  $(f+g)(x)$}\solonly{$\DD=\left[- 5 ; \infty \right[ $
+            }
 
+            \part \exonly{
+                Il dominio di  $\left(\dfrac{f}{g}\right)(x)$ }\solonly{$\DD=\left] -5 ; \infty \right[ $
+            }
+
+        \end{parts}
+        \begin{profonly}	Src: Swok ex 5 pg 226/227	\end{profonly}
+    \end{qblock}
+
+
+    \begin{qblock}
+        \question
+        \exonly{Date le funzioni  $f(x)=x^2-3x$ e \\ $g(x)=\sqrt{x+2}$.
+            Determinare:
+        }
+        \begin{parts}
+            \part $(f \circ g)(x)$\solonly{$=x+2-3\sqrt{x+2}$}
+            \part \exonly{il dominio di $(f \circ g)(x)$}
+            \solonly{$\DD=\left[ -2 ; \infty \right[ $}
+            \part $(g \circ f)(x)$\solonly{$=\sqrt{x^2-3x+2}$}
+            \part \exonly{il dominio $(g \circ f)(x)$}\solonly{$\DD=\left] -\infty ;1 \right] \cup \left[ 2; \infty \right[ $}
+        \end{parts}
+
+        \begin{profonly}	Src: Swok ex 21 pg 227	\end{profonly}
+    \end{qblock}
+
+
+    \begin{qblock}
+        \question
+        \exonly{Date le funzioni $f(x)=x^2-4$ e \\ $g(x)=\sqrt{3x}$.
+            Determinare:
+        }
+        \begin{parts}
+            \part $(f \circ g)(x)$\solonly{$=3x-4$}
+            \part \exonly{il dominio di $(f \circ g)(x)$}\solonly{$\DD=\left[ 0 ; \infty \right[ $}
+            \part $(g \circ f)(x)$\solonly{$=\sqrt{3x^2-12}$}
+            \part \exonly{il dominio di $(g \circ f)(x)$}\solonly{$\DD=\left] -\infty ;-2 \right] \cup \left[ 2; \infty \right[ $}
+        \end{parts}
+
+
+        \begin{profonly}	Src: Swok ex 23 pg 227	\end{profonly}
+    \end{qblock}
+
+    \begin{qblock}
+        \question
+        Date le leggi:
+        \begin{itemize}
+            \item  $f_1(x)=x^2-9$
+            \item $f_2(x)=3x-7$
+            \item  $f_3(x)=\sqrt{x}$
+            \item  $f_4(x)=\sqrt{4-x^2}$
+        \end{itemize}
+
+
+        \begin{parts}
+            \part
+            \exonly{
+                Determinare il dominio naturale $\DD_{f_i}$ e l'insieme delle immagini $Im_{f_i}$.}
+
+
+            \part
+            \exonly{
+                Determinare se la funzione $f_i: \DD_{f_i} \mapsto Im_{f_i}$ é biiettiva.}
+            \begin{checkboxes}
+                \choice $f_1(x)=x^2-9$ %\solonly{$\DD=\left]0;\infty\right[$}
+                \CorrectChoice $f_2(x)=3x-7$
+
+                \CorrectChoice $f_3(x)=\sqrt{x}$
+                \choice $f_4(x)=\sqrt{4-x^2}$
+            \end{checkboxes}
+
+            \part
+            \exonly{
+                In caso contrario restringere il dominio e determinarne le immagine in modo da renderla biiettiva.}
+        \end{parts}
+
+        \begin{profonly}	Src: Swok ex 1-12 pg 236	\end{profonly}
+    \end{qblock}
+
+   
+   \begin{qblock}
+     \question
+     \exonly{Determinare la funzione inversa (o reciproca) di $f$ sul loro dominio.}
+ 
+     \begin{parts}
+ 
+         \part
+         \exonly{$f(x)=3x+5$} \solonly{$f^{-1}(x)=\dfrac{x-5}{3}$}
+ 
+         \part
+         \exonly{$f(x)=\dfrac{3x+2}{2x-5}$}
+ 
+         \solonly{$f^{-1}(x)=\dfrac{5x+2}{2x-3}$}
+ 
+         \part
+         \exonly{$f(x)=2-3x^2$ , $x\leq 0$}
+         \solonly{$f^{-1}(x)=-\sqrt{\dfrac{2-x}{3}}$}
+ 
+         \part
+         \exonly{$f(x)=\sqrt{3-x}$} \solonly{$f^{-1}(x)=3-x^2$ , $x \geq 0$}
+ 
+ 
+     \end{parts}
+ 
+     \begin{profonly}	Src: Swok ex 17,21,23,27 pg 236	\end{profonly}
+   \end{qblock}
 
 \end{questions}
 
 \subsection{Funzioni pari e dispari}
 \begin{questions}
-    \question
-    \exonly{Determinare se $f$ é una funzione pari, dispari o nessuna delle due cose.}
 
-    \begin{parts}
-        \part
-        \exonly{$f_1(x)=5x^3+2x$}
-        \solonly{Dispari}
 
-        \part
-        \exonly{$f_2(x)=3x^4+2x^2-5$}
-        \solonly{Pari}
-
-        \part
-        \exonly{$f_3(x)=8x^3-3x^2$}
-        \solonly{Né pari né dispari}
-
-        \part
-        \exonly{$f_4(x)=\sqrt{x^2+1}$ }
-        \solonly{Pari}
-
-    \end{parts}
+\begin{qblock}
+        \question
+        \exonly{Determinare se $f$ é una funzione pari, dispari o nessuna delle due cose.}
+    
+        \begin{parts}
+            \part
+            \exonly{$f_1(x)=5x^3+2x$}
+            \solonly{Dispari}
+    
+            \part
+            \exonly{$f_2(x)=3x^4+2x^2-5$}
+            \solonly{Pari}
+    
+            \part
+            \exonly{$f_3(x)=8x^3-3x^2$}
+            \solonly{Né pari né dispari}
+    
+            \part
+            \exonly{$f_4(x)=\sqrt{x^2+1}$ }
+            \solonly{Pari}
+    
+        \end{parts}
+\end{qblock}
 \end{questions}
