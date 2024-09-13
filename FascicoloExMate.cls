@@ -461,7 +461,7 @@ minimum height=6cm, node distance=4cm]
 }
 {
     \end{minipage}
-    \medskip
+    \bigskip
 }
 % Solutions
 
