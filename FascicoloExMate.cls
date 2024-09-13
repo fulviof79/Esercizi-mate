@@ -416,7 +416,7 @@ minimum height=6cm, node distance=4cm]
 % IMAGES and INPUT PATH
 
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
-\def\input@path{{../DB/}{./DB/}{./}{../ch/}{./ex/}{./temi}{../temi}}  %pour les exercices
+\def\input@path{{../DB/}{./DB/}{./}{../ch/}{./ex/}{./temi}{../temi}{esercizi/}{temi/}}  %pour les exercices
 \graphicspath{{../DB/images/}{./images/}{./}{./img/}{../img/}{./temi/img/}{./tikz}{../tikz}} % pour le logo et les images des exercices
 
 
