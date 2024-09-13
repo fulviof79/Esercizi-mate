@@ -140,9 +140,9 @@ Fulvio Frapolli]
     \@examtrue
 }
 
-\newif\if@arial \@arialfalse
-\DeclareOption{arial}{
-    \@arialtrue
+\newif\if@dsa \@dsafalse
+\DeclareOption{dsa}{
+    \@dsatrue
 }
 
 
@@ -183,9 +183,10 @@ Fulvio Frapolli]
 }
 
 %%% Arial font
-\if@arial
+\if@dsa
     
     \renewcommand{\familydefault}{\sfdefault}
+    \renewcommand{\baselinestretch}{1.3}
 
 \fi
 
