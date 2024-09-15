@@ -3,84 +3,62 @@
 
 \begin{questions}
 
-	\question
-	\exonly{
-		Scomporre in fattori e determinare le soluzioni delle seguenti equazioni:
-	}
-	\begin{parts}
 
-		\part
-		\exonly{$x^3-x^2-10x-8=0$}
-		\solonly{$(x + 1) (x + 2) (x - 4)=0$ \\ $S=\left\lbrace -2,-1,4\right\rbrace $}
+	\begin{qblock}
+		\question
+		\exonly{
+			Scomporre in fattori i polinomi seguenti:
+		}
 
-		\part
-		\exonly{$x^3 + x^2 -14x -24 = 0$ }
-		\solonly{$(x - 4) (x + 2) (x + 3) = 0=0$ \\ $S=\left\lbrace -3,-2,4\right\rbrace $}
+		\begin{multicols}{2}
+			\begin{parts}
 
-		\part
-		\exonly{$2 x^3 - 3 x^2 - 17 x + 30 = 0$ }
-		\solonly{$(x - 2) (x + 3) (2 x - 5) = 0$ \\$S=\left\lbrace -3,2,\dfrac{5}{2}\right\rbrace $}
+				\part
+				\exonly{$x^3-x^2-10x-8=0$}
+				\solonly{$(x + 1) (x + 2) (x - 4)$ \\ $S=\left\lbrace -2,-1,4\right\rbrace $}
 
-		\part
-		\exonly{$12x^3+8x^2-3x-2=0$ }
-		\solonly{ $(3x+2)(2x-1)(2x+1)=0 $ \\ $S=\left\lbrace -\dfrac{2}{3},-\dfrac{1}{2},\dfrac{1}{2}\right\rbrace $ }
+				\part
+				\exonly{$x^3 + x^2 -14x -24 $ }
+				\solonly{$(x - 4) (x + 2) (x + 3) $ \\ $S=\left\lbrace -3,-2,4\right\rbrace $}
 
-	\end{parts}
-	\begin{profonly}	Src: Swok ex 15-18 impairs pg 289\end{profonly}
+				\part
+				\exonly{$2 x^3 - 3 x^2 - 17 x + 30 $ }
+				\solonly{$(x - 2) (x + 3) (2 x - 5)$ \\$S=\left\lbrace -3,2,\dfrac{5}{2}\right\rbrace $}
 
-	%	\question
-	%	\exonly{Favre, ex. 27, pg.219}\sol{Sol. Favre}	
+				\part
+				\exonly{$12x^3+8x^2-3x-2$ }
+				\solonly{ $(3x+2)(2x-1)(2x+1) $ \\ $S=\left\lbrace -\dfrac{2}{3},-\dfrac{1}{2},\dfrac{1}{2}\right\rbrace $ }
+
+			\end{parts}
+		\end{multicols}
+		\begin{profonly}	Src: Swok ex 15-18 impairs pg 289\end{profonly}
+	\end{qblock}
+
+
 \end{questions}
 
 \subsection{Studio della funzione}
 
 \begin{questions}
+
 	\question
 	\exonly{
 		Realizzare lo studio della funzione (zeri, massimi, minimi, etc.) e rappresentarla graficamente:
 
 	}
+
 	\begin{parts}
 
 		\part
 		\exonly{$f_1(x)=x^3-x^2-10x-8$}
 		\ifprintanswers
 			\input{tikz/funzioni.polinomiali.1}
-			%\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-			%  \tikzset{
-			%	every pin/.style={fill=yellow!50!white,rectangle,rounded corners=3pt,font=\tiny},
-			%	small dot/.style={fill=black,circle,scale=0.3}
-			%}
-			%\begin{axis}[
-			%AxisDefaults, 
-			%width=10cm,
-			%ytick distance={10}]
-			%\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-25:20]{x^3-x^2-10*x-8}; 
-			%\addplot[mark=*] coordinates {(-1.52,1.38)} node[small dot,pin={[pin distance=0.5cm]90:{$(-1.52,1.38)$}}]{} ;
-			%\addplot[mark=*] coordinates {(2.19,-24.2)} node[small dot,pin={[pin distance=1cm]90:{$(2.19,-24.2)$}}]{} ;
-			%\end{axis}
-			%\end{tikzpicture} 
 		\fi
-
 
 		\part
 		\exonly{$f_2(x)=-x^3 - x^2 +14x +24$ }
 		\ifprintanswers
 			\input{tikz/funzioni.polinomiali.2}
-			%\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-			%\tikzset{
-			%	every pin/.style={fill=yellow!50!white,rectangle,rounded corners=3pt,font=\tiny},
-			%	small dot/.style={fill=black,circle,scale=0.3}
-			%}
-			%\begin{axis}[
-			%AxisDefaults, 
-			%width=10cm,
-			%ytick distance={10}]
-			%\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-45:5]{x^3+x^2-14*x-24}; 
-			%\addplot[mark=*] coordinates {(-2.5,1.6)} node[small dot,pin={[pin distance=2cm]-90:{$(-2.5,1.6)$}}]{} ;
-			%\addplot[mark=*] coordinates {(1.85,-40.1)} node[small dot,pin={[pin distance=1cm]90:{$(1.85,-40.1)$}}]{} ;
-			%\end{axis}
-			%\end{tikzpicture} 
 		\fi
 
 
@@ -88,20 +66,6 @@
 		\exonly{$f_3(x)=2 x^3 - 3 x^2 - 17 x + 30 $ }
 		\ifprintanswers
 			\input{tikz/funzioni.polinomiali.3}
-			%\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-			%\tikzset{
-			%	every pin/.style={fill=yellow!50!white,rectangle,rounded corners=3pt,font=\tiny},
-			%	small dot/.style={fill=black,circle,scale=0.3}
-			%}
-			%\begin{axis}[
-			%AxisDefaults, 
-			%width=10cm,
-			%ytick distance={10}]
-			%\addplot[draw=red,smooth,unbounded coords=jump,restrict y to domain=-5:45]{2*x^3-3*x^2-17*x+30}; 
-			%\addplot[mark=*] coordinates {(-1.26,42.66)} node[small dot,pin={[pin distance=2cm]-90:{$(-1.26,42.66)$}}]{} ;
-			%\addplot[mark=*] coordinates {(2.26,-0.66)} node[small dot,pin={[pin distance=1cm]90:{$(2.26,-0.66)$}}]{} ;
-			%\end{axis}
-			%\end{tikzpicture} 
 		\fi
 
 
@@ -125,18 +89,9 @@
 			\end{tikzpicture}
 		\fi
 
-
-
-
-
-
-
-
-
-
 	\end{parts}
 
-	\solnewpage
+
 	\question
 	\exonly{
 		Realizzare lo studio delle funzioni seguenti (zeri e molteplicità, rappresentazione grafica).}
@@ -177,7 +132,6 @@
 		\fi
 
 		\begin{profonly}	Src: Swok ex 17 pg 260\end{profonly}
-		\solnewpage
 		\part
 		\exonly{$f(x)=\dfrac{1}{6}(x+2)(x-3)(x-4)$}
 		\solonly{Zero: $-2$ molteplicità $1$, $3$ molt. $1$ et $4$ molt. $1$}
@@ -218,10 +172,6 @@
 
 		\begin{profonly}	Src: Swok ex 21 pg 260\end{profonly}
 
-
-
-
-		\solnewpage
 		\part
 		\exonly{$f(x)=x^4-6x^2+8$}
 		\solonly{Zero: $2$ molteplicità $1$, $-2$ molt. $1$, $\sqrt{2}$ molt. $1$ e $-\sqrt{2}$ molt. $1$.}
@@ -294,72 +244,76 @@
 		\fi
 	\end{parts}
 
-\end{questions}
 
-\exnewpage
+\end{questions}
 \subsection{Rappresentazione grafica}
 
 \begin{questions}
 
-	\question
-	\exonly{
-		Determinare la legge di assegnazione della funzione polinomiale di 3° grado rappresentata qui sotto.}
-	\solonly{$f(x)=\dfrac{7}{9}(x+1)(x-\dfrac{3}{2})(x-3)$}
 
-	\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+	\begin{qblock}
+		\question
 		\exonly{
-			\begin{axis}[AxisDefaults,
-					width=0.7\linewidth,
-					xlabel=$t$, xlabel style={at=(current axis.right of origin), anchor=west},
-					ylabel=$N(t)$, ylabel style={at=(current axis.above origin), anchor=south},
-					ytick distance={1},
-					grid=both,
-					minor tick num = 1,
-					ymin=-5,ymax=5,xmin=-2,xmax=5,
-				]
-				\addplot[draw=red,thick,smooth,unbounded coords=jump,
-					restrict y to domain=-7:6,
-					domain=-5:5
-				]{7*(x+1)*(x-3/2)*(x-3)/9};
-				%\filldraw (axis cs:0,3.5) circle (1.5pt) node[above right] {\tiny $(0;\num{3.5})$};
-			\end{axis}
+			Determinare la legge di assegnazione della funzione polinomiale di 3° grado rappresentata qui sotto.}
+		\solonly{$f(x)=\dfrac{7}{9}(x+1)(x-\dfrac{3}{2})(x-3)$}
 
-		}
-	\end{tikzpicture}
+		\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+			\exonly{
+				\begin{axis}[AxisDefaults,
+						width=0.7\linewidth,
+						xlabel=$t$, xlabel style={at=(current axis.right of origin), anchor=west},
+						ylabel=$N(t)$, ylabel style={at=(current axis.above origin), anchor=south},
+						ytick distance={1},
+						grid=both,
+						minor tick num = 1,
+						ymin=-5,ymax=5,xmin=-2,xmax=5,
+					]
+					\addplot[draw=red,thick,smooth,unbounded coords=jump,
+						restrict y to domain=-7:6,
+						domain=-5:5
+					]{7*(x+1)*(x-3/2)*(x-3)/9};
+					%\filldraw (axis cs:0,3.5) circle (1.5pt) node[above right] {\tiny $(0;\num{3.5})$};
+				\end{axis}
+
+			}
+		\end{tikzpicture}
 
 
 
-	\begin{profonly}	Src: Swok ex 11 pg 280\end{profonly}
+		\begin{profonly}	Src: Swok ex 11 pg 280\end{profonly}
+	\end{qblock}
 
-	\question
-	\exonly{
-		Determinare la legge di assegnazione della funzione polinomiale di 4° rappresentata qui sotto.}
-	\solonly{$f(x)=\dfrac{1}{12}x(x-1)(x-3)(x-5)$}
 
-	\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+	\begin{qblock}
+		\question
 		\exonly{
-			\begin{axis}[AxisDefaults,
-					width=0.7\linewidth,
-					ytick distance={1},
-					grid=both,
-					minor tick num = 1,
-					ymin=-2,ymax=6,xmin=-3,xmax=6,
-				]
-				\addplot[draw=red,thick,smooth,unbounded coords=jump,
-					restrict y to domain=-3:8,
-					domain=-3:7
-				]{x*(x-1)*(x-3)*(x-5)/12};
-				\addplot [only marks, mark=o] (1,-4) node[left] {\scriptsize $(-1;\num{4})$} ;
-				%\filldraw (axis cs:-1,4) circle (1.5pt) node[left] {\scriptsize $(-1;\num{4})$};
-			\end{axis}
+			Determinare la legge di assegnazione della funzione polinomiale di 4° rappresentata qui sotto.}
+		\solonly{$f(x)=\dfrac{1}{12}x(x-1)(x-3)(x-5)$}
 
-		}
-	\end{tikzpicture}
+		\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+			\exonly{
+				\begin{axis}[AxisDefaults,
+						width=0.7\linewidth,
+						ytick distance={1},
+						grid=both,
+						minor tick num = 1,
+						ymin=-2,ymax=6,xmin=-3,xmax=6,
+					]
+					\addplot[draw=red,thick,smooth,unbounded coords=jump,
+						restrict y to domain=-3:8,
+						domain=-3:7
+					]{x*(x-1)*(x-3)*(x-5)/12};
+					\addplot [only marks, mark=o] (1,-4) node[left] {\scriptsize $(-1;\num{4})$} ;
+					%\filldraw (axis cs:-1,4) circle (1.5pt) node[left] {\scriptsize $(-1;\num{4})$};
+				\end{axis}
+
+			}
+		\end{tikzpicture}
 
 
 
-	\begin{profonly}	Src: Swok ex 12 pg 280\end{profonly}
-	\exnewpage
+		\begin{profonly}	Src: Swok ex 12 pg 280\end{profonly}
+	\end{qblock}
 
 	\question
 	\exonly{
@@ -456,142 +410,126 @@
 	\end{parts}
 
 
-	%\question
-	%\exonly{Favre, ex. 24, pg.218}	
-	%\solonly{Sol. Favre}
-	\solnewpage
 
 
-	\question
-	\exonly{Risolvere graficamente la seguente equazione: $x^3 - 0.6x-3= 0$ .
+	\begin{qblock}
+		\question
+		\exonly{Risolvere graficamente la seguente equazione: $x^3 - 0.6x-3= 0$ .
 
-		% Si cerchi dapprima di stimare una	soluzione determinando l’intersezione tra i grafici di $f (x) = x^3$  e $g(x) = 0.6x + 3$.
+			% Si cerchi dapprima di stimare una	soluzione determinando l’intersezione tra i grafici di $f (x) = x^3$  e $g(x) = 0.6x + 3$.
 
-		In seguito confrontare il risultato con la soluzione numerica data dalla calcolatrice.}
-	%TODO: controllare immagine che da errore in compilazione su OSX !!!!!
+			In seguito confrontare il risultato con la soluzione numerica data dalla calcolatrice.}
+		%TODO: controllare immagine che da errore in compilazione su OSX !!!!!
 
-	\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-		\begin{axis}[AxisDefaults,
-			major grid style={ thick,black!50},
-				axis line style={very thick, black},
-				x=1cm,y=1cm,
-				width=0.7\linewidth,
-				ytick distance={1},
-				grid=both,
-				minor tick num = 9,
-				ymin=-5,ymax=5,xmin=-5,xmax=5,
-				domain=-5:5
-			]
-			\addplot[draw=blue,thick,smooth,unbounded coords=jump,
-				restrict y to domain=-6:6,name path=cubic ]{x^3} node[pos=0.8, left] {$x^3$};
-			\ifprintanswers	
-			\addplot[draw=red,thick,smooth,unbounded coords=jump,name path=line
-			]{0.6*x+3};
-			\path [name intersections={of=cubic and line, by=a}];
-			\path (a) node[pin={[pin distance=1cm]-80:{$\approx(1.6;3.9)$}}]{} ;
-			\fi
-		\end{axis}
-
-	\end{tikzpicture}
-	\solonly{
-		% \begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-		% 	\begin{axis}[AxisDefaults,
-		% 			width=0.7\linewidth,
-		% 			ytick distance={1},
-		% 			grid=both,
-		% 			minor tick num = 1,
-		% 			ymin=-3,ymax=5,xmin=-2,xmax=3,
-		% 			domain=-3:3
-		% 		]
-		% 		\addplot[draw=blue,thick,smooth,unbounded coords=jump,
-		% 			restrict y to domain=-6:6,name path=cubic ]{(x^3};
-		% 		\addplot[draw=red,thick,smooth,unbounded coords=jump,
-		% 			restrict y to domain=-6:6,name path=line
-		% 		]{0.6*x+3};
-		% 		\path [name intersections={of=cubic and line, by=a}];
-		% 		\path (a) node[pin={[pin distance=1cm]-80:{$\approx(1.6;4)$}}]{} ;
-		% 	\end{axis}
-
-		% \end{tikzpicture}
-		Calcolatrice: $\es{(\num{1.5805},\num{3.9483})}$
-	}
-
-	\exnewpage
-	\question
-	\exonly{Dato il grafico di $f$ risolvere graficamente l'equazione $f(x)=3$.
-
-		\input{img/f-poly-5}
-	}
-
-	\exnewpage
-	\question
-	\exonly{Dato il grafico di $f$ risolvere graficamente l'equazione $ f(x) + \frac{3}{4}x=3$.
-
-		\input{img/f-poly-5}
-	}
-	\exnewpage
-
-
-
-
-
-	\question
-	Per ogni grafico sono proposte quattro funzioni da $\R \longrightarrow \R$. Associare la legge di assegnazione con il grafico.
-
-
-	\begin{parts}
-		\part
 		\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
 			\begin{axis}[AxisDefaults,
-					width=8cm,
-					ymin=-3,ymax=3,xmin=-1,xmax=3,
-					grid=none,
-					xtick = \empty,
-					ytick = \empty,
+					major grid style={ thick,black!50},
+					axis line style={very thick, black},
+					x=1cm,y=1cm,
+					width=0.7\linewidth,
+					ytick distance={1},
+					grid=both,
+					minor tick num = 9,
+					ymin=-5,ymax=5,xmin=-5,xmax=5,
+					domain=-5:5
 				]
-				\addplot[draw=red,smooth,unbounded coords=jump,
-					restrict y to domain=-6:6,
-					domain=-1:5
-				]{3*x*(x-1)*(x-2)};
+				\addplot[draw=blue,thick,smooth,unbounded coords=jump,
+					restrict y to domain=-6:6,name path=cubic ]{x^3} node[pos=0.8, left] {$x^3$};
+				\ifprintanswers
+					\addplot[draw=red,thick,smooth,unbounded coords=jump,name path=line
+					]{0.6*x+3};
+					\path [name intersections={of=cubic and line, by=a}];
+					\path (a) node[pin={[pin distance=1cm]-80:{$\approx(1.6;3.9)$}}]{} ;
+				\fi
 			\end{axis}
+
 		\end{tikzpicture}
-		\begin{minipage}[t][][c]{0.5\linewidth}
-			$f_1(x)=x^2(x-1)^2(x-2)$  \medskip
 
-			$f_2(x)=3x(x-1)(x-2)$ \medskip
-
-			$f_3(x)=x^3(x-1)(x-2)$\medskip
-
-			$f_4(x)=-x(x-1)(x-2)$
-		\end{minipage}
-
-		\part
-		\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-			\begin{axis}[AxisDefaults,
-					width=8cm,
-					ymin=-3,ymax=3,xmin=-1,xmax=3,
-					grid=none,
-					xtick = \empty,
-					ytick = \empty,
-				]
-				\addplot[draw=red,smooth,unbounded coords=jump,
-					restrict y to domain=-6:6,
-					domain=-1:5
-				]{5*x*(x-1)^2*(x-2)};
-			\end{axis}
-		\end{tikzpicture}
-		\begin{minipage}[t][][c]{0.5\linewidth}
-			$f_1(x)=2x^3(x-1)(x-2)^2$  \medskip
-
-			$f_2(x)=x^2(x-1)(x-2)$ \medskip
-
-			$f_3(x)=5x(x-1)^2(x-2)$\medskip
-
-			$f_4(x)=-2x(x-1)^2(2-x)$
-		\end{minipage}
+		\solonly{
+			Calcolatrice: $\es{(\num{1.5805},\num{3.9483})}$
+		}
+	\end{qblock}
 
 
-	\end{parts}
+	\begin{qblock}
+		\question
+		\exonly{Dato il grafico di $f$ risolvere graficamente l'equazione $f(x)=3$.
+
+			\input{img/f-poly-5}
+		}
+		\solonly{ ~ }
+	\end{qblock}
+
+
+	\begin{qblock}
+		\question
+		\exonly{Dato il grafico di $f$ risolvere graficamente l'equazione $ f(x) + \frac{3}{4}x=3$.
+
+			\input{img/f-poly-5}
+		}
+		\solonly{ ~ }
+	\end{qblock}
+
+
+	\begin{qblock}
+		\question
+		Per ogni grafico sono proposte quattro funzioni da $\R \longrightarrow \R$. Associare la legge di assegnazione con il grafico.
+
+
+		\begin{parts}
+			\part
+			\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+				\begin{axis}[AxisDefaults,
+						width=8cm,
+						ymin=-3,ymax=3,xmin=-1,xmax=3,
+						grid=none,
+						xtick = \empty,
+						ytick = \empty,
+					]
+					\addplot[draw=red,smooth,unbounded coords=jump,
+						restrict y to domain=-6:6,
+						domain=-1:5
+					]{3*x*(x-1)*(x-2)};
+				\end{axis}
+			\end{tikzpicture}
+			\begin{minipage}[t][][c]{0.5\linewidth}
+				$f_1(x)=x^2(x-1)^2(x-2)$  \medskip
+
+				$f_2(x)=3x(x-1)(x-2)$ \medskip
+
+				$f_3(x)=x^3(x-1)(x-2)$\medskip
+
+				$f_4(x)=-x(x-1)(x-2)$
+			\end{minipage}
+
+			\part
+			\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+				\begin{axis}[AxisDefaults,
+						width=8cm,
+						ymin=-3,ymax=3,xmin=-1,xmax=3,
+						grid=none,
+						xtick = \empty,
+						ytick = \empty,
+					]
+					\addplot[draw=red,smooth,unbounded coords=jump,
+						restrict y to domain=-6:6,
+						domain=-1:5
+					]{5*x*(x-1)^2*(x-2)};
+				\end{axis}
+			\end{tikzpicture}
+			\begin{minipage}[t][][c]{0.5\linewidth}
+				$f_1(x)=2x^3(x-1)(x-2)^2$  \medskip
+
+				$f_2(x)=x^2(x-1)(x-2)$ \medskip
+
+				$f_3(x)=5x(x-1)^2(x-2)$\medskip
+
+				$f_4(x)=-2x(x-1)^2(2-x)$
+			\end{minipage}
+
+
+		\end{parts}
+	\end{qblock}
 
 \end{questions}
 \exnewpage
@@ -599,206 +537,227 @@
 
 \begin{questions}
 
-	\question
-	\exonly{Determinare gli zeri nonché il massimo e il minimo locale della seguente funzione:
 
-		$f(x)=\num{0.046}x^3-\num{1.57}x^2 +\num{14.3}x-26$
+	\begin{qblock}
+		\question
+		\exonly{Determinare gli zeri nonché il massimo e il minimo locale della seguente funzione:
 
-
-	}
-
-
-
-
-
-	\solonly{
-		Zeri:  $x_1=\num{2.411570}$, $x_2=\num{11.718864}$ e $x_3=\num{20}$ \\
-		Massimo locale: $P_{\text{max}}=(\num{6.2966};\num{13.27887}) $\\
-		Minimo locale: $P_{\text{min}}=(\num{16.4570};\num{-10.846}) $\\
-	}
-
-	\question
-	\exonly{
-		Un branco di 100 cervi viene introdotto su di una piccola isola.
-		%	Un troupeau de 100 cerfs est introduit sur une petite île. 
-		Inizialmente il branco cresce rapidamente, ma in seguito le risorse cominciano a scarseggiare e la popolazione diminuisce.
-		%Tout d'abord le troupeau grandit rapidement, mais par la suite les ressources en nourriture baissent et la population diminue.
-		Supponiamo che il numero di cervi $N(t)$ dopo $t$ anni dalla loro introduzione sull'isola sia dato da
-
-		$N(t) =-t^4 + 21t^2 + 100$, dove $t > 0$.}
-
-	\begin{parts}
-		\part
-		\exonly{
-			Determinare il valore $t$ per il quale $N(t) > 0$ e rappresentare graficamente $N(t)$.
-			%Déterminer la valeur de $t$ pour laquelle $N(t) > 0$ et représenter le graphique de $N(t)$.
+			$$f(x)=\num{0.046}x^3-\num{1.57}x^2 +\num{14.3}x-26$$
 		}
-		\solonly{$0<t<5$}
 
-		\ifprintanswers
+		\solonly{
+			Zeri:  $x_1=\num{2.411570}$, $x_2=\num{11.718864}$ e $x_3=\num{20}$ \\
+			Massimo locale: $P_{\text{max}}=(\num{6.2966};\num{13.27887}) $\\
+			Minimo locale: $P_{\text{min}}=(\num{16.4570};\num{-10.846}) $\\
+		}
+	\end{qblock}
+
+
+	\begin{qblock}
+		\question
+		\exonly{
+			Un branco di 100 cervi viene introdotto su di una piccola isola.
+			%	Un troupeau de 100 cerfs est introduit sur une petite île. 
+			Inizialmente il branco cresce rapidamente, ma in seguito le risorse cominciano a scarseggiare e la popolazione diminuisce.
+			%Tout d'abord le troupeau grandit rapidement, mais par la suite les ressources en nourriture baissent et la population diminue.
+			Supponiamo che il numero di cervi $N(t)$ dopo $t$ anni dalla loro introduzione sull'isola sia dato da
+
+			$N(t) =-t^4 + 21t^2 + 100$, dove $t > 0$.}
+
+		\begin{parts}
+			\part
+			\exonly{
+				Determinare il valore $t$ per il quale $N(t) > 0$ e rappresentare graficamente $N(t)$.
+				%Déterminer la valeur de $t$ pour laquelle $N(t) > 0$ et représenter le graphique de $N(t)$.
+			}
+			\solonly{$0<t<5$}
+
+			\ifprintanswers
+				\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+					\begin{axis}[AxisDefaults,
+							width=\linewidth,
+							ytick distance={50},
+							ymin=0,
+						]
+						\addplot[draw=red,smooth,unbounded coords=jump,
+							restrict y to domain=0:250,
+							domain=0:5
+						]{-x^4+21*x^2+100};
+					\end{axis}
+				\end{tikzpicture}
+			\fi
+			\part
+			\exonly{
+				Secondo questo modello la popolazione si estinguerà? Se si, quando?
+				%	La population de cerfs va-t-elle s’éteindre? Si oui, quand ?
+			}
+			\solonly{
+				Si, dopo 5 anni.
+			}
+
+		\end{parts}
+	\end{qblock}
+
+
+
+
+
+	\begin{qblock}
+		\question
+
+		\exonly{La tabella qui sotto indica la temperatura $\theta$ in \si{\celsius}
+
+			misurate nell'arco di una giornata (24 ore).
+			L'andamento della temperatura in questo intervallo può essere descritto da una funzione polinomiale (di $4\degree$) $f(t)=\theta$.
+
+
+			\bigskip
+			
+			\begin{center}
+				\begin{tabular}{|c|c|c|c|c|c|}
+					\hline
+					$t[\si{\hour}]$          & 0 & 5 & 12 & 19 & 24 \\
+					\hline
+					$\theta [\si{\celsius}]$ & 0 & 0 & 10 & 0  & 0  \\
+					\hline
+				\end{tabular}
+			\end{center} 
+			
+			\bigskip
+			}
+
+			
+
+
+		\begin{parts}
+			\part
+			\exonly{Determinare la legge di assegnazione di $f(t)$ e tracciarne l'andamento. }
+			\solonly{ $f(t)=\dfrac{5}{3528}t(t-5)(t-19)(t-24)$ }
+
+			\part
+			\exonly{Determinare la temperatura $\theta $ se $t=9$ }
+			\solonly{$ \theta \approx 7.65 \si{\celsius}$ }
+		\end{parts}
+	\end{qblock}
+
+
+
+	\begin{qblock}
+		\question
+		\exonly{La relazione tra la quantità $q$ e il prezzo $p$ ci permettono di descrivere l'offerta e la domanda di un certo bene sul mercato.
+
+			Vorremmo calcolare il prezzo di equilibrio  tra le funzioni di domanda e offerta seguenti:
+
+			Offerta: $q=\sqrt{100-\dfrac{300}{p^2}}$
+
+			Domanda: $q=\dfrac{2400}{p^2}$
+		}
+		\solonly{$p\approx 15.64$ }
+
+		\question
+		\exonly{Determinare il polinomio di Newton $$P_k(x)=c_0+c_1(x-x_0)+\ldots +c_k(x-x_0)\ldots(x-x_{k-1})$$ passante per i punti  $$(1;3) \quad (2;5) \quad (3;1) \quad (6;-3)$$ }
+		\solonly{$P(x)=3+2(x-1)-3(x-1)(x-2)+\dfrac{11}{15}(x-1)(x-2)(x-3)$ }
+	\end{qblock}
+
+
+
+	\begin{qblock}
+
+		\question
+
+		\exonly{
+			Il cubo grande ha un lato di \SI{10}{\centi\metre}. Si vuole costruire un parallelepipedo a base quadrata come in figura:
+
+			\bigskip
+			%\includegraphics[scale=1]{cubo}
+
+			\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+				%\tikzstyle{isometric}=[x={(0.710cm,-0.410cm)},y={(0cm,0.820cm)},z={(-0.710cm,-0.410cm)}]
+				%\tikzset{every path/.style={isometric}}
+				\tikzset{face/.style={fill=gray!20}}
+				\pgfmathsetmacro{\cubex}{3}
+				\pgfmathsetmacro{\cubey}{3}
+				\pgfmathsetmacro{\cubez}{3}
+				\pgfmathsetmacro{\ratio}{0.4}
+
+				\coordinate (FTR) at (0,0,0);
+				\coordinate (FTL) at (-\cubex,0,0);
+				\coordinate (FBL) at (-\cubex,-\cubey,0);
+				\coordinate (FBR) at (0,-\cubey,0);
+				\coordinate (BTR) at (0,0,-\cubez);
+				\coordinate (BBR) at (0,-\cubey,-\cubez);
+				\coordinate (BTL) at (-\cubex,0,-\cubez);
+				\coordinate (BBL) at (-\cubex,-\cubey,-\cubez);
+
+
+				\draw[dotted] (FTR)  -- (FTL)  -- (FBL)  -- (FBR)  -- cycle;
+				\draw[dotted] (FTR) -- (BTR)  -- (BTL)  -- (FTL) -- cycle;
+				\draw[dotted] (FTR) -- (FBR) -- (BBR)  -- (BTR) -- cycle;
+				\dimline[line style = {line width=0.7},extension start length=-0.5cm,extension end length=-0.5cm] {($(FTL)+(-0.5,0,0)$)}{($(FBL)+(-0.5,0,0)$)}{\SI{10}{\centi\metre}};
+
+
+				\pgfmathsetmacro{\cubex}{1}
+				\pgfmathsetmacro{\cubey}{2}
+				\pgfmathsetmacro{\cubez}{1}
+				%\path (FBR) -- node[midway,right] {$x$}+(0,\cubex,0);
+				\dimline[line style = {line width=0.7},
+					extension start length=-0.24,
+					extension end length=-0.24] {(FBR)}{($ (FBR) + (0,\cubex,0) $)}{$x$};
+
+				\coordinate (FTR) at (0,0,0);
+				\coordinate (FTL) at (-\cubex,0,0);
+				\coordinate (FBL) at (-\cubex,-\cubey,0);
+				\coordinate (FBR) at (0,-\cubey,0);
+				\coordinate (BTR) at (0,0,-\cubez);
+				\coordinate (BBR) at (0,-\cubey,-\cubez);
+				\coordinate (BTL) at (-\cubex,0,-\cubez);
+				\coordinate (BBL) at (-\cubex,-\cubey,-\cubez);
+
+
+				\draw[thick] (FTR)  --(FTL)  -- (FBL)  -- (FBR)  -- cycle;
+				\draw[thick] (FTR) -- (BTR)  -- (BTL)  -- (FTL) -- cycle;
+				\draw[thick,face] (FTR) -- (FBR) -- (BBR)  -- (BTR) -- cycle;
+				\dimline[line style = {line width=0.7},
+					extension start length=-0.24,
+					extension end length=-0.24] {(FTR)}{(FTL)}{$x$};
+
+
+			\end{tikzpicture}
+
+			\bigskip
+
+			Determinare i valori approssimati di $x$ tali per cui il volume del parallelepipedo sia di \SI{147}{\cubic\centi\metre}.
+
+			SFIDA : Determinare i valori esatti di $x$ tali per cui il volume del parallelepipedo sia di \SI{147}{\cubic\centi\metre}.
+		}
+
+		\solonly{$7$ e $\dfrac{3+\sqrt{93}}{2}\approx 6.32$ }
+	\end{qblock}
+
+
+	\begin{qblock}
+		\question
+		\exonly{In una giornata di fine estate la temperatura di \SI{20}{\degreeCelsius}  è stata misurata alle 00h00, alle 09h00 e di nuovo alle 24h00.
+
+			La temperatura minima è stata riscontrata alle 04h00 ed era di \SI{17}{\degreeCelsius}.
+
+			Stabilire un modello polinomiale, $T(x)$ della temperatura in funzione dell'ora per la suddetta giornata e rappresentarla graficamente. }
+		\solonly{$T(x)=-\dfrac{3}{400}x(x-9)(x-24)+20$
+
 			\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
 				\begin{axis}[AxisDefaults,
 						width=\linewidth,
-						ytick distance={50},
+						ytick distance={1},
 						ymin=0,
+						ymax=30,
+						ylabel=$T(x)$
 					]
-					\addplot[draw=red,smooth,unbounded coords=jump,
-						restrict y to domain=0:250,
-						domain=0:5
-					]{-x^4+21*x^2+100};
+					\addplot[ultra thick,draw=red,smooth,unbounded coords=jump,
+						restrict y to domain=0:35,
+						domain=0:24
+					]{-x*(x-9)*(x-24)*3/400+20};
 				\end{axis}
 			\end{tikzpicture}
-		\fi
-		\part
-		\exonly{
-			Secondo questo modello la popolazione si estinguerà? Se si, quando?
-			%	La population de cerfs va-t-elle s’éteindre? Si oui, quand ?
 		}
-		\solonly{
-			Si, dopo 5 anni.
-		}
-
-	\end{parts}
-
-
-
-
-	\question
-
-	\exonly{La tabella qui sotto indica la temperatura $\theta$ in \si{\celsius}
-
-		misurate nell'arco di una giornata (24 ore).
-		L'andamento della temperatura in questo intervallo può essere descritto da una funzione polinomiale (di $4\degree$) $f(t)=\theta$.
-
-		\begin{tabular}{|c|c|c|c|c|c|}
-			\hline
-			$t[\si{\hour}]$          & 0 & 5 & 12 & 19 & 24 \\
-			\hline
-			$\theta [\si{\celsius}]$ & 0 & 0 & 10 & 0  & 0  \\
-			\hline
-		\end{tabular}  }
-
-
-
-	\begin{parts}
-		\part
-		\exonly{Determinare la legge di assegnazione di $f(t)$ e tracciarne l'andamento. }
-		\solonly{ $f(t)=\dfrac{5}{3528}t(t-5)(t-19)(t-24)$ }
-
-		\part
-		\exonly{Determinare la temperatura $\theta $ se $t=9$ }
-		\solonly{$ \theta \approx 7.65 \si{\celsius}$ }
-	\end{parts}
-
-
-	\question
-	\exonly{La relazione tra la quantità $q$ e il prezzo $p$ ci permettono di descrivere l'offerta e la domanda di un certo bene sul mercato.
-
-		Vorremmo calcolare il prezzo di equilibrio  tra le funzioni di domanda e offerta seguenti:
-
-		Offerta: $q=\sqrt{100-\dfrac{300}{p^2}}$
-
-		Domanda: $q=\dfrac{2400}{p^2}$
-	}
-	\solonly{$p\approx 15.64$ }
-
-	\question
-	\exonly{Determinare il polinomio di Newton $$P_k(x)=c_0+c_1(x-x_0)+\ldots +c_k(x-x_0)\ldots(x-x_{k-1})$$ passante per i punti  $$(1;3) \quad (2;5) \quad (3;1) \quad (6;-3)$$ }
-	\solonly{$P(x)=3+2(x-1)-3(x-1)(x-2)+\dfrac{11}{15}(x-1)(x-2)(x-3)$ }
-
-
-	%\subfile{../ch/BS-MPT-FP-fct-polyn}
-
-
-	\question
-
-	\exonly{
-		Il cubo grande ha un lato di \SI{10}{\centi\metre}. Si vuole costruire un parallelepipedo a base quadrata come in figura:
-
-
-		%\includegraphics[scale=1]{cubo}
-
-		\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-			%\tikzstyle{isometric}=[x={(0.710cm,-0.410cm)},y={(0cm,0.820cm)},z={(-0.710cm,-0.410cm)}]
-			%\tikzset{every path/.style={isometric}}
-			\tikzset{face/.style={fill=gray!20}}
-			\pgfmathsetmacro{\cubex}{3}
-			\pgfmathsetmacro{\cubey}{3}
-			\pgfmathsetmacro{\cubez}{3}
-			\pgfmathsetmacro{\ratio}{0.4}
-
-			\coordinate (FTR) at (0,0,0);
-			\coordinate (FTL) at (-\cubex,0,0);
-			\coordinate (FBL) at (-\cubex,-\cubey,0);
-			\coordinate (FBR) at (0,-\cubey,0);
-			\coordinate (BTR) at (0,0,-\cubez);
-			\coordinate (BBR) at (0,-\cubey,-\cubez);
-			\coordinate (BTL) at (-\cubex,0,-\cubez);
-			\coordinate (BBL) at (-\cubex,-\cubey,-\cubez);
-
-
-			\draw[dotted] (FTR)  -- (FTL)  -- (FBL)  -- (FBR)  -- cycle;
-			\draw[dotted] (FTR) -- (BTR)  -- (BTL)  -- (FTL) -- cycle;
-			\draw[dotted] (FTR) -- (FBR) -- (BBR)  -- (BTR) -- cycle;
-			\dimline[line style = {line width=0.7},extension start length=-0.5cm,extension end length=-0.5cm] {($(FTL)+(-0.5,0,0)$)}{($(FBL)+(-0.5,0,0)$)}{\SI{10}{\centi\metre}};
-
-
-			\pgfmathsetmacro{\cubex}{1}
-			\pgfmathsetmacro{\cubey}{2}
-			\pgfmathsetmacro{\cubez}{1}
-			%\path (FBR) -- node[midway,right] {$x$}+(0,\cubex,0);
-			\dimline[line style = {line width=0.7},
-				extension start length=-0.24,
-				extension end length=-0.24] {(FBR)}{($ (FBR) + (0,\cubex,0) $)}{$x$};
-
-			\coordinate (FTR) at (0,0,0);
-			\coordinate (FTL) at (-\cubex,0,0);
-			\coordinate (FBL) at (-\cubex,-\cubey,0);
-			\coordinate (FBR) at (0,-\cubey,0);
-			\coordinate (BTR) at (0,0,-\cubez);
-			\coordinate (BBR) at (0,-\cubey,-\cubez);
-			\coordinate (BTL) at (-\cubex,0,-\cubez);
-			\coordinate (BBL) at (-\cubex,-\cubey,-\cubez);
-
-
-			\draw[thick] (FTR)  --(FTL)  -- (FBL)  -- (FBR)  -- cycle;
-			\draw[thick] (FTR) -- (BTR)  -- (BTL)  -- (FTL) -- cycle;
-			\draw[thick,face] (FTR) -- (FBR) -- (BBR)  -- (BTR) -- cycle;
-			\dimline[line style = {line width=0.7},
-				extension start length=-0.24,
-				extension end length=-0.24] {(FTR)}{(FTL)}{$x$};
-
-
-		\end{tikzpicture}
-
-		Determinare i valori approssimati di $x$ tali per cui il volume del parallelepipedo sia di \SI{147}{\cubic\centi\metre}.
-
-		SFIDA : Determinare i valori esatti di $x$ tali per cui il volume del parallelepipedo sia di \SI{147}{\cubic\centi\metre}.
-	}
-
-	\solonly{$7$ e $\dfrac{3+\sqrt{93}}{2}\approx 6.32$ }
-
-	\question
-	\exonly{In una giornata di fine estate la temperatura di \SI{20}{\degreeCelsius}  è stata misurata alle 00h00, alle 09h00 e di nuovo alle 24h00.
-
-		La temperatura minima è stata riscontrata alle 04h00 ed era di \SI{17}{\degreeCelsius}.
-
-		Stabilire un modello polinomiale, $T(x)$ della temperatura in funzione dell'ora per la suddetta giornata e rappresentarla graficamente. }
-	\solonly{$T(x)=-\dfrac{3}{400}x(x-9)(x-24)+20$
-
-		\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-			\begin{axis}[AxisDefaults,
-					width=\linewidth,
-					ytick distance={1},
-					ymin=0,
-					ymax=30,
-					ylabel=$T(x)$
-				]
-				\addplot[ultra thick,draw=red,smooth,unbounded coords=jump,
-					restrict y to domain=0:35,
-					domain=0:24
-				]{-x*(x-9)*(x-24)*3/400+20};
-			\end{axis}
-		\end{tikzpicture}
-	}
+	\end{qblock}
 \end{questions}
