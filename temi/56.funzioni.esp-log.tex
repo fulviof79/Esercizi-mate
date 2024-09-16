@@ -94,17 +94,13 @@
 		\fi
 	\end{qblock}
 
-
-
-
-	
 	\begin{qblock}
 		\question
 		\exonly{Siano $a>b>1>c>0$. Rappresentare graficamente le funzioni seguenti:
 		$f_1(x)=a^x$, $f_2(x)=b^x$, $f_3(x)=c^x$, $f_4(x)=c^{x+2}$ e $f_5(x)=b^x-2$. }
-	
+
 		\solonly{Esempio con  $a=3$, $b=2$ e $c=\frac{1}{2}$:}
-	
+
 		\ifprintanswers
 			\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
 				\begin{axis}[
@@ -127,59 +123,54 @@
 		\fi
 	\end{qblock}
 
-
-
-
-	
 	\begin{qblock}
 		\question
-	
+
 		\exonly{
 			Secondo la legge di raffreddamento di Newton, la velocità di raffreddamento é proporzionale alla differenza di temperature tra l'oggetto e l'ambiente in cui si trova.
-	
+
 			Un ferro da stiro passa da \SI{52}{\celsius} a \SI{38}{\degreeCelsius} in \SI{30}{\minute} in una stanza ad una temperatura  constante di \SI{24}{\celsius}.
-	
+
 			La temperatura $T$ del ferro dopo  $t$ ore é modellizzata da
 			$$ T(t)=28\cdot 2^{-2t}+24$$
 		}
-	
+
 		\begin{parts}
-	
+
 			\part \exonly{
 				Indicare il ruolo di ciascun parametro del modello e da quali dati sperimentali è stato ricavato.
 			}
-	
+
 			\part
 			\exonly{Eseguire uno schizzo qualitativo del grafico della funzione $T(t)$}
-	
-	
+
+
 		\end{parts}
 	\end{qblock}
 
-	
 	\begin{qblock}
 		\question
 		\exonly{
 			Il numero di batteri di una cultura passa da  $600$ a $1800$ tra le  $7h$ e le  $9h$ del mattino.
 			Supponendo una crescita esponenziale, la popolazione di batteri   $t$ ore dopo le  $7h$ del mattino é data dal modello
-	
+
 			\[P(t)=600 \cdot 3^{\sfrac{t}{2}}\]
 		}
-	
-	
-	
-	
+
+
+
+
 		\begin{parts}
 			\part \exonly{Indicare il ruolo di ciascun parametro del modello e da quali dati sperimentali è stato ricavato.}
-	
-	
+
+
 			\part
 			\exonly{Eseguire uno schizzo qualitativo del grafico della funzione $P(t)$}
-	
-	
+
+
 		\end{parts}
-	
-	
+
+
 		\begin{profonly}
 			Swokowski pg 318 ex 15
 			Swokowski pg 317 ex 17
@@ -187,15 +178,13 @@
 		\end{profonly}
 	\end{qblock}
 
-
-
-\begin{qblock}
+	\begin{qblock}
 		\question
 		\exonly{
 			Determinare il modello $f$ che rappresenti al meglio i dati rappresentati qui sotto.
-	
-	
-	
+
+
+
 			\begin{center}
 				\begin{tikzpicture}
 					\begin{axis}[
@@ -207,7 +196,7 @@
 							ymin=-1, ymax=10, %set the min and max y tick
 							xmin=-3
 						]
-	
+
 						\addplot[draw=red,  only marks] coordinates {
 								(-3.00,24.00) (-2.00,12.00) (-1.00,6.00) (0.00,3.00) (1.00,1.50) (2.00,0.75) (3.00,0.38) (4.00,0.19) (5.00,0.09) (6.00,0.05) (7.00,0.02) (8.00,0.01) (9.00,0.01)
 							};
@@ -216,26 +205,25 @@
 					\end{axis}
 				\end{tikzpicture}
 			\end{center}
-	
-	
-	
+
+
+
 		}
-	
+
 		\solonly{
 			$f(x)=3\cdot 2^{-x}=3\cdot \left(\dfrac{1}{2}\right)^x$
-	
-	
-		}
-\end{qblock}
 
-	
+
+		}
+	\end{qblock}
+
 	\begin{qblock}
 		\question
 		\exonly{
 			Determinare il modello $f$ che rappresenti al meglio i dati rappresentati qui sotto.
-	
-	
-	
+
+
+
 			\begin{center}
 				\begin{tikzpicture}
 					\begin{axis}[
@@ -248,7 +236,7 @@
 							xmin=-3,
 							ytick distance=5,
 						]
-	
+
 						\addplot[draw=red,  only marks] coordinates {
 								(-3.00,0.05) (-2.00,0.09) (-1.00,0.19) (0.00,0.38) (1.00,0.75) (2.00,1.50) (3.00,3.00) (4.00,6.00) (5.00,12.00) (6.00,24.00) (7.00,48.00) (8.00,96.00) (9.00,192.00)
 							};
@@ -257,11 +245,11 @@
 					\end{axis}
 				\end{tikzpicture}
 			\end{center}
-	
+
 		}
-	
+
 		\solonly{
-	
+
 			$f(x)=3\cdot 4^{\frac{x-3}{2}}=3\cdot 2^{x-3}$
 		}
 	\end{qblock}
@@ -272,34 +260,34 @@
 \subsection{Equazioni esponenziali - introduzione}
 
 \begin{questions}
-	
-	
+
+
 	\begin{qblock}
 		\question
 		\exonly{Risolvere le seguenti equazioni senza l'ausilio della calcolatrice:  }
-	
+
 		\begin{parts}
 			\part
 			\exonly{$7^{x+6}=7^{3x-4}$ }
-	
-	
+
+
 			\solonly{$S=\left\lbrace 5\right\rbrace $
 				\begin{profonly}Src: Swok pg 317 ex 1	\end{profonly}
 			}
-	
-	
+
+
 			\part
 			\exonly{$3^{2x+3}=3^{(x^2)}$ }
 			\solonly{$S=\left\lbrace -1;3\right\rbrace $
 				\begin{profonly}Src: Swok pg 317 ex 3	\end{profonly}
 			}
-	
+
 			\part
 			\exonly{$2^{-100x}=(\num{0.5})^{x-4}$ }
 			\solonly{$S=\left\lbrace -\frac{4}{99}\right\rbrace $
 				\begin{profonly}Src: Swok pg 317 ex 5	\end{profonly}
 			}
-	
+
 			\solonly{\begin{profonly} Evtl :
 					Src: Swok pg 317 ex 2
 					Src: Swok pg 317 ex 4
@@ -310,96 +298,94 @@
 		\end{parts}
 	\end{qblock}
 
-
 \end{questions}
 
+\exnewpage
 \subsection{Funzioni logaritmiche}
 \begin{questions}
 
+	% \begin{qblock} %%Troppo grande per una minipage
+	\question
+	\exonly{Rappresentare graficamente:}
 
-	
-	% \begin{qblock}
-		\question
-		\exonly{Rappresentare graficamente:}
-	
-	
-		\begin{parts}
-			\part
-			\exonly{$f(x)=\log_4(x)$}
-	
-			\ifprintanswers
-				\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-					\begin{axis}[
-							AxisDefaults,
-							SmallAxisLabels,
-							width=\linewidth,
-						]
-						\addplot[draw=red,samples=1000,domain=0:1]{log2(x)/log2(4)} ;
-						\addplot[draw=red,samples=100,domain=1:6]{log2(x)/log2(4)};
-					\end{axis}
-				\end{tikzpicture}
-			\fi
-	
-	
-			\part
-			\exonly{$f(x)=\log_4(x+2)$}
-			\ifprintanswers
-				\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-					\begin{axis}[
-							AxisDefaults,
-							SmallAxisLabels,
-							width=\linewidth,
-						]
-						\addplot[draw=red,samples=1000,domain=-2:-1,restrict y to domain=-5:0]{log2(x+2)/log2(4)} ;
-						\addplot[draw=red,samples=100,domain=-1:4]{log2(x+2)/log2(4)};
-					\end{axis}
-				\end{tikzpicture}
-			\fi
-			%	\columnbreak
-	
-			\part
-			\exonly{$f(x)=\log_4(x)+2$}
-	
-	
-			\ifprintanswers
-				\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-					\begin{axis}[
-							AxisDefaults,
-							SmallAxisLabels,
-							width=\linewidth,
-						]
-						\addplot[draw=red,samples=1000,domain=0:1]{log2(x)/log2(4)+2} ;
-						\addplot[draw=red,samples=100,domain=1:6]{log2(x)/log2(4)+2};
-					\end{axis}
-				\end{tikzpicture}
-			\fi
-	
-			\part
-			\exonly{$f(x)=\log_2(x-1)+1$}
-	
-	
-			\ifprintanswers
-				\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
-					\begin{axis}[
-							AxisDefaults,
-							SmallAxisLabels,
-							width=\linewidth,
-							ymin=-3,ymax=3,xmin=0,xmax=4
-						]
-						\addplot[draw=red,samples=1000,domain=1:2]{log2(x-1)+1} ;
-						\addplot[draw=red,samples=100,domain=2:4]{log2(x-1)+1};
-					\end{axis}
-				\end{tikzpicture}
-			\fi
-	
-		\end{parts}
+
+	\begin{parts}
+		\part
+		\exonly{$f(x)=\log_4(x)$}
+
+		\ifprintanswers
+			\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+				\begin{axis}[
+						AxisDefaults,
+						SmallAxisLabels,
+						width=\linewidth,
+					]
+					\addplot[draw=red,samples=1000,domain=0:1]{log2(x)/log2(4)} ;
+					\addplot[draw=red,samples=100,domain=1:6]{log2(x)/log2(4)};
+				\end{axis}
+			\end{tikzpicture}
+		\fi
+
+
+		\part
+		\exonly{$f(x)=\log_4(x+2)$}
+		\ifprintanswers
+			\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+				\begin{axis}[
+						AxisDefaults,
+						SmallAxisLabels,
+						width=\linewidth,
+					]
+					\addplot[draw=red,samples=1000,domain=-2:-1,restrict y to domain=-5:0]{log2(x+2)/log2(4)} ;
+					\addplot[draw=red,samples=100,domain=-1:4]{log2(x+2)/log2(4)};
+				\end{axis}
+			\end{tikzpicture}
+		\fi
+		%	\columnbreak
+
+		\part
+		\exonly{$f(x)=\log_4(x)+2$}
+
+
+		\ifprintanswers
+			\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+				\begin{axis}[
+						AxisDefaults,
+						SmallAxisLabels,
+						width=\linewidth,
+					]
+					\addplot[draw=red,samples=1000,domain=0:1]{log2(x)/log2(4)+2} ;
+					\addplot[draw=red,samples=100,domain=1:6]{log2(x)/log2(4)+2};
+				\end{axis}
+			\end{tikzpicture}
+		\fi
+
+		\part
+		\exonly{$f(x)=\log_2(x-1)+1$}
+
+
+		\ifprintanswers
+			\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+				\begin{axis}[
+						AxisDefaults,
+						SmallAxisLabels,
+						width=\linewidth,
+						ymin=-3,ymax=3,xmin=0,xmax=4
+					]
+					\addplot[draw=red,samples=1000,domain=1:2]{log2(x-1)+1} ;
+					\addplot[draw=red,samples=100,domain=2:4]{log2(x-1)+1};
+				\end{axis}
+			\end{tikzpicture}
+		\fi
+
+	\end{parts}
 	% \end{qblock}
 
-	
+
 	\begin{qblock}
 		\question
 		\exonly{Determinare le funzioni $f1(x)$, $f_2(x)$, $f_3(x)$ e $f_4(x)$}
-	
+
 		\ifprintanswers \else
 			\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
 				\begin{axis}[
@@ -418,26 +404,24 @@
 				\end{axis}
 			\end{tikzpicture}
 		\fi
-	
+
 		\solonly{$f_1(x)=\log_3(x)$
-	
+
 			$f_2(x)=\log_2(x-2)$
-	
+
 			$f_3(x)=\log_2(-x)$
-	
+
 			$f_4(x)=\log_2(x-1)+3$}
-	
+
 		\solonly{\begin{profonly}
 				SRC: Swokowski pg 343 ex 37 et suivants
 			\end{profonly}}
 	\end{qblock}
 
-
-	
 	\begin{qblock}
 		\question
 		\exonly{Determinare le funzioni seguenti}
-	
+
 		\ifprintanswers \else
 			\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
 				\begin{axis}[
@@ -457,7 +441,7 @@
 				\end{axis}
 			\end{tikzpicture}
 		\fi
-	
+
 		\solonly{$f(x)=2^x$, $g(x)=3^{-x}$, $h(x)=2x+10$}
 	\end{qblock}
 
@@ -466,87 +450,83 @@
 \subsection{Forma esponenziale e forma logaritmica}
 
 \begin{questions}
-	
+
 	\begin{qblock}
 		\question
 		\exonly{Esprimere in forma logaritmica:}
-	
-	
-		
+
+
+
 		\begin{multicols}{2}
 			\begin{parts}
-		
+
 				\part
 				\exonly{$3^5=243$}
 				\solonly{$\log_3(243)=5$}
-		
+
 				\part
 				\exonly{$3^{-4}=\frac{1}{81}$}
 				\solonly{$\log_3(\frac{1}{81})=-4$}
-		
+
 				\part
 				\exonly{$c^p=d$}
 				\solonly{$\log_c(d)=p$}
-		
+
 				\part
 				\exonly{$7^x=100p$}
 				\solonly{$\log_7(100p)=x$}
-		
+
 				\part
 				\exonly{$3^{-2x}=\frac{P}{F}$}
 				\solonly{$\log_3(\frac{P}{F})=-2x$}
-		
+
 				\part
 				\exonly{$\num{0.9}^t=\frac{1}{2}$}
 				\solonly{$\log_{\num{0.9}}(\frac{1}{2})=t$}
-		
+
 			\end{parts}
-		
+
 		\end{multicols}
 		\solonly{\begin{profonly}
 				Swokowski pg 342 ex 2
 			\end{profonly}}
 	\end{qblock}
 
-
-
-
-	
 	\begin{qblock}
 		\question
 		\exonly{Esprimere in forma esponenziale}
-	
-		
+
+
 		\begin{multicols}{2}
 			\begin{parts}
-		
+
 				\part
 				\exonly{$\log_3(81)=4$}
 				\solonly{$3^4=81$}
-		
+
 				\part
 				\exonly{$\log_4(\frac{1}{256})=-4$}
 				\solonly{$4^{-4}=\frac{1}{256}$}
-		
+
 				\part
 				\exonly{$\log_v(w)=t$}
 				\solonly{$v^t=w$}
-		
+
 				\part
 				\exonly{$\log_6(2x-1)=3$}
 				\solonly{$6^3=2x-1$}
-		
+
 				\part
 				\exonly{$\log_4(p)=5-x$}
 				\solonly{$4^{5-x}=p$}
-		
+
 				\part
 				\exonly{$\log_{a}(343)=\frac{3}{4}$}
 				\solonly{$a^{\frac{3}{4}}=343$}
-		
+
 			\end{parts}
 		\end{multicols}
-	
+
 		\solonly{
 			\begin{profonly}
 				Swokowski pg 342 ex 4
@@ -561,31 +541,32 @@
 
 \begin{questions}
 
-	
 	\begin{qblock}
 		\question
 		\exonly{Calcolare senza l'ausilio della calcolatrice}
-	
-	
-		
+
+
+
 		\begin{multicols}{2}
 			\begin{parts}
 				\part
 				\exonly{$\log_8(1)$}
 				\solonly{$0$}
-		
+
 				\part
 				\exonly{$\log_9(9)$}
 				\solonly{$1$}
-		
+
 				\part
 				\exonly{$\log_5(0)$}
 				\solonly{$\notin \R$}
-		
+
+				\columnbreak
+				
 				\part
 				\exonly{$\log_6(6^7)$}
 				\solonly{$7$}
-		
+
 				\part
 				\exonly{$5^{\log_5(4)}$}
 				\solonly{$4$}
@@ -594,23 +575,20 @@
 				\solonly{$7$}
 			\end{parts}
 		\end{multicols}
-	
-	
-	
+
+
+
 		\solonly{\begin{profonly}SRC:Swokowski pg 342 ex 14	\end{profonly}	}
-	
+
 		\solonly{\begin{profonly}EVTL: Swokowski pg 342 ex 15	\end{profonly}	}
 	\end{qblock}
 
-
-
-	
 	\begin{qblock}
 		\question
 		\exonly{Calcolare senza l'ausilio della calcolatrice}
-	
-	
-		
+
+
+
 		\begin{multicols}{2}
 			\begin{parts}
 				\part \exonly{$\log_5(1)$ }
@@ -640,42 +618,40 @@
 		\end{multicols}
 	\end{qblock}
 
-	
 	\begin{qblock}
 		\question
 		\exonly{Determinare, senza l'ausilio della calcolatrice, i valori delle espressioni seguenti:}
-	
-		
+
+
 		\begin{multicols}{2}
 			\begin{parts}
 				\part
 				\exonly{$\log 7 + \log \left(\dfrac{1}{7}\right)$}
 				\solonly{$0$}
-		
+
 				\part
 				\exonly{$\log (40) + \log (25) $ }
 				\solonly{$3$}
-		
+
 				\part
 				\exonly{$\log (6000) - \log (60)$ }
 				\solonly{$2$}
-		
+
 				\part
 				\exonly{$3\cdot \log (2) + 3 \cdot \log (5)$}
 				\solonly{$3$}
-		
+
 			\end{parts}
 		\end{multicols}
 	\end{qblock}
 
-	
 	\begin{qblock}
 		\question
 		\exonly{Selezionare le affermazioni vere}
-	
-	
-	\begin{multicols}{2}
-		
+
+
+		\begin{multicols}{2}
+
 			\begin{checkboxes}
 				\choice $\log_b (2x) = 2 \cdot \log_b x$
 				\correctchoice $\log_a(u+v) \neq  \log_a u + \log_a v$
@@ -688,94 +664,88 @@
 				\choice $\log_b (\sqrt{x}) = \sqrt{\log_b (x)}$
 				\choice $\dfrac{\log (a)}{\log (b)}= \log \left(\dfrac{a}{b}\right)$
 			\end{checkboxes}
-	\end{multicols}
+		\end{multicols}
 	\end{qblock}
 
-
-
-\begin{qblock}
+	\begin{qblock}
 		\question
 		\exonly{Scomporre le espressioni seguenti:}
-	
-		
+
+
 		\begin{multicols}{2}
 			\begin{parts}
 				\part
 				\exonly{$\log \left(\dfrac{1}{x}\right)$}
 				\solonly{$- \log (x)$}
-		
+
 				\part
 				\exonly{$\log \left(\dfrac{1}{k^6}\right)$ }
 				\solonly{$-6 \cdot \log (k)$}
-		
+
 				\part
 				\exonly{$\log \left(\dfrac{2a}{bc}\right)$ }
 				\solonly{$\log (2) + \log (a) - \log (b) - \log (c)$}
-		
+
 				\part
 				\exonly{$\log(3a^2(a+b))$}
 				\solonly{$\log (3) + 2 \log (a) + \log (a+b)$}
-		
+
 				\part
 				\exonly{$\log \left(\sqrt{n^3}\right)$ }
 				\solonly{$\dfrac{3}{2}\cdot\log (n)$}
-		
+
 				\part
 				\exonly{$\log \left(\sqrt{\dfrac{1+x}{1-x}}\right)$ }
 				\solonly{$\dfrac{1}{2}\left(   \log(1+x) - \log (1-x)\right) $}
 			\end{parts}
 		\end{multicols}
-	
-\end{qblock}
 
+	\end{qblock}
 
-
-	
 	\begin{qblock}
 		\question
 		\exonly{Riscrivere utilizzando un solo logaritmo:}
-	
-		
-			\begin{parts}
-				\part
-				\exonly{$\log_3 \left(2z \right)-\log_3 (x)$ }
-				\solonly{$\log_3 \left( \dfrac{2z}{x}\right) $}
-		
-				\part
-				\exonly{$5\log_6 (x)-\dfrac{1}{2}\log_6(3x-4)-3\log_6(5x+1)$}
-				\solonly{$\log_6 \left(\dfrac{x^5}{\sqrt{3x-4}\cdot (5x+1)^3}\right)$}
-		
-				\part
-				\exonly{	$3\log_2 (x) + \dfrac{1}{2}\log_2 (3-x)-5\log_2(x+3)$}
-				\solonly{$\log_2 \left( \dfrac{x^3  \cdot \sqrt{3-x}}{(x+3)^5}\right)$}
-		
-				\part
-				\exonly{$3\log \left(\dfrac{y}{x^2}\right)-3\log (y) + \dfrac{1}{3} \log (x^6 y^3)$}
-				\solonly{$\log \left(\dfrac{y}{x^4} \right)$}
-		
-				\part
-				\exonly{$\ln (y^3) + \dfrac{1}{3}\ln (x^3y^6)-5 \ln (y)$ }
-				\solonly{$\ln (x)$}
-			\end{parts}
-	
+
+
+		\begin{parts}
+			\part
+			\exonly{$\log_3 \left(2z \right)-\log_3 (x)$ }
+			\solonly{$\log_3 \left( \dfrac{2z}{x}\right) $}
+
+			\part
+			\exonly{$5\log_6 (x)-\dfrac{1}{2}\log_6(3x-4)-3\log_6(5x+1)$}
+			\solonly{$\log_6 \left(\dfrac{x^5}{\sqrt{3x-4}\cdot (5x+1)^3}\right)$}
+
+			\part
+			\exonly{	$3\log_2 (x) + \dfrac{1}{2}\log_2 (3-x)-5\log_2(x+3)$}
+			\solonly{$\log_2 \left( \dfrac{x^3  \cdot \sqrt{3-x}}{(x+3)^5}\right)$}
+
+			\part
+			\exonly{$3\log \left(\dfrac{y}{x^2}\right)-3\log (y) + \dfrac{1}{3} \log (x^6 y^3)$}
+			\solonly{$\log \left(\dfrac{y}{x^4} \right)$}
+
+			\part
+			\exonly{$\ln (y^3) + \dfrac{1}{3}\ln (x^3y^6)-5 \ln (y)$ }
+			\solonly{$\ln (x)$}
+		\end{parts}
+
 		\solonly{\begin{profonly}
 				EVTL: Swokowski pg 351 ex 1 - 15
 			\end{profonly}}
 	\end{qblock}
-
 
 \end{questions}
 
 \subsection{Equazioni esponenziali}
 
 \begin{questions}
-	
+
 	\begin{qblock}
 		\question
 		\exonly{
 			Risolvere le equazioni seguenti. Specificare l'insieme delle soluzioni esatte e dare un valore approssimato (al centesimo).  }
-	
-	
+
+
 		\begin{multicols}{2}
 			\begin{parts}
 				\part
@@ -783,110 +753,109 @@
 				\solonly{$S=\left\lbrace \dfrac{\log (\frac{2}{81})}{\log 24}\right\rbrace $  $\approx -\num{1.16}$
 					\begin{profonly}Src: Swok pg 361 ex 11	\end{profonly}
 				}
-	
-	
+
+
 				\part
 				\exonly{$4^{2x+3}=5^{x-2}$ }
 				\solonly{$S=\left\lbrace \dfrac{\log (1600)}{\log \frac{5}{16}}\right\rbrace $  $\approx -\num{6.34}$
 					\begin{profonly}Src: Swok pg 361 ex 12	\end{profonly}
 				}
-	
+
 				\part
 				\exonly{$2^{2x-3}=5^{x-2}$ }
 					\solonly{$S=\left\lbrace \dfrac{\log (\frac{8}{25})}{\log \frac{4}{5}}\right\rbrace $  $\approx \num{5.11}$
 						\begin{profonly}Src: Swok pg 361 ex 13	\end{profonly}
 					}
-	
+
 					\part
 					\exonly{$3^{2-3x}=4^{2x+1}$ }
 				\solonly{$S=\left\lbrace \dfrac{\log (\frac{9}{4})}{\log 432}\right\rbrace $  $\approx \num{0.13}$
 					\begin{profonly}Src: Swok pg 361 ex 14	\end{profonly}
 				}
-	
+
 				\part
 				\exonly{$3^{-x}=8$ }
 				\solonly{$S=\left\lbrace -\dfrac{\log 8}{\log 3} \right\rbrace $  $\approx \num{-1.89}$
 					\begin{profonly}Src: Swok pg 361 ex 15	\end{profonly}
 				}
-	
+
 				\part
 				\exonly{$3^{-x^2}=5$ }
 				\solonly{$S=\emptyset $}
 				\begin{profonly}Src: Swok pg 361 ex 16	\end{profonly}
-	
+
 				\part
 				\exonly{	$5^x-5^{-x}=6$  }
 				%\begin{prof}$ x= \log_5(3 + \sqrt{10})=\dfrac{\log(3+\sqrt{10})}{\log 5}$\end{prof}
 				\solonly{$S=\left\lbrace \log_5(3 + \sqrt{10})\right\rbrace =\left\lbrace \dfrac{\log(3+\sqrt{10})}{\log 5}\right\rbrace $}
-	
+
 				\part
 				\exonly{$2^x-6 \cdot 2^{-x}=6$ } %\begin{prof}$x=\dfrac{\log(3 \pm \sqrt{15})}{\log 2}$\end{prof}
 				\solonly{$S=\left\lbrace \log_2(3 + \sqrt{15})\right\rbrace=
 						\left\lbrace \dfrac{\log(3 + \sqrt{15})}{\log 2}\right\rbrace $}
-	
-	
+
+
 			\end{parts}
 		\end{multicols}
 	\end{qblock}
-
 
 \end{questions}
 
 \subsection{Equazioni logaritmiche}
 
 \begin{questions}
-	
+
 	\begin{qblock}
 		\question
 		\exonly{Risolvere le equazioni seguenti dopo averne determinato l'insieme di definizione (dominio)}
-	
-		
+
+
 		\begin{multicols}{2}
 			\begin{parts}
 				\part
 				\exonly{$\log_6(2x-3)=\log_6(12)-\log_6(3)$}
 				\solonly{$\DD=]\frac{3}{2};\infty[ \quad S=\left\lbrace \frac{7}{2} \right\rbrace $}
-		
+
 				\part
 				\exonly{$\log_4(3x+2)=\log_4(5)+\log_4(3)$}
 				\solonly{$\DD=]-\frac{2}{3};\infty[ \quad S=\left\lbrace \frac{13}{3} \right\rbrace $}
-		
+
 				\part
 				\exonly{$2\log_3(x)=3\log_3(5)$}
 				\solonly{$\DD=]0;\infty[ \quad S=\left\lbrace \sqrt{125} \right\rbrace $}
-		
+
 				\part
 				\exonly{$3\log_2(x)=2\log_2(3)$}
 				\solonly{$\DD=]0;\infty[ \quad S=\left\lbrace \sqrt[3]{9} \right\rbrace $}
-		
+
 				\part
 				\exonly{$\log_5(x-2)=\log_5(3x+7)$}
 				\solonly{$\DD=]2;\infty[ \quad S=\emptyset$}
-		
-		
+
+
 				\part
 				\exonly{$\log_3(x+4)=\log_3(1-x)$}
 				\solonly{$\DD=]-4;1[ \quad S=\left\lbrace -\frac{3}{2} \right\rbrace $}
-		
+
 				\part
 				\exonly{$\log(x)-\log(x+1)=3\log(4)$}
 				\solonly{$\DD=]0;\infty[ \quad S=\emptyset$}
-		
+
 				\part
 				\exonly{$\log_2(x+7)+\log_2(x)=3$}
 				\solonly{$\DD=]0;\infty[ \quad S=\left\lbrace 1 \right\rbrace $}
-		
+
 				\part
 				\exonly{$\log_3(x-2)+\log_3(x-4)=2$}
 				\solonly{$\DD=]4;\infty[ \quad S=\left\lbrace \frac{6 + \sqrt{40}}{2} \right\rbrace $}
-		
+
 				\part
 				\exonly{$\log(57x)=2+\log(x-2)$}
 				\solonly{$\DD=]2;\infty[ \quad S=\left\lbrace \frac{200}{43} \right\rbrace $}
-		
+
 			\end{parts}
 		\end{multicols}
-	
+
 		\solonly{\begin{profonly}
 				Swokowski pg 351-352 ex 17 - 32
 			\end{profonly}}
@@ -898,44 +867,44 @@
 \subsection{Equazioni esponenziali e logaritmiche}
 
 \begin{questions}
-	
+
 	\begin{qblock}
 		\question
 		\exonly{Risolvere le equazioni seguenti dopo averne determinato l'insieme di definizione (dominio)}
-	
-		
+
+
 		\begin{multicols}{2}
 			\begin{parts}
 				\part
 				\exonly{$2^{-x}=8$ }
 				\solonly{$S=\left\lbrace -3\right\rbrace $}
-		
+
 				\part
 				\exonly{$3^{x+3}=18^{x-3}$  }
 				\solonly{	$S=\left\lbrace 3 \cdot \dfrac{\log 54}{\log 6}\right\rbrace $}
-		
+
 				\part
 				\exonly{$4^{(2^x)}=2$  }
 				\solonly{$S=\left\lbrace -1\right\rbrace $}
-		
+
 				\part
 				\exonly{$\log_x (5) = \log_5 (x)$ }
 				%$\log^2 5 = \log^2 x \iff \pm \log 5 = \log x \iff x= 5^{\pm1}$ $x_1=5$ et $x_2=\dfrac{1}{5}$
 				\solonly{$S=\left\lbrace 5; \dfrac{1}{5} \right\rbrace $}
-		
+
 				\part
 				\exonly{$\log(x-2)+\log(x+1)=1$  }
-		
+
 				%\begin{prof}$(x+1)(x-2)=10^1 $ donc $x_1=4$ et $x_2=-3\notin ED$\end{prof}
-		
+
 				\solonly{$S=\left\lbrace 4 \right\rbrace $}
-		
+
 				\part
 				\exonly{$2\log (x) - \log(2x+3)=0$  }
-		
+
 				%\begin{prof}$x^2-2x-3=0$ donc $x_1=3$ et $x_2=-1\notin ED$\end{prof}
 				\solonly{$S=\left\lbrace 3  \right\rbrace $}
-		
+
 				\part
 				\exonly{$1=\log_2 (x^2) - \log_2 (4-x)$  }
 				%\begin{prof}$x^2+2x-8=0$ donc $x_1=-4$ et $x_2=2$\end{prof}
@@ -950,85 +919,81 @@
 				\solonly{$S=\left\lbrace (20;-5)\right\rbrace $}
 				\part
 				\exonly{$\log(35-x^3 )=3 \log (5-x)$  }
-		
+
 				%\begin{prof}$0=15 \cdot (x+3)(x+2)$ donc $x_1=2$ et $x_2=3$\end{prof}
 				\solonly{$S=\left\lbrace 2;3\right\rbrace $}
-		
+
 				\part
 				\exonly{$x^{6+\log (x)}=10^{-8}$  }
 				%\begin{prof}$6\log x +\log^2 x = -8$ donc $y=\log x$ $x_1=10^{-4}$ et $x_2=10^{-2}$\end{prof}
 				\solonly{$S=\left\lbrace 10^{-4};10^{-2}\right\rbrace $}
-		
-		
+
+
 				%	\part
 				%	$\log_y \sqrt{3}=\sqrt{2}$ \begin{prof}$y= 3^{\frac{1}{2 \sqrt{2}}}$\end{prof}
 				%	
-		
+
 			\end{parts}
 		\end{multicols}
 	\end{qblock}
 
-
-
 \end{questions}
-\solnewpage
+
 \subsection{Applicazioni, modellizzazione}
 
-
 \begin{questions}
-	
+
 	\begin{qblock}
 		\question
 		\exonly{
 			La crescita in altezza di un albero é frequentemente descritta con una funzione logistica.
 			Supponiamo che l'altezza $h$ (in metri) di un albero di $t$ anni sia descritta dalla funzione
-	
+
 			$$h(t)=\dfrac{36}{1+200 e^{-\num{0.2}t}} $$}
-	
+
 		\begin{parts}
 			\part
 			\exonly{
 				Quale sarà l'altezza di un albero di $10$ anni?
 			}
 			\solonly{\SI{1.28}{\meter}}
-	
+
 			\part
 			\exonly{
 				A che età la sua altezza sarà di \SI{15}{\metre}?}
-	
+
 			\solonly{A \num{24.8} anni}
 		\end{parts}
 	\end{qblock}
 
-	
 	\begin{qblock}
 		\question
-	
+
 		\exonly{
 			La massa di un elefante africano (in  \SI{}{\kilogram}) in funzione dell’età (in anni) é data approssimativamente dalla formula
-	
+
 			$$m(t)=2600\cdot\left(1-0.51\cdot e^{-0.075\cdot t}\right)^3$$}
-	
+
 		\begin{parts}
 			\part
 			\exonly{Determinare la massa di un elefante alla nascita}
 			\solonly{\SI{305.9}{\kilogram}}
-	
+
 			\part
 			\exonly{
 				Determinare l’età di un elefante di  \SI{1800}{\kilogram}}
 			\solonly{\num{19.82} ans}
 		\end{parts}
 	\end{qblock}
-	
-	
+
+
 	\begin{qblock}
 		\question
 		\exonly{
 			La popolazione (in milioni di abitanti) degli Stati Uniti $t$ anni dopo il 1980 può essere approssimata dalla funzione
-	
+
 			$$N(t)=227\cdot e^{0.007\cdot t}.$$
-	
+
 			In quale lasso di tempo la popolazione raddoppia?
 			In quale anno la popolazione sarà raddoppiata rispetto al 1980?
 		}
@@ -1036,18 +1001,18 @@
 			\begin{profonly}
 				$2=e^{0.007\cdot t} \iff \ln 2 = 0.007 \cdot t \iff t=\dfrac{\ln 2}{0.007}\approx 99$
 			\end{profonly}
-	
+
 			Dopo 99 anni. Nel 2079 }
 	\end{qblock}
 
-	
+
 	\begin{qblock}
 		\question
 		\exonly{
 			Varie masse vengono sospese ad una molla di  \SI{70}{\centi\meter} . Le lunghezze corrispondenti della molla vengono  misurate e notate nella tabella  qui sotto.
-	
-		
-		\begin{center}
+
+
+			\begin{center}
 				\begin{Tabular}[1.5]{|l|c|c|c|c|}
 					\hline
 					Massa in \si{\kilo\gram} & \num{0} & \num{0.5} & \num{1} & \num{2.5} \\
@@ -1055,27 +1020,25 @@
 					Lunghezza in  \si{\centi\meter} & \num{70} & \num{71.5} & \num{73} & \num{77.5} \\
 					\hline
 				\end{Tabular}
-		\end{center}
-	
+			\end{center}
+
 			Vogliamo modellizzare la funzione $L(x)$ che ci darà la lunghezza della molla (in \SI{}{\centi\meter}) in funzione della massa sospesa (in \SI{}{\kilogram}). Con che tipo di modello abbiamo a che fare? Lineare (o affine) o esponenziale?
-	
+
 			Quale lunghezza possiamo prevedere se sospendiamo una massa di \SI{4}{\kilogram} ?
 		}
-	
+
 		\solonly{
 			Modello lineare. $L(4)=\SI{82}{\centi\meter}$
 			\begin{profonly}
 				Pour chaque augmentation de $\frac{1}{2}$ de $kg$ on augmente la longueur de  $\num{1.5}$ $cm$
-	
+
 				$L(x)= \dfrac{\frac{3}{2}}{\frac{1}{2}}x + 70 = 3x+70$
-	
+
 				$L(4)=82$ $cm$
 			\end{profonly}
 		}
 	\end{qblock}
 
-
-	
 	\begin{qblock}
 		\question
 		\exonly{
@@ -1083,9 +1046,9 @@
 			\SI{20}{\degreeCelsius}.
 			Una persona decide di misurare la temperatura del caffè ogni \SI{4}{\minute}.
 			I dati sono stati raccolti nella tabella qui sotto:
-	
-	
-	\begin{center}
+
+
+			\begin{center}
 				\begin{Tabular}[1.5]{|l|c|c|c|c|}
 					\hline
 					Tempo in  $\SI{}{\minute}$ & \num{0} & \num{4} & \num{8} & \num{12} \\
@@ -1093,301 +1056,280 @@
 					Temperatura in \SI{}{\degreeCelsius} & \num{95} & \num{80.75} & \num{69.2} & \num{59.9} \\
 					\hline
 				\end{Tabular}
-	\end{center}
-	
+			\end{center}
+
 			Vogliamo modellizzare la funzione $T(t)$, la temperatura del caffè in \SI{}{\degreeCelsius}, in funzione del tempo trascorso $t$ in \SI{}{\minute}.
-	
+
 			Si tratta di un modello lineare (o affine) o esponenziale?
-	
+
 			Quale sarà la temperatura del caffè dopo \SI{24}{\minute}?
 		}
-	
+
 		\solonly{	Modello Esponenziale $T(24)=\SI{41.18}{\degreeCelsius}$ }
-	
-	
+
+
 		\begin{profonly}
 			Cela ne peut pas être linéaire puisque pour une variation de  $\SI{4}{\minute}$ on à des diminutions différentes de température : entre $0$ et $4$ diminution $\SI{14.2}{\degreeCelsius}$ mais entre $4$ et $8$ diminution de $\SI{12.1}{\degreeCelsius}$  et entre $8$ et $12$ de $\SI{10.3}{\degreeCelsius}$ .
-	
+
 			Le modèle est exponentiel puisque le facteur de décroissance est constant:
-	
+
 			$0.81 \approx \dfrac{60.8}{75}=\dfrac{48.7}{60.8}$
-	
+
 			$T(t)= 75 \cdot 0.81^\frac{t}{4}+20$  les élèves auront probablement $T'(t)=95 \cdot 0.85^\frac{t}{4}$
-	
+
 			$T(24)=\SI{41.2}{\degreeCelsius}$
-	
+
 			ou $T'(24)=\SI{35.82}{\degreeCelsius}$
-	
+
 			Discuter du problème de l'asymptote.
 		\end{profonly}
 	\end{qblock}
 
-	
 	\begin{qblock}
 		\question
 		\exonly{
 			Uno stagno contiene 1000 trote.
 			Novanta giorni più tardi se ne stimano 600.
 			Determinare il modello esponenziale $q(t)$ utilizzabile per stimare il numero di trote dopo $t$ giorni.
-	
+
 			In seguito determinare dopo quanti giorni resteranno solo 100 trote.
 		}
-	
+
 		\solonly{Dopo  406 giorni circa}
 	\end{qblock}
 
-
-	
 	\begin{qblock}
 		\question
 		\exonly{
 			Il numero di batteri in una coltura cresce esponenzialmente. L'esperimento inizia in laboratorio al tempo $t=0$.
 			Trenta minuti dopo l'inizio dell'esperienza si registrano 1500 batteri e quaranta minuti dopo l'inizio dell'esperimento se ne stimano 2000.
 		}
-	
+
 		\begin{parts}
 			\part
-	
+
 			\exonly{Stabilire il modello $P(t)$ che stima il numero di batteri $t$ minuti dopo l'inizio dell'esperimento. }
 			\solonly{$P(t)=1500 \left( \frac{4}{3}\right) ^{\frac{t-30}{10}}$ }
 			\part
 			\exonly{
 				Quanti batteri c'erano inizialmente (al $t=0$)?
 			}
-	
+
 			\solonly{
 				\begin{profonly}
 					$632.81=\dfrac{1500}{(\frac{4}{3})^3}$
 				\end{profonly}
 				$632.81\approx 633$ batteri.
 			}
-	
+
 			\part
 			\exonly{
 				Quanto tempo é necessario per raddoppiare la popolazione?
 			}
-	
+
 			\solonly{\SI{24.1}{\minute} }
 		\end{parts}
-	
+
 	\end{qblock}
 
-
-	
 	\begin{qblock}
 		\question
 		\exonly{
 			Il \DTMDate{2000-01-01} la popolazione della città $A$ era di $\num{62500}$ abitanti con un tasso di decrescita del $2\%$ annuo.
-	
+
 			La popolazione della città $B$ era di $\num{45070}$ il \DTMDate{1995-01-01} e di
 			$\num{53530}$ il \DTMDate{2000-01-01}.
-	
+
 			I tassi di crescita e decrescita delle popolazioni sono supposti costanti nel tempo.
 		}
-	
+
 		\begin{parts}
 			\part
 			\exonly{
 				Determinare le funzioni $A(t)$ e $B(t)$ rappresentanti il numero di abitanti de lle due città in funzione del tempo $t$ misurato in anni ($t=0$ il \DTMDate{2000-01-01}).
 			}
-	
-	
+
+
 			\solonly{
 			$A(t)=62500 \cdot \num{0.98}^t$ \\
 			$B(t)=53530 \cdot \num{1.19}^{\sfrac{t}{5}}$
 			}
-	
-	
+
+
 			\part
 			\exonly{
 				Quale sarà il numero di abitanti della città $A$ il \DTMDate{2050-01-01}? E per la città $B$?
 			}
-	
+
 			\solonly{
 				$A(50)\approx \num{22760}$\\
 				$B(50)\approx \num{304837}$
 			}
-	
-	
-	
+
+
+
 			\part
 			\exonly{
 				In quale momento le due popolazioni saranno identiche?
 			}
-	
+
 			\solonly{
 				Settembre 2002
 				\begin{profonly}
 					$t=2.81$
 				\end{profonly}
 			}
-	
+
 		\end{parts}
 	\end{qblock}
 
-
-	
 	\begin{qblock}
 		\question
 		\exonly{
 			Si é osservata una diminuzione del 7\% della superficie di una foresta ogni 3 anni.
-	
+
 			Oggi la superficie é di  $\num{250000} m^2$.
 		}
-	
+
 		\begin{parts}
 			\part
 			\exonly{
 				Determinare il modello esponenziale  $S(t)$ rappresentante la superficie della foresta in funzione del tempo $t$ in anni.}
-	
+
 			\solonly{$S(t)=250000 \cdot (1-0.07)^{\sfrac{t}{3}}$}
-	
+
 			\part
 			\exonly{
 				Quale sarà la superficie della foresta tra 7 anni?
 			}
-	
+
 			\solonly{$S(7)\approx \num{211057}$}
-	
+
 			\part
 			\exonly{
 				Quale superficie occupava la foresta 5 anni fa?
 			}
-	
+
 			\solonly{$S(-5)\approx \num{282142}$}
-	
+
 			\part
 			\exonly{
 				Tra quanti anno  resteranno solo  $10000 m^2$ di foresta?}
-	
+
 			\solonly{Tra  \num{133} anni circa}
-	
+
 		\end{parts}
 	\end{qblock}
 
-	
 	\begin{qblock}
 		\question
 		\exonly{
 			In un paese si é constatata la diminuzione del potere di acquisto del 20\% ogni 4 anni circa.
 		}
-	
+
 		\begin{parts}
 			\part
 			\exonly{
 				Modellizzare questa evoluzione usando una funzione del tipo
 				$P(t)=P_0 \cdot \alpha^{t/T}$
 			}
-	
+
 			\solonly{$P(t)=P_0 \cdot 0.8^{\sfrac{t}{4}}$}
-	
+
 			\part
 			\exonly{
 				Se definiamo un potere d'acquisto di riferimento al 100\% ad una certa data, quale sarà il potere d'acquisto dopo 10 anni?
 			}
-	
+
 			\solonly{$P(10)=57\%$}
-	
+
 		\end{parts}
 	\end{qblock}
 
-
-	
 	\begin{qblock}
 		\question
 		\exonly{
 			Un capitale di  \SI{35000}{\CHF} viene depositato ad un tasso del  $\num{2.75}\%$ annuale (interesse composto, capitalizzato annualmente).
-	
+
 			Qual'é stata la durata del deposito a queste condizioni se il capitale finale é di \SI{44679.11}{\CHF}?}
-	
+
 		\solonly{Approssimativamente  $9$ anni}
 	\end{qblock}
 
-
-
-	
 	\begin{qblock}
 		\question
 		\exonly{
 			Un nostro avo ha depositato la modica somma di  \SI{1}{\CHF} su di un conto ad un tasso di interesse del $5\%$ capitalizzato annualmente.
 			Oggi ritiriamo la somma depositata sotto forma di lingotti d'oro da \SI{1}{\kilogram}.
-	
+
 			Determinare il numero di lingotti che riceveremmo sapendo che il deposito risale a $500$ anni fa e stimando il prezzo attuale di \SI{1}{\kilogram} d'oro a \SI{25000}{\CHF}
 		}
-	
+
 		\solonly{\num{1572930} lingotti }
-	\end{qblock}
-
-
-	\solonly{\begin{profonly}
+		\solonly{\begin{profonly}
 			Note: : La plus grande réserve d’or du monde, la «Federal Reserve Bank» de New York dispose de 9 millions de kg d'or.
 		\end{profonly}}
+	\end{qblock}
 
-
-
-
-\begin{qblock}
+	\begin{qblock}
 		\question
 		\exonly{
 			Un maglio colpisce un pezzo di metallo di uno spessore iniziale di un centimetro con una frequenza di 10 colpi al minuto.
 			Ad ogni colpo lo spessore del pezzo diminuisce dell'1\%.
-	
+
 			Quanti colpi saranno necessari per ridurre lo spessore di un quarto?
-	
+
 			Il pezzo é considerato finito se il suo spessore non eccede i 5 millimetri.
 			Quanto tempo sarà necessario ad ottenere un pezzo finito?
 		}
 		\solonly{
 			29 colpi \\ 414 \si{\second}
 		}
-\end{qblock}
+	\end{qblock}
 
-	
 	\begin{qblock}
 		\question
 		\exonly{Il tempo di dimezzamento (o emivita) dell'isotopo radioattivo $239$ del Plutonio (${}^{239}Pu$) è di $24000$ anni. }
-	
+
 		\begin{parts}
 			\part
 			\exonly{
 				Dopo $2000$ anni quanto rimarrà di un campione iniziale di \SI{100}{\gram}?
 			}
-	
+
 			\solonly{
 			$Q(t)=100 \cdot \left(\dfrac{1}{2}\right)^{\dfrac{t}{24000}}$
-	
+
 			$Q(2000)=\SI{94.4}{\gram}$}
-	
-	
+
+
 			\part
-	
+
 			\exonly{Quanto tempo è necessario per passare da \SI{100}{\gram} a \SI{10}{\gram} di ${}^{239}Pu$. }
 			\solonly{$\approx\num{79726.3}$ anni}
-	
+
 			\part
 			\exonly{Definire un modello $T(x)$ che rappresenti il tempo (in anni) necessario affinché rimanga solo una percentuale  $x$  di ${}^{239}Pu$}
-	
+
 			\solonly{$T(x)=-\dfrac{24000}{\log(2)}\log\left( \dfrac{x}{100}\right)$}
-	
+
 		\end{parts}
 	\end{qblock}
 
-
-	
 	\begin{qblock}
 		\question
 		\exonly{
 			In acustica si definisce il livello di intensità acustica ($D$) come rapporto in \si{\deci\bel}
 			fra il flusso di energia $I$ e il flusso $I_0$ della soglia di udibilità, pari a $10^{-12} \text{W/m}^2$.
-	
+
 			$$D=10\cdot \log\left(\frac{I}{I_0}\right)$$
 		}
-	
+
 		\begin{parts}
 			\part
 			\exonly{Una conversazione normale ha un livello di intensità acustica di \SI{60}{\deci\bel}. Calcolare il flusso di energia $I$ in $\text{W/m}^2$ }
 			\solonly{$10^{-6}$ $\text{W/m}^2$ }
-	
+
 			\part
 			\exonly{Misuriamo due suoni con intenistà sonore $D_1$ e $D_2$. Qual'è il rapporto tra i due flussi di energia  $I_1$ e $I_2$ misurati se:}
 			\begin{subparts}
@@ -1399,35 +1341,34 @@
 				\exonly{$D_2 = 7 + D_1$ }
 				\solonly{$\frac{I_2}{I_1}=10^{\num{0.7}}\approx 5.02$ }
 			\end{subparts}
-	
-	
-	
+
+
+
 		\end{parts}
 	\end{qblock}
 
-	
 	\begin{qblock}
 		\question
-	
+
 		\exonly{
 			Secondo la legge di raffreddamento di Newton, la velocità di raffreddamento é proporzionale alla differenza di temperature tra l'oggetto e l'ambiente in cui si trova.
-	
+
 			Un ferro da stiro passa da \SI{52}{\celsius} a \SI{38}{\degreeCelsius} in \SI{30}{\minute} in una stanza ad una temperatura  constante di \SI{24}{\celsius}.
-	
+
 			La temperatura $T$ del ferro dopo  $t$ ore é modellizzata da
 			$$ T(t)=28\cdot 2^{-2t}+24$$
 		}
-	
+
 		\begin{parts}
-	
+
 			\part \exonly{Supponendo che $t=0$ corrisponda alle ore  $13:00$, determinare, con una precisione di un decimo di grado, la temperatura alle ore  14h00, 15h30 e 16h00 }
 			\solonly{$T(1)=\SI{31}{\degreeCelsius}$ \\ $T(\num{2.5})=\SI{24.875}{\degreeCelsius}$ \\
 				$T(3)=\SI{24.4}{\degreeCelsius}$
 			}
-	
+
 			\part
 			\exonly{Rappresentare graficamente  $T(t)$ nell'intervallo  $0\leq t \leq 4$}
-	
+
 			\ifprintanswers
 				\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
 					\begin{axis}[
@@ -1445,38 +1386,37 @@
 					\end{axis}
 				\end{tikzpicture}
 			\fi
-	
+
 			\solonly{
-	
-	
+
+
 				\begin{profonly}
 					Src: Swokowski pg 318 ex 24
 				\end{profonly}}
-	
-	
+
+
 		\end{parts}
 	\end{qblock}
 
-	
 	\begin{qblock}
 		\question
 		\exonly{
 			Il numero di batteri di una cultura passa da  $600$ a $1800$ tra le  $7h$ e le  $9h$ del mattino.
 			Supponendo una crescita esponenziale, la popolazione di batteri   $t$ ore dopo le  $7h$ del mattino é data dal modello
-	
+
 			\[P(t)=600 \cdot 3^{\sfrac{t}{2}}\]
 		}
-	
-	
-	
-	
+
+
+
+
 		\begin{parts}
 			\part \exonly{Determinare approssimativamente il numero di batteri alle  $8h$ e alle  $11h$ del mattino. }
 			\solonly{$P(1)\approx 1039$ , $P(4)=5400$}
-	
+
 			\part
 			\exonly{Rappresentare graficamente  $P(t)$ per $0\leq t \leq 4$}
-	
+
 			\ifprintanswers
 				\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
 					\begin{axis}[
@@ -1492,18 +1432,18 @@
 					\end{axis}
 				\end{tikzpicture}
 			\fi
-	
+
 			\solonly{
-	
-	
+
+
 				\begin{profonly}
 					Src: Swokowski pg 318 ex 23
 				\end{profonly}}
-	
+
 			\part
 			\exonly{Dopo quante ore ci saranno circa $5400$ batteri? }
 			\solonly{Dopo circa 4 ore }
-	
+
 		\end{parts}
 	\end{qblock}
 
