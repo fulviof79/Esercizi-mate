@@ -233,7 +233,7 @@
 				\part
 				\exonly{$
 						\begin{aligned}[t]
-							f:w\mathbb{R} & \longrightarrow\mathbb{R} \\
+							f:\mathbb{R} & \longrightarrow\mathbb{R} \\
 							x             & \longmapsto x^2-4x-32
 						\end{aligned}$ }
 				\part
@@ -409,7 +409,51 @@
 					\end{tikzpicture}
 				}
 				\solonly{$y=3x^2+6x-3$}
+
+				\part
+				\exonly{
+					\begin{tikzpicture}
+						\begin{axis}[
+								axis equal,
+								axis x line=middle,
+								axis y line=middle,
+								xlabel={$x$},
+								ylabel={$y$},
+								xtick distance=1,
+								ytick distance=1,
+								%			minor tick num = 2,
+								xmin=-4, xmax=4,
+								ymin=-5, ymax=6,
+								grid=both,]
+							\addplot[domain=-6:6,			samples=200,thick,color=blue,]{-2*(x-1)*(x+2)};
+						\end{axis}
+					\end{tikzpicture}
+				}
+				\solonly{$y=-2(x-1)(x+2)$}
+
+				\part
+				\exonly{
+					\begin{tikzpicture}
+						\begin{axis}[
+								axis equal,
+								axis x line=middle,
+								axis y line=middle,
+								xlabel={$x$},
+								ylabel={$y$},
+								xtick distance=1,
+								ytick distance=1,
+								%			minor tick num = 2,
+								xmin=-4, xmax=4,
+								ymin=-5, ymax=6,
+								grid=both,]
+							\addplot[domain=-6:6,			samples=200,thick,color=blue,]{0.5*x*(x-4)};
+						\end{axis}
+					\end{tikzpicture}
+				}
+				\solonly{$y=\frac{1}{2}x(x-4)$}
 			\end{parts}
+
+			
 		\end{multicols}
 \end{qblock}
 
