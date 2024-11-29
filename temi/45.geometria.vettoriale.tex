@@ -558,7 +558,7 @@
 		\exonly{Di una piramide a base rettangolare nello spazio si conoscono (le misure sono in metri):\\
 			$A(5;-3;9)$, $B(-3;3;4)$, $C(0;7;z)$ e il vertice $V(6;10;12)$
 
-			
+
 			\begin{center}
 				\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
 					\coordinate (BC) at (1,0.8);
@@ -569,7 +569,7 @@
 					\draw[dotted] (D)--(E);
 					\draw (B) -- (E) (C)--(E);
 					\draw[dotted] (D)--(E);
-	
+
 				\end{tikzpicture}
 			\end{center}
 
@@ -633,14 +633,61 @@
 		}
 
 		\solonly{
-		Con $AB \parallel CD$ si ha 
-		$D\left(\frac{5}{3};\frac{20}{3};\frac{28}{3}\right)$ 
+			Con $AB \parallel CD$ si ha
+			$D\left(\frac{5}{3};\frac{20}{3};\frac{28}{3}\right)$
 
-		Con $AD \parallel BC$ si ha
-		$D\left(\frac{60}{61};\frac{225}{61};\frac{551}{61}\right)$
+			Con $AD \parallel BC$ si ha
+			$D\left(\frac{60}{61};\frac{225}{61};\frac{551}{61}\right)$
 		}
 	\end{qblock}
 
+	\begin{qblock}
+		\question
+		Sia $ABCDEF$ un tronco di prisma (vedi figura non in scala).
+
+		Si conoscono i seguenti punti:
+		$$A(-1;-1;3) \qquad B(0;4;-1) \qquad C(3;1;-13) \qquad D(7;-1;z)$$
+
+		Si sa inoltre che $\overrightarrow{CF}=\frac{1}{4}\overrightarrow{AD}$ e che $\overrightarrow{BE}=\frac{1}{2}\overrightarrow{AD}$
+
+\begin{center}
+	
+
+
+		\begin{tikzpicture}[scale=0.5]
+			\coordinate[label=left:$B$]  (B) at (0,0);
+			\coordinate[label=above right:$C$]  (C) at (5,1);
+			\coordinate[label=below:$A$]  (A) at (2,2);
+			\coordinate[label=above:$D$]  (D) at (2,6);
+			\coordinate[label=above left:$E$]  (E) at (0,3);
+			\coordinate[label=above right:$F$]  (F) at (5,2.5);
+			\draw (B) -- (C);
+			\draw[dashed] (C)-- (A) -- (B);
+			\draw[dashed] (A) -- (D);
+			\draw[dashed] (B) -- (E);
+			\draw[dashed] (C) -- (F);
+			\draw (D) --(E)--(F)--cycle;
+		\end{tikzpicture}
+	\end{center}
+
+		\begin{parts}
+			\part Il vettore $\vec{v}=\vvec{-3,-15,12}$ è parallelo al lato $AB$?
+			\rsol{Si}
+			\part Il punto $K(1;9;-1)$ è allineato con $A$ e $B$?
+			\rsol{No}
+			\part Determinare la coordinata $z$ del punto $D$ in modo che il tronco di prisma sia retto.
+			\rsol{$z=5$}
+			\part
+
+			Determinare le coordinate dei punti $E$ e $F$.
+			\rsol{$E(5;1;-\frac{25}{2})$
+
+				$F(4;4;0)$}
+
+		\end{parts}
+
+
+	\end{qblock}
 
 
 	\begin{qblock}
