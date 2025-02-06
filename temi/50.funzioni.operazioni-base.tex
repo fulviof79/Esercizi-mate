@@ -173,34 +173,47 @@
     \begin{qblock}
         \question
         \exonly{
-            Date le funzioni  $f(x)=x^2+2$ e \\ $g(x)=2x^2-1$.
-            Calcolare:
-            %	Soit les fonctions $f(x)=x^2+2$ et \\ $g(x)=2x^2-1$. 
-            %Calculer:
+            Date le funzioni  $f(x)=x^2+2$ e  $g(x)=2x^2-1$.
+
+            Determinare la legge e il dominio naturale delle funzioni seguenti:
+  
         }
 
         \begin{parts}
-            \part \exonly{$(f+g)(x)$ }
-            \solonly{$3x^2+1$}
+            \part 
+                \exonly{$(f+g)(x)$ }
+            \solonly{
+                
+            \begin{align*}
+				f+g:\mathbb{R} & \rightarrow \mathbb{R} \\
+				x            & \mapsto 3x^2+1
+			\end{align*}
+            }
             \part \exonly{$(f-g)(x)$ }
-            \solonly{$-x^2+3$}
+            \solonly{
+                \begin{align*}
+                    f-g:\mathbb{R} & \rightarrow \mathbb{R} \\
+                    x            & \mapsto -x^2+3
+                \end{align*}    
+            }
             \part \exonly{$(fg)(x)$ }
-            \solonly{$2x^4+3x^2-2$}
+            \solonly{
+                \begin{align*}
+                    fg:\mathbb{R} & \rightarrow \mathbb{R} \\
+                    x            & \mapsto 2x^4+3x^2-2
+                \end{align*}  
+                }
             \part
             \exonly{ $\left(\dfrac{f}{g}\right)(x)$ }
 
-            \solonly{$=\dfrac{x^2+2}{2x^2-1}$}
+            \solonly{
+                \begin{align*}
+                    \dfrac{f}{g}:\mathbb{R}\setminus \left\lbrace \pm \dfrac{ \sqrt{2}}{2}\right\rbrace  & \rightarrow \mathbb{R} \\
+                    x            & \mapsto \dfrac{x^2+2}{2x^2-1}
+                \end{align*} 
+                }
 
-            \part \exonly{
-                Il dominio di $(f+g)(x)$
-                %	Le domaine de définition de $(f+g)(x)$
-            }
-            \solonly{$\DD=\R $}
-            \part \exonly{
-                Il dominio  di $(\dfrac{f}{g})(x)$
-                %	Le domaine de définition de $(\dfrac{f}{g})(x)$ 
-            }
-            \solonly{$\DD=\R \setminus \left\lbrace \pm \dfrac{ \sqrt{2}}{2}\right\rbrace $}
+
         \end{parts}
 
         \begin{profonly}	Src: Swok ex 3 pg 226/227	\end{profonly}
@@ -211,30 +224,47 @@
         \question
         \exonly
         {
-            Date le funzioni $f(x)=\sqrt{x+5}$ e \\ $g(x)=\sqrt{x+5}$.
-            Calcolare:
-            %	Soit les fonctions $f(x)=\sqrt{x+5}$ et \\ $g(x)=\sqrt{x+5}$. 
-            %Calculer:
+            Date le funzioni $f(x)=\sqrt{x+5}$ e  $g(x)=\sqrt{x+5}$.
+
+            Determinare la legge e il dominio naturale delle funzioni seguenti:
         }
 
         \begin{parts}
-            \part $(f+g)(x)$\solonly{$=2\sqrt{x+5}$}
+            \part \exonly{$(f+g)(x)$}
+            \solonly{
+                \begin{align*}
+                    f+g:[-5;\infty] & \rightarrow \mathbb{R} \\
+                    x            & \mapsto 2\sqrt{x+5}
+                \end{align*}  
+                }
 
-            \part $(f-g)(x)$\solonly{$=0$}
-
-            \part $(fg)(x)$\solonly{$=x+5$}
-
-            \part $\left(\dfrac{f}{g}\right)(x)$\solonly{$=\dfrac{\sqrt{x+5}}{\sqrt{x+5}}$}
-
-
-
-            \part \exonly{
-                Il dominio di  $(f+g)(x)$}\solonly{$\DD=\left[- 5 ; \infty \right[ $
+            \part \exonly{$(f-g)(x)$}
+            \solonly{
+                \begin{align*}
+                    f-g:[-5;\infty] & \rightarrow \mathbb{R} \\
+                    x            & \mapsto 0
+                \end{align*} 
             }
 
-            \part \exonly{
-                Il dominio di  $\left(\dfrac{f}{g}\right)(x)$ }\solonly{$\DD=\left] -5 ; \infty \right[ $
+            \part \exonly{$(fg)(x)$}
+            \solonly{
+                \begin{align*}
+                    fg:[-5;\infty] & \rightarrow \mathbb{R} \\
+                    x            & \mapsto x+5
+                \end{align*} 
             }
+
+            \part \exonly{$\left(\dfrac{f}{g}\right)(x)$}
+            
+            \solonly{
+                \begin{align*}
+                    \dfrac{f}{g}:]-5;\infty] & \rightarrow \mathbb{R} \\
+                    x            & \mapsto 1
+                \end{align*}  
+            }
+
+
+
 
         \end{parts}
         \begin{profonly}	Src: Swok ex 5 pg 226/227	\end{profonly}
@@ -304,7 +334,7 @@
 
             \part
             \exonly{
-                In caso contrario restringere il dominio e determinarne le immagine in modo da renderla biiettiva.}
+                In caso contrario restringere il dominio e determinare l'insieme delle immagini in modo da renderla biiettiva.}
         \end{parts}
 
         \begin{profonly}	Src: Swok ex 1-12 pg 236	\end{profonly}
@@ -313,7 +343,7 @@
    
    \begin{qblock}
      \question
-     \exonly{Determinare la funzione inversa (o reciproca) di $f$ sul loro dominio.}
+     \exonly{Determinare la funzione inversa (o reciproca) di $f$ sul loro dominio. Indicare il dominio, l'insieme delle immagini e la legge.}
  
      \begin{parts}
  
