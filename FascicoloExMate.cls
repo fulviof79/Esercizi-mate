@@ -824,3 +824,7 @@ minimum height=6cm, node distance=4cm]
 
 \fi
 
+\newcommand{\multicolsol}{
+    \solonly{~ \vspace{-2em}} %%% to be used in the solutions to break the column
+}
+
