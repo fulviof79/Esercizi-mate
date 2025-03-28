@@ -91,38 +91,47 @@
 	\begin{qblock}
 		\question
 		\exonly{
-			Consideriamo le forze $\vec{F_1}$ e $\vec{F_2}$. Determinare graficamente e algebricamente il vettore della forza $\vec{F_3}$ tale per cui $\vec{F_1}+\vec{F_2}+\vec{F_3}=\vec{0}$.}
+			Consideriamo le forze $\vec{F_1}$ e $\vec{F_2}$. Determinare graficamente e algebricamente il vettore della forza $\vec{F_3}$ tale per cui $\vec{F_1}+\vec{F_2}+\vec{F_3}=\vec{0}$.
+			\bigskip}
+
+		\begin{center}
 
 
 
-		\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+			\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
 
-			\draw[->] (0,0)-- node[midway,above]{$\vec{F_1}$} +(3,2);
-			\draw[->] (0,0)--node[midway,above]{$\vec{F_2}$}  +(-2,1);
-			\ifprintanswers
-				\draw[->,red] (0,0)--node[midway,above]{$\vec{F_3}$}  +(-1,-3);
-			\fi
-		\end{tikzpicture}
+				\draw[->] (0,0)-- node[midway,above]{$\vec{F_1}$} +(3,2);
+				\draw[->] (0,0)--node[midway,above]{$\vec{F_2}$}  +(-2,1);
+				\ifprintanswers
+					\draw[->,red] (0,0)--node[midway,above]{$\vec{F_3}$}  +(-1,-3);
+				\fi
+			\end{tikzpicture}
+		\end{center}
 
 		\solonly{$\vec{F_3}=-\left( \vec{F_1}+\vec{F_2} \right) $}
 	\end{qblock}
 
+	\newpage
 	\begin{qblock}
 		\question
 		\exonly{
-			Consideriamo le forze $\vec{F_1}$ e $\vec{F_2}$. Determinare graficamente e algebricamente il vettore della forza $\vec{F_3}$ tale per cui $\vec{F_1}+\vec{F_2}+\vec{F_3}=\vec{R}$.}
+			Consideriamo le forze $\vec{F_1}$ e $\vec{F_2}$. Determinare graficamente e algebricamente il vettore della forza $\vec{F_3}$ tale per cui $\vec{F_1}+\vec{F_2}+\vec{F_3}=\vec{R}$.
+			\bigskip}
+		\begin{center}
 
 
-		\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
 
-			\draw[->] (0,0)-- node[midway,above]{$\vec{F_1}$} +(3,2);
-			\draw[->] (0,0)--node[midway,above]{$\vec{F_2}$}  +(-2,1);
-			\draw[->] (0,0)--node[midway,above]{$\vec{R}$}  +(-2,4);
-			\ifprintanswers
-				\draw[->,blue] (3,2)--node[midway,above]{$\vec{F_2}$}  +(-2,1);
-				\draw[->,red] (1,3)--node[midway,above]{$\vec{F_3}$}  +(-3,1);
-			\fi
-		\end{tikzpicture}
+			\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+
+				\draw[->] (0,0)-- node[midway,above]{$\vec{F_1}$} +(3,2);
+				\draw[->] (0,0)--node[midway,above]{$\vec{F_2}$}  +(-2,1);
+				\draw[->] (0,0)--node[midway,above]{$\vec{R}$}  +(-2,4);
+				\ifprintanswers
+					\draw[->,blue] (3,2)--node[midway,above]{$\vec{F_2}$}  +(-2,1);
+					\draw[->,red] (1,3)--node[midway,above]{$\vec{F_3}$}  +(-3,1);
+				\fi
+			\end{tikzpicture}
+		\end{center}
 
 		\solonly{$\vec{F_3}=\vec{R}-\left( \vec{F_1}+\vec{F_2} \right) $}
 	\end{qblock}
@@ -180,9 +189,15 @@
 
 	\begin{qblock}
 		\question
-		\exonly{Dati i vettori $\vec{a}=\vecII{3}{5}$, $\vec{b}=\vecII{-4}{2}$ e $\vec{c}=\vecII{-3}{-4}$ determinare le componenti di
+		\exonly{Dati i vettori $\vec{a}=\vecII{3}{5}$, $\vec{b}=\vecII{-4}{2}$ e $\vec{c}=\vecII{-3}{-4}$ determinare le componenti di $\vec{d}$, $\vec{e}$, $\vec{f}$ e $\vec{g}$ definiti come segue:
 
-			$\vec{d}=\vec{a}+\vec{b}+\vec{c}$, $\vec{e}=\vec{a}-\vec{b}-\vec{c}$, $\vec{f}=\frac{1}{2}\vec{a}$ e $\vec{g}=-\dfrac{3}{2}\vec{c}$
+
+			\begin{multicols}{2}
+				$\vec{d}=\vec{a}+\vec{b}+\vec{c}$\\
+				$\vec{e}=\vec{a}-\vec{b}-\vec{c}$ \\
+				$\vec{f}=\frac{1}{2}\vec{a}$ \\
+				$\vec{g}=-\dfrac{3}{2}\vec{c}$
+			\end{multicols}
 
 		}
 
@@ -191,7 +206,19 @@
 		\question
 		\exonly{Dati i vettori $\vec{a}=\vecII{2}{3}$, $\vec{b}=\vecII{-4}{2}$.
 
-			Calcolare $\norm{\vec{a}}$, $\norm{\vec{b}}$, $\norm{\vec{a}+\vec{b}}$ e $\norm{\vec{a}}+\norm{\vec{b}}$}
+			Calcolare
+
+
+			\begin{multicols}{2}
+				$\norm{\vec{a}}$ \\
+				$\norm{\vec{b}}$\\
+				$\norm{\vec{a}+\vec{b}}$ \\
+				$\norm{\vec{a}}+\norm{\vec{b}}$
+			\end{multicols}
+
+		}
+
+
 		\solonly{$\norm{\vec{a}}=\sqrt{13}$, $\norm{\vec{b}}=\sqrt{20}$, $\norm{\vec{a}+\vec{b}}=\sqrt{29}\approx \num{5.39}$ e $\norm{\vec{a}}+\norm{\vec{b}}\approx \num{8.07}$}
 	\end{qblock}
 
@@ -293,7 +320,7 @@
 		\solonly{Velocità al suolo di \SI{710.21}{\kilo\meter/\hour} in direzione $\num{9.7}\degree  NO$}
 
 		\question
-		\exonly{Dato i punti $A(2;3)$, $B(-1;2)$ e $C(5;-4)$ determinare le componenti dei vettori $\overrightarrow{AB}$,$\overrightarrow{BC}$ e $\overrightarrow{AC}$}
+		\exonly{Dati i punti $A(2;3)$, $B(-1;2)$ e $C(5;-4)$ determinare le componenti dei vettori $\overrightarrow{AB}$,$\overrightarrow{BC}$ e $\overrightarrow{AC}$}
 		\solonly{$\overrightarrow{AB}=\vecII{-3}{-1}$,$\overrightarrow{BC}=\vecII{6}{-6}$ e $\overrightarrow{AC}=\vecII{3}{-7}$}
 	\end{qblock}
 
@@ -431,7 +458,21 @@
 
 \subsection{Vettori dello spazio}
 \begin{questions}
+	\begin{qblock}
+		\question
+		\exonly{Dati i vettori $\vec{a}=\vvec{-2,3,1}$ e  $\vec{b}=\vvec{4,5,-1}$ determinare:
+		}
+		\begin{parts}
+			\part \exonly{Le norme di $\vec{a}$ e $\vec{b}$}
+			\solonly{$\norm{\vec{a}}=\sqrt{14}$ e $\norm{\vec{b}}=\sqrt{42}$}
+			\part \exonly{L'angolo tra i due vettori}
+			\solonly{$\num{75.67}\degree$}
+			\part 
+			\exonly{La lunghezza della proiezione di $\vec{a}$ su $\vec{b}$}
+			\solonly{$\dfrac{6}{\sqrt{42}}\approx \num{0.93}$}
+		\end{parts}
 
+	\end{qblock}
 
 	\begin{qblock}
 		\question
@@ -650,25 +691,25 @@
 
 		Si sa inoltre che $\overrightarrow{CF}=\frac{1}{4}\overrightarrow{AD}$ e che $\overrightarrow{BE}=\frac{1}{2}\overrightarrow{AD}$
 
-\begin{center}
-	
+		\begin{center}
 
 
-		\begin{tikzpicture}[scale=0.5]
-			\coordinate[label=left:$B$]  (B) at (0,0);
-			\coordinate[label=above right:$C$]  (C) at (5,1);
-			\coordinate[label=below:$A$]  (A) at (2,2);
-			\coordinate[label=above:$D$]  (D) at (2,6);
-			\coordinate[label=above left:$E$]  (E) at (0,3);
-			\coordinate[label=above right:$F$]  (F) at (5,2.5);
-			\draw (B) -- (C);
-			\draw[dashed] (C)-- (A) -- (B);
-			\draw[dashed] (A) -- (D);
-			\draw[] (B) -- (E);
-			\draw[] (C) -- (F);
-			\draw (D) --(E)--(F)--cycle;
-		\end{tikzpicture}
-	\end{center}
+
+			\begin{tikzpicture}[scale=0.5]
+				\coordinate[label=left:$B$]  (B) at (0,0);
+				\coordinate[label=above right:$C$]  (C) at (5,1);
+				\coordinate[label=below:$A$]  (A) at (2,2);
+				\coordinate[label=above:$D$]  (D) at (2,6);
+				\coordinate[label=above left:$E$]  (E) at (0,3);
+				\coordinate[label=above right:$F$]  (F) at (5,2.5);
+				\draw (B) -- (C);
+				\draw[dashed] (C)-- (A) -- (B);
+				\draw[dashed] (A) -- (D);
+				\draw[] (B) -- (E);
+				\draw[] (C) -- (F);
+				\draw (D) --(E)--(F)--cycle;
+			\end{tikzpicture}
+		\end{center}
 
 		\begin{parts}
 			\part Il vettore $\vec{v}=\vvec{-3,-15,12}$ è parallelo al lato $AB$?
