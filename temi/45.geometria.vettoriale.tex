@@ -330,15 +330,7 @@
 		\exonly{Date le coordinate $A(1;-1)$, $B(2;2)$, $C(-3;2)$ , $D(-4;-1)$ e $E(0,2)$. }
 
 		\begin{parts}
-			\part
-			\exonly{Determinare la natura del quadrilatero $ABCD$ (quadrilatero qualunque, trapezio, parallelogrammo, rettangolo, quadrato)}
-			\solonly{
-
-				\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)},scale=0.5]
-					\draw[] (-3,2) coordinate[label=left:$C$] (C) -- (2,2) coordinate[label=right:$B$] (B) -- (1,-1) coordinate[label=right:$A$] (A) -- (-4,-1) coordinate[label=left:$D$] (D) -- cycle;
-				\end{tikzpicture}
-
-				Parallelogrammo: $ \overrightarrow{AB} = \overrightarrow{DC}$}
+			
 			\part
 			\exonly{Determinare la natura del quadrilatero $ABED$ (quadrilatero qualunque, trapezio, parallelogrammo, rettangolo, quadrato)}
 			\solonly{
@@ -350,6 +342,16 @@
 				Trapezio: $ \overrightarrow{AD} =\frac{5}{2} \overrightarrow{BE}$
 
 			}
+
+			\part
+			\exonly{Determinare la natura del quadrilatero $ABCD$ (quadrilatero qualunque, trapezio, parallelogrammo, rettangolo, quadrato)}
+			\solonly{
+
+				\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)},scale=0.5]
+					\draw[] (-3,2) coordinate[label=left:$C$] (C) -- (2,2) coordinate[label=right:$B$] (B) -- (1,-1) coordinate[label=right:$A$] (A) -- (-4,-1) coordinate[label=left:$D$] (D) -- cycle;
+				\end{tikzpicture}
+
+				Parallelogrammo: $ \overrightarrow{AB} = \overrightarrow{DC}$}
 		\end{parts}
 	\end{qblock}
 
