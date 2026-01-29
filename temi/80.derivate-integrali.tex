@@ -14,7 +14,7 @@
 			\exonly{ $f(x)=3x^2-5x+2$ }
 			\solonly{$6x-5$}
 			\part
-			\exonly{$f(x)=2x^4-3x^2+5$ }
+			\exonly{$f(x)=2x^4-3x^3+5$ }
 			\solonly{$8x^3-6x^2$ }
 			\part
 			\exonly{$f(x)=(x+3)^2$ }
@@ -69,7 +69,7 @@
 					\solonly{$f'(x)=8x^3-6x$}
 					\part
 					\exonly{$ f(x)=x^4-3x^3+x^2-5x+1 $}
-					\solonly{$f'(x)=4x^3-9x^2-5$}
+					\solonly{$f'(x)=4x^3-9x^2x-5$}
 				\end{parts}
 				\exonly{\end{multicols}}
 
@@ -264,16 +264,49 @@
 				f:\mathbb{R} & \rightarrow \mathbb{R} \\
 				x            & \mapsto 2x^2-3x-5
 			\end{align*}
+		}
 
 			\begin{parts}
-				\part Determinarne la derivata $f'(x)$.
-				\part Rappresentare graficamente $f(x)$ e $f'(x)$ sullo stesso diagramma.
-				\part Determinare le coordinate del vertice di $f(x)$.
-				\part Determinare la pendenza di $f(x)$ nel punto di ascissa $x=2$.
-				\part Determinare la pendenza di $f(x)$ nel punto di ascissa $x=-1$.
-				\part Determinare in che punti $f(x)$ ha una pendenza di $-1$.
+				\part
+				\exonly{ Determinarne la derivata $f'(x)$}
+				\solonly{$f'(x)=4x-3$}
+				\part 
+				\exonly{ Rappresentare graficamente $f(x)$ e $f'(x)$ sullo stesso diagramma.}
+				\solonly{ 
+					\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+                    \begin{axis}[
+                            AxisDefaults,
+                            TinyAxisLabels,
+                            width=0.8\linewidth,
+                            ytick distance={2},
+                            ymin=-10,
+                            ymax=10,
+                            domain=-10:10,
+                            restrict y to domain=-11:11,
+                        ]
+                        \addplot[draw=red]{2*x^2-3*x-5} node[pos=0.8,above] {$f(x)$};
+                        \addplot[draw=blue]{4*x-3}node[pos=0.8,above] {$f'(x)$};
+                    \end{axis}
+                \end{tikzpicture}
+				}
+
+				\part 
+					\exonly{ Determinare le coordinate del vertice di $f(x)$.}
+					\solonly{ $V(\dfrac{3}{4};-\dfrac{49}{8})$ }
+
+				\part 
+				\exonly{ Determinare la pendenza di $f(x)$ nel punto di ascissa $x=2$.}
+				\solonly{ $f'(2)=5$ }
+
+				\part 
+				\exonly{ Determinare la pendenza di $f(x)$ nel punto di ascissa $x=-1$.}
+				\solonly{ $f'(-1)=-7$ }
+
+				\part 
+				\exonly{ Determinare in che punti $f(x)$ ha una pendenza di $-1$.}
+				\solonly{ $x=\dfrac{1}{2}$ }
 			\end{parts}
-		}
+		
 
 	\end{qblock}
 
@@ -284,18 +317,32 @@
 			Sono date le seguenti funzioni reali
 
 			\begin{align*}
-				f(x) & = \frac{1}{2} x^2 -\frac{3}{2} x + \frac{4}{2} \\
+				f(x) & = \frac{1}{2} x^2 -\frac{3}{2} x + 2 \\
 				g(x) & = -2x^2+x+3
 			\end{align*}
+		}
 
 			\begin{parts}
-				\part Determinare i punti di intersezione tra $f(x)$ e $g(x)$.
-				\part Determinare la pendenza di $f(x)$ e di $g(x)$ nel punto di ascissa $x=-4$
-				\part Determinare in che punti $f(x)$ e $g(x)$ hanno pendenza $1$.
-				\part Determinare in che punti $f(x)$ e $g(x)$ hanno la stessa pendenza.
+				\part 
+				\exonly{Determinare i punti di intersezione tra $f(x)$ e $g(x)$.}
+				\solonly{ $I_1\left( \dfrac{5+\sqrt{65}}{10} ;  \dfrac{17 -\sqrt{65}}{10}  \right) $
+				$ I_2\left( \dfrac{5-\sqrt{65}}{10} ;  \dfrac{17 +\sqrt{65}}{10}  \right) $  }
+				 
+				\part 
+				\exonly{Determinare la pendenza di $f(x)$ e di $g(x)$ nel punto di ascissa $x=-4$.}
+				\solonly{ $f'(-4)=-\dfrac{11}{2}$ , $g'(-4)=17$ }
+
+				\part 
+				\exonly{Determinare in che punti $f(x)$ e $g(x)$ hanno pendenza $1$.}
+				\solonly{ $f$ in $x=\dfrac{5}{2}$ , $g$ in $x=0$} 
+
+				\part 
+				\exonly{Determinare in che punti $f(x)$ e $g(x)$ hanno la stessa pendenza.}
+				\solonly{ $x=\dfrac{1}{2}$ }
+
 			\end{parts}
 
-		}
+		
 	\end{qblock}
 
 	\begin{qblock}
@@ -310,9 +357,17 @@
 		}
 
 		\begin{parts}
-			\part \exonly{Determinarne le intersezioni con gli assi. }
-			\part \exonly{Determinarne gli estremi locali. }
-			\part \exonly{Tracciare uno schizzo del grafico utilizzando i dati trovati. }
+			\part 
+			\exonly{Determinarne le intersezioni con gli assi. }
+			\solonly{$I_x=\left\lbrace (-\frac{1}{3};0),(2;0)\right\rbrace $ $I_y(0;-2)$ }
+
+			\part 
+			\exonly{Determinarne gli estremi locali. }
+			\solonly{Minimo $\left( \frac{5}{6};-\frac{49}{12}\right) $ }
+
+			\part 
+			\exonly{Tracciare uno schizzo del grafico utilizzando i dati trovati. }
+
 		\end{parts}
 		\exonly{
 			Verificare la correttezza dei risultati tracciando il grafico con la calcolatrice, Geogebra o Desmos.
@@ -332,9 +387,17 @@
 		}
 
 		\begin{parts}
-			\part \exonly{Determinarne le intersezioni con gli assi. }
-			\part \exonly{Determinarne gli estremi locali. }
-			\part \exonly{Tracciare uno schizzo del grafico utilizzando i dati trovati. }
+			\part 
+			\exonly{Determinarne le intersezioni con gli assi. }
+			\solonly{$I_x=\left\lbrace (\dfrac{5 + \sqrt{41}}{4};0),(0;0),(\dfrac{5 - \sqrt{41}}{4};0)\right\rbrace $ $I_y(0;0)$ }
+
+			\part 
+			\exonly{Determinarne gli estremi locali. }
+			\solonly{Max $\left( \frac{5-\sqrt{37}}{6};0.186\right) $  Min $\left( \frac{5+\sqrt{37}}{6};-8.149 \right) $ }
+
+			\part 
+			\exonly{Tracciare uno schizzo del grafico utilizzando i dati trovati. }
+
 		\end{parts}
 		\exonly{
 			Verificare la correttezza dei risultati tracciando il grafico con la calcolatrice, Geogebra o Desmos.
