@@ -202,6 +202,51 @@
 			\end{parts}
 		\end{qblock}
 
+		\begin{qblock}
+			\question
+			\exonly{Data la funzione:
+				\[
+					\begin{aligned}[t]
+						f: A & \rightarrow B    \\
+						x    & \mapsto \dfrac{3x}{x+1} &
+					\end{aligned}
+				\]
+			}
+
+			\begin{parts}
+
+				\part
+		
+				\exonly{
+					Determina il dominio $A$ della funzione $f$ .
+				}
+				\solonly{$\DD_f=\R \setminus \lbrace 0 \rbrace$}
+
+
+				\part
+
+				\exonly{
+					Per quale codominio $B$ la funzione è biettiva? Determina la legge di $f^{-1}$
+				}
+				\solonly{$B=\R \setminus \lbrace 3 \rbrace$ \\ $f^{-1}(x)=\dfrac{x}{3-x}$}
+
+				\part
+				\exonly{Esegui uno schizzo qualitativo della funzione $f$.}
+				\solonly{
+					\begin{tikzpicture}[baseline={($(current bounding box.north)-(0,1.6ex)$)}]
+						\begin{axis}[
+								AxisDefaults,
+								width=0.7\linewidth,
+								xmin=-10,xmax=10,ymin=-10,ymax=10,samples=500,]
+							\addplot[draw=red,smooth,unbounded coords=jump,domain=-10:-1.01]{3*x/(x+1)};
+							\addplot[draw=red,smooth,unbounded coords=jump,domain=-0.99:10]{3*x/(x+1)};
+							\addplot [only marks, mark=o] (-1,3) ;
+						\end{axis}
+					\end{tikzpicture}
+				}
+			\end{parts}
+		\end{qblock}
+
 	\end{questions}
 
 	\subsection{Rappresentazione grafica}
