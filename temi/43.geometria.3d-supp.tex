@@ -45,4 +45,92 @@ triangolo isoscele:
 		\begin{minipage}{0.3\textwidth}
 			\includegraphics[scale=0.7]{3d-0-1}
 		\end{minipage}
+
+
+
+
+\question 
+\exonly{
+\begin{minipage}[t]{0.6\textwidth}
+Un diamante lavorato è costituito da una piramide e da un tronco di piramide che hanno in comune la base a forma di ottagono regolare (vedere figura a fianco). Al riguardo si chiede di:
+
+\begin{enumerate}[a)]
+	\item Determinare l'altezza del tronco di piramide e della piramide;
+	\item Determinare il volume del diamante
+	\item Sapendo che:
+	\begin{itemize}
+		\item La densità del diamante è $\rho = \SI{3.52}{\gram\per\cubic\centi\meter}$;
+		\item 1 carato è pari a \SI{0.2}{\gram}
+	\end{itemize}
+	Dire di quanti carati è il diamante in figura
+\end{enumerate}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.35\textwidth}
+\centering
+% Vista dall'alto
+\begin{tikzpicture}[scale=0.6]
+	% Ottagono regolare
+	\foreach \i in {0,...,7} {
+		\coordinate (A\i) at ({360/8*\i}:1.5);
+	}
+	% Disegna l'ottagono
+	\draw[thick] (A0) -- (A1) -- (A2) -- (A3) -- (A4) -- (A5) -- (A6) -- (A7) -- cycle;
+	
+	% Centro
+	\coordinate (C) at (0,0);
+	\fill (C) circle (1.5pt);
+	
+	% Linee dal centro ai vertici (sfaccettature)
+	\foreach \i in {0,...,7} {
+		\draw[gray!50] (C) -- (A\i);
+	}
+	
+	% Quota diametro
+	\draw[<->] (-1.8,1.8) -- (1.8,1.8);
+	\node[above] at (0,1.8) {\small 15 mm};
+	
+	\node[below] at (0,-2) {\small Vista dall'alto};
+\end{tikzpicture}
+
+\vspace{0.5cm}
+
+% Vista di fianco
+\begin{tikzpicture}[scale=0.6]
+	% Piramide superiore
+	\coordinate (apex) at (0,2.5);
+	\coordinate (L1) at (-1.2,0);
+	\coordinate (R1) at (1.2,0);
+	
+	% Tronco di piramide inferiore
+	\coordinate (L2) at (-1.8,-3);
+	\coordinate (R2) at (1.8,-3);
+	
+	% Disegna il diamante
+	\draw[thick] (L2) -- (L1) -- (apex) -- (R1) -- (R2) -- cycle;
+	\draw[thick, fill=gray!20] (L1) -- (apex) -- (R1) -- cycle;
+	\draw[thick, fill=gray!10] (L2) -- (L1) -- (R1) -- (R2) -- cycle;
+	
+	% Linea di separazione
+	\draw[dashed] (L1) -- (R1);
+	
+	% Centro e linee interne
+	\draw[gray!50] (apex) -- (0,0);
+	\draw[gray!50] (0,-3) -- (0,0);
+	
+	% Quote
+	\draw[<->] (2.2,0) -- (2.2,2.5);
+	\node[right] at (2.2,1.25) {\small 6.25 mm};
+	
+	\draw[<->] (2.2,-3) -- (2.2,0);
+	\node[right] at (2.2,-1.5) {\small 7.5 mm};
+	
+	\node[below] at (0,-3.5) {\small Vista di fianco};
+\end{tikzpicture}
+\end{minipage}
+}
+\solonly{
+% Soluzione da completare
+}
+	
 \end{questions}
