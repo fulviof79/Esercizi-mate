@@ -607,11 +607,11 @@
 		\question
 
 		\exonly{
-			Determinare il volume massimo di una piramide a base quadrata di area laterale $\SI{47}{cm^2} $.
+			Determinare il volume massimo di una piramide retta a base quadrata di area laterale $\SI{47}{cm^2} $.
 
 		}
 
-		\solonly{Volunme massimo $\num{33.317}\approx \SI{33.2}{\cubic\centi\metre}$ }
+		\solonly{Volume massimo $\num{33.317}\approx \SI{33.2}{\cubic\centi\metre}$ }
 	\end{qblock}
 
 
@@ -643,7 +643,7 @@
 					]
 
 					\addplot[domain=-1:4,samples=201,]{-x^2+3*x};
-					\draw[-,thick] (0.9,0) --(0.9,-0.9^2+3*0.9) -- (3-0.9,-0.9^2+3*0.9) -- ((3-0.9,0);
+					\draw[-,thick] (0.9,0) --(0.9,-0.9^2+3*0.9) -- (3-0.9,-0.9^2+3*0.9) -- (3-0.9,0);
 				\end{axis}
 			\end{tikzpicture}
 
@@ -727,6 +727,20 @@
 				\part $x \approx 1.43$
 				\part $x_1 \approx -1.91$ , $x_2 \approx 1.	66$
 			\end{parts}
+		}
+	\end{qblock}
+
+	\begin{qblock}
+		\question
+		\exonly{
+			Determinare il polinomio di Talyor di ordine $n=4$ centrato in $a=1$ per la funzione $f(x)=\ln(x)$ e utilizzarlo per approssimare $f(0.8)$ e $f(8)$. Confrontare i risultati con i valori calcolati dalla calcolatrice.
+	
+		}
+
+		\solonly{
+		$P_4(x)=\ln(1)+\frac{1}{1}(x-1)-\frac{1}{2}(x-1)^2+\frac{1}{3}(x-1)^3-\frac{1}{4}(x-1)^4$ \newline
+		$P_4(0.8) \approx -0.2231$ \newline
+		$P_4(8) \approx -503.41$ il valore è troppo lontano dal centro dello sviluppo del polinomio \newline
 		}
 	\end{qblock}
 \end{questions}
